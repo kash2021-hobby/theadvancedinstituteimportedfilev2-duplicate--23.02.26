@@ -90,7 +90,7 @@ export default function HomePage() {
 
   return (
     <div>
-      <section className="relative bg-gradient-to-br from-primary via-primary-dark to-blue-900 text-white py-12 md:py-20">
+      <section className="relative bg-gradient-to-br from-primary via-primary-dark to-blue-900 text-white py-12 md:py-20 overflow-visible">
         <div className="absolute inset-0 overflow-hidden">
           <ShaderBackground />
         </div>
@@ -118,7 +118,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8 relative z-20">
+            <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8 relative z-20 overflow-visible">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Get Started Today</h3>
               <LeadForm
                 sourcePage="home-hero"
