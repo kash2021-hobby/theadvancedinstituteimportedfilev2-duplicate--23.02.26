@@ -66,49 +66,40 @@ export default function HomePage() {
     <div>
       <section className="relative text-black py-20 md:py-32 overflow-hidden min-h-[600px] md:min-h-[700px]">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200"></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center h-full">
-            <div className="space-y-6">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
-                Crack Govt Exams in Guwahati with Expert-Led Coaching
-              </h1>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                  <p className="text-lg md:text-xl text-gray-800 font-medium">
-                    RRB NTPC | SSC CGL | SSC CHSL | Banking Exams
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                  <p className="text-lg md:text-xl text-gray-800">
-                    Structured classroom programs with small batch size
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                  <p className="text-lg md:text-xl text-gray-800">
-                    Weekly tests and personalized mentoring
-                  </p>
-                </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+          <div className="max-w-2xl space-y-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
+              Crack Govt Exams in Guwahati with Expert-Led Coaching
+            </h1>
+            <div className="space-y-4">
+              <div className="flex items-start space-x-3">
+                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <p className="text-lg md:text-xl text-gray-800 font-medium">
+                  RRB NTPC | SSC CGL | SSC CHSL | Banking Exams
+                </p>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4 pt-6">
-                <button className="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-dark transition-all hover:shadow-xl flex items-center justify-center space-x-2">
-                  <Download className="w-5 h-5" />
-                  <span>Download Brochure</span>
-                </button>
-                <Link to="/contact" className="bg-white text-primary border-2 border-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all hover:shadow-xl flex items-center justify-center space-x-2">
-                  <Calendar className="w-5 h-5" />
-                  <span>Book Free Demo Class</span>
-                </Link>
+              <div className="flex items-start space-x-3">
+                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <p className="text-lg md:text-xl text-gray-800">
+                  Structured classroom programs with small batch size
+                </p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <p className="text-lg md:text-xl text-gray-800">
+                  Weekly tests and personalized mentoring
+                </p>
               </div>
             </div>
-            <div className="hidden lg:flex justify-end items-center">
-              <img
-                src="/image copy copy copy.png"
-                alt="Student learning"
-                className="w-full max-w-lg h-auto object-contain rounded-2xl shadow-2xl"
-              />
+            <div className="flex flex-col sm:flex-row gap-4 pt-6">
+              <button className="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-dark transition-all hover:shadow-xl flex items-center justify-center space-x-2">
+                <Download className="w-5 h-5" />
+                <span>Download Brochure</span>
+              </button>
+              <Link to="/contact" className="bg-white text-primary border-2 border-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all hover:shadow-xl flex items-center justify-center space-x-2">
+                <Calendar className="w-5 h-5" />
+                <span>Book Free Demo Class</span>
+              </Link>
             </div>
           </div>
         </div>
