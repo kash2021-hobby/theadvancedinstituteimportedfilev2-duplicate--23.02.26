@@ -20,8 +20,8 @@ const courses: Course[] = [
     cohortStart: '1st March 2026',
     slug: 'rrb-ntpc',
     category: 'RRB',
-    logo: '/indian-railways-logo.png',
-    backgroundImage: '/train-background.jpg'
+    logo: '/indian-railways-logo.webp',
+    backgroundImage: '/train-background.webp'
   },
   {
     name: 'SSC CGL',
@@ -29,8 +29,8 @@ const courses: Course[] = [
     cohortStart: '15th March 2026',
     slug: 'ssc-cgl',
     category: 'SSC',
-    logo: '/ssc-logo.png',
-    backgroundImage: '/ssc-headquarters.jpg'
+    logo: '/ssc-logo.webp',
+    backgroundImage: '/ssc-headquarters.webp'
   },
   {
     name: 'SSC CHSL',
@@ -38,8 +38,8 @@ const courses: Course[] = [
     cohortStart: '15th March 2026',
     slug: 'ssc-chsl',
     category: 'SSC',
-    logo: '/ssc-logo.png',
-    backgroundImage: '/ssc-chsl-background.jpg'
+    logo: '/ssc-logo.webp',
+    backgroundImage: '/ssc-chsl-background.webp'
   },
   {
     name: 'Banking Clerical',
@@ -47,8 +47,8 @@ const courses: Course[] = [
     cohortStart: '10th March 2026',
     slug: 'banking',
     category: 'Banking',
-    logo: '/banking-logo.png',
-    backgroundImage: '/banking-background.jpg'
+    logo: '/banking-logo.webp',
+    backgroundImage: '/banking-background.webp'
   }
 ];
 

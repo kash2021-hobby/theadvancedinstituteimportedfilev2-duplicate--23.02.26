@@ -228,7 +228,7 @@ export default function HomePage() {
                 qualification: "Ph.D. in Mathematics", 
                 experience: "15+ Years", 
                 specialization: "Quantitative Aptitude & Reasoning",
-                image: "/faculty-1.jpg",
+                image: "/faculty-1.webp",
                 fullQualifications: "Ph.D. in Mathematics, NET Qualified",
                 university: "Gauhati University",
                 subjects: ["Quantitative Aptitude", "Logical Reasoning", "Data Interpretation"],
@@ -242,7 +242,7 @@ export default function HomePage() {
                 qualification: "M.A. English Literature", 
                 experience: "12+ Years", 
                 specialization: "English & General Awareness",
-                image: "/faculty-2.jpg",
+                image: "/faculty-2.webp",
                 fullQualifications: "M.A. in English Literature, B.Ed.",
                 university: "Delhi University",
                 subjects: ["English Language", "Comprehension", "General Awareness", "Current Affairs"],
@@ -256,7 +256,7 @@ export default function HomePage() {
                 qualification: "Ex-Railway Officer", 
                 experience: "10+ Years", 
                 specialization: "RRB & Technical Subjects",
-                image: "/faculty-3.jpg",
+                image: "/faculty-3.webp",
                 fullQualifications: "B.Tech (Mechanical), Ex-Railway Technical Officer",
                 university: "IIT Roorkee",
                 subjects: ["RRB Technical", "General Science", "Railway Procedures", "Technical Aptitude"],
@@ -312,7 +312,7 @@ export default function HomePage() {
             <div className="grid lg:grid-cols-2 gap-0">
               <div className="p-6 md:p-8 lg:p-10 flex flex-col justify-center">
                 <div className="mb-4">
-                  <img src="/image.png" alt="The Advanced Learning Academy" className="h-8 w-auto" />
+                  <img src="/image.webp" alt="The Advanced Learning Academy" className="h-8 w-auto" />
                 </div>
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 leading-tight">
                   Level Up Your Skills with Expert-Led, Exam-Focused Courses.
@@ -405,7 +405,7 @@ export default function HomePage() {
                   qualification: "Ph.D. in Mathematics", 
                   experience: "15+ Years", 
                   specialization: "Quantitative Aptitude & Reasoning",
-                  image: "/faculty-1.jpg",
+                  image: "/faculty-1.webp",
                   fullQualifications: "Ph.D. in Mathematics, NET Qualified",
                   university: "Gauhati University",
                   subjects: ["Quantitative Aptitude", "Logical Reasoning", "Data Interpretation"],
@@ -419,7 +419,7 @@ export default function HomePage() {
                   qualification: "M.A. English Literature", 
                   experience: "12+ Years", 
                   specialization: "English & General Awareness",
-                  image: "/faculty-2.jpg",
+                  image: "/faculty-2.webp",
                   fullQualifications: "M.A. in English Literature, B.Ed.",
                   university: "Delhi University",
                   subjects: ["English Language", "Comprehension", "General Awareness", "Current Affairs"],
@@ -433,7 +433,7 @@ export default function HomePage() {
                   qualification: "Ex-Railway Officer", 
                   experience: "10+ Years", 
                   specialization: "RRB & Technical Subjects",
-                  image: "/faculty-3.jpg",
+                  image: "/faculty-3.webp",
                   fullQualifications: "B.Tech (Mechanical), Ex-Railway Technical Officer",
                   university: "IIT Roorkee",
                   subjects: ["RRB Technical", "General Science", "Railway Procedures", "Technical Aptitude"],
