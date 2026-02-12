@@ -9,6 +9,7 @@ import {
   TrendingUp,
   Award,
   ChevronRight,
+  CheckCircle2,
   Play
 } from 'lucide-react';
 import LeadForm from '../components/LeadForm';

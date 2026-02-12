@@ -55,11 +55,6 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5173,
-    strictPort: false,
-    hmr: {
-      clientPort: 5173,
-      protocol: 'wss',
-      host: '5173-iupfjo4c0o68amv7e8i71-8f57ffe2.sandbox.novita.ai'
-    }
+    strictPort: false
   }
 });
