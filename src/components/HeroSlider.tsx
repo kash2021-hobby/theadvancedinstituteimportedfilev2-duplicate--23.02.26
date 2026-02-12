@@ -133,8 +133,8 @@ export default function HeroSlider() {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full min-h-[600px] md:min-h-[700px]">
-        <div className="grid lg:grid-cols-2 gap-8 items-end h-full">
-          <div className="flex flex-col justify-end space-y-6 py-8 pb-20 lg:pb-24">
+        <div className="grid lg:grid-cols-2 gap-8 items-end lg:items-center h-full">
+          <div className="flex flex-col justify-end lg:justify-center space-y-6 py-8 lg:py-4 pb-12 lg:pb-4">
             {/* Slide Animation Wrapper */}
             <div 
               key={slide.id}
