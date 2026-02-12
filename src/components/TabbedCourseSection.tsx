@@ -10,6 +10,7 @@ interface Course {
   slug: string;
   category: string;
   logo?: string;
+  backgroundImage?: string;
 }
 
 const courses: Course[] = [
@@ -19,7 +20,8 @@ const courses: Course[] = [
     cohortStart: '1st March 2026',
     slug: 'rrb-ntpc',
     category: 'RRB',
-    logo: '/indian-railways-logo.png'
+    logo: '/indian-railways-logo.png',
+    backgroundImage: '/train-background.jpg'
   },
   {
     name: 'SSC CGL',
@@ -104,9 +106,16 @@ export default function TabbedCourseSection() {
                   key={course.slug}
                   className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-1"
                 >
-                  <div className="h-48 bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-hidden">
-                    <div className="absolute inset-0 bg-black/10"></div>
-                    <div className="relative text-center px-6">
+                  <div 
+                    className="h-48 bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-hidden"
+                    style={course.backgroundImage ? {
+                      backgroundImage: `url('${course.backgroundImage}')`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center'
+                    } : undefined}
+                  >
+                    <div className="absolute inset-0 bg-black/40"></div>
+                    <div className="relative text-center px-6 z-10">
                       {course.logo ? (
                         <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-4 p-3">
                           <img 
