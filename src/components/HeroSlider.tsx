@@ -30,23 +30,9 @@ const slides: Slide[] = [
   },
   {
     id: 2,
-    headline: "SSC & Railway Exam Preparation That Works",
-    subheadline: "95% Success Rate with Proven Methods",
-    personImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80",
-    personName: "Success Story",
-    personRole: "AIR 247 - RRB NTPC",
-    bullets: [
-      "Daily doubt clearing sessions with expert mentors",
-      "All India ranking in weekly mock tests",
-      "Comprehensive study material - Print + Digital"
-    ],
-    bgGradient: "from-blue-50 via-indigo-50 to-purple-50"
-  },
-  {
-    id: 3,
     headline: "Your Dream Government Job Starts Here",
     subheadline: "500+ Students Selected in Last Year",
-    personImage: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80",
+    personImage: "https://www.genspark.ai/api/files/s/IF7CuENT",
     personName: "Top Ranker",
     personRole: "SSC CGL Selected",
     bullets: [
