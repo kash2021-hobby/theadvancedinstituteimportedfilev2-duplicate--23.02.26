@@ -173,7 +173,7 @@ export default function HeroSlider() {
                 <div
                   key={`${slide.id}-${index}`}
                   className={cn(
-                    'absolute w-40 h-72 sm:w-48 sm:h-80 transition-all duration-500 ease-in-out',
+                    'absolute w-48 h-80 sm:w-56 sm:h-96 transition-all duration-500 ease-in-out',
                     'flex items-center justify-center'
                   )}
                   style={{
@@ -235,7 +235,7 @@ export default function HeroSlider() {
 
             {/* Main Headline - Primary Message */}
             <h1 
-              className="text-[32px] font-bold leading-[1.2] mb-4 opacity-0"
+              className="text-[32px] font-bold leading-[1.2] mb-6 opacity-0"
               style={{
                 color: '#1A202C',
                 letterSpacing: '-0.02em',
@@ -248,7 +248,7 @@ export default function HeroSlider() {
 
             {/* Subtext - Supporting Description */}
             <p 
-              className="text-[15px] font-normal leading-[1.5] mb-6 opacity-0"
+              className="text-[15px] font-normal leading-[1.5] mb-8 opacity-0"
               style={{
                 color: '#718096',
                 animation: 'fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.4s forwards'
