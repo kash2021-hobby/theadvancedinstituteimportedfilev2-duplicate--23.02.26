@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 
 interface Slide {
   id: number;
+  eyebrowText: string;
   headline: string;
-  subheadline: string;
+  subtext: string;
   personImage: string;
   ctaText: string;
   ctaLink: string;
@@ -14,27 +15,30 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    headline: "Become a Government Job Leader",
-    subheadline: "Master RRB, SSC, and Banking Exams with Expert-Led Programs",
+    eyebrowText: "Expert-Led Coaching",
+    headline: "Crack Government Exams with Confidence",
+    subtext: "Join India's leading government exam institute with 15+ years of proven success in RRB NTPC, SSC CGL, SSC CHSL, and Banking exams.",
     personImage: "/2bcff076-87b2-405a-b4d1-a4287e6f29c7.png",
     ctaText: "Explore Programs",
     ctaLink: "/courses"
   },
   {
     id: 2,
-    headline: "Transform Your Career with SSC Excellence",
-    subheadline: "All our programs include personalized mentoring and comprehensive study material",
+    eyebrowText: "95% Success Rate",
+    headline: "SSC & Railway Exam Preparation That Works",
+    subtext: "Structured classroom programs with small batch sizes, comprehensive study material, and personalized mentoring from experienced faculty.",
     personImage: "/woman-success-story.jpg",
-    ctaText: "Explore Programs",
+    ctaText: "View All Courses",
     ctaLink: "/courses"
   },
   {
     id: 3,
-    headline: "Railway Exam Success Starts Here",
-    subheadline: "Join hundreds of successful candidates who achieved their dreams with us",
+    eyebrowText: "500+ Students Selected",
+    headline: "Your Dream Government Job Starts Here",
+    subtext: "Small batches of max 20 students for personal attention, full-length mock exams matching actual exam patterns, and expert guidance every step of the way.",
     personImage: "/student-girl-success.jpg",
-    ctaText: "Explore Programs",
-    ctaLink: "/courses"
+    ctaText: "Book Free Demo",
+    ctaLink: "/contact"
   }
 ];
 
@@ -48,7 +52,7 @@ export default function HeroSlider() {
     
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000); // 5 seconds interval
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [isAutoPlaying, isPaused]);
@@ -80,58 +84,61 @@ export default function HeroSlider() {
 
   return (
     <section 
-      className="relative bg-white overflow-hidden"
+      className="relative bg-white overflow-hidden min-h-screen"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      {/* Mobile-First Layout */}
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:min-h-[600px]">
-          
-          {/* Image Section - Top on mobile, Right on desktop */}
-          <div className="w-full lg:w-1/2 lg:order-2">
-            <div 
-              key={`image-${slide.id}`}
-              className="relative h-[400px] lg:h-[600px] animate-fadeIn"
+      {/* Background Image with Gradient Overlay */}
+      <div 
+        key={`bg-${slide.id}`}
+        className="absolute inset-0 animate-fadeIn"
+      >
+        <img
+          src={slide.personImage}
+          alt="Hero Background"
+          className="w-full h-full object-cover object-right-center lg:object-right"
+        />
+        {/* Mobile: Stronger gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-white/95 to-white/70 lg:hidden"></div>
+        
+        {/* Desktop: Left-to-right gradient overlay as per spec */}
+        <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-white via-white/85 to-transparent"
+          style={{
+            background: 'linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,0.85) 55%, rgba(255,255,255,0.2) 75%, rgba(255,255,255,0) 100%)'
+          }}
+        ></div>
+      </div>
+
+      {/* Content Container */}
+      <div className="relative z-10 max-w-[1200px] mx-auto px-5 py-[60px] lg:px-[5%] lg:py-[80px] min-h-screen flex items-center">
+        <div className="w-full max-w-[600px]">
+          <div 
+            key={`content-${slide.id}`}
+            className="animate-fadeIn"
+          >
+            {/* Eyebrow Text */}
+            <p className="text-[18px] lg:text-[22px] font-semibold text-gray-800 leading-[1.4] mb-[14px]">
+              {slide.eyebrowText}
+            </p>
+
+            {/* Main Heading */}
+            <h1 className="text-[34px] lg:text-[56px] font-extrabold text-slate-900 leading-[1.15] mb-[18px] max-w-[600px]">
+              {slide.headline}
+            </h1>
+
+            {/* Subtext */}
+            <p className="text-[16px] lg:text-[20px] font-normal text-gray-600 leading-[1.6] mb-[28px]">
+              {slide.subtext}
+            </p>
+
+            {/* Primary CTA Button */}
+            <Link
+              to={slide.ctaLink}
+              className="inline-block w-full lg:w-auto bg-blue-600 text-white h-[52px] px-[28px] rounded-lg text-[16px] font-semibold hover:bg-blue-700 transition-all duration-300 hover:shadow-lg leading-[52px] text-center"
             >
-              <img
-                src={slide.personImage}
-                alt="Hero"
-                className="w-full h-full object-cover object-center"
-              />
-              {/* Subtle overlay for better image quality */}
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/20 lg:bg-gradient-to-r lg:from-white/30 lg:to-transparent"></div>
-            </div>
+              {slide.ctaText}
+            </Link>
           </div>
-
-          {/* Content Section - Bottom on mobile, Left on desktop */}
-          <div className="w-full lg:w-1/2 lg:order-1 px-6 py-12 lg:px-12 lg:py-16">
-            <div 
-              key={`content-${slide.id}`}
-              className="animate-fadeIn space-y-6"
-            >
-              {/* Headline */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                {slide.headline}
-              </h1>
-
-              {/* Subheadline */}
-              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-xl">
-                {slide.subheadline}
-              </p>
-
-              {/* CTA Button */}
-              <div className="pt-4">
-                <Link
-                  to={slide.ctaLink}
-                  className="inline-block w-full sm:w-auto bg-primary text-white px-12 py-4 rounded-lg text-lg font-semibold hover:bg-primary-dark transition-all duration-300 hover:shadow-xl text-center"
-                >
-                  {slide.ctaText}
-                </Link>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
 
@@ -160,7 +167,7 @@ export default function HeroSlider() {
             onClick={() => goToSlide(index)}
             className={`transition-all rounded-full ${
               index === currentSlide
-                ? 'w-8 h-2 bg-primary'
+                ? 'w-8 h-2 bg-blue-600'
                 : 'w-2 h-2 bg-gray-400 hover:bg-gray-600'
             }`}
             aria-label={`Go to slide ${index + 1}`}
