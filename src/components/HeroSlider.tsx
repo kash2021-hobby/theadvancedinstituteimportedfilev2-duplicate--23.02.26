@@ -187,7 +187,7 @@ export default function HeroSlider() {
                 <div
                   key={`${slide.id}-${index}`}
                   className={cn(
-                    'absolute w-48 h-80 sm:w-56 sm:h-96 transition-all duration-500 ease-in-out',
+                    'absolute w-48 h-80 sm:w-56 sm:h-96 transition-all duration-300 ease-in-out',
                     'flex items-center justify-center'
                   )}
                   style={{
