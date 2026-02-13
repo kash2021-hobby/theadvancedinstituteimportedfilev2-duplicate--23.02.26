@@ -388,9 +388,9 @@ export default function CourseDetailPage() {
                             <thead>
                               <tr className="bg-orange-400 text-black">
                                 <th className="px-2 py-2 md:px-6 md:py-3 text-left font-bold border-r border-orange-500">Sections</th>
-                                <th className="px-2 py-2 md:px-6 md:py-3 text-left font-bold border-r border-orange-500">No. of Questions</th>
-                                <th className="px-2 py-2 md:px-6 md:py-3 text-left font-bold border-r border-orange-500">Total Marks</th>
-                                <th className="px-2 py-2 md:px-6 md:py-3 text-left font-bold">Duration</th>
+                                <th className="px-2 py-2 md:px-6 md:py-3 text-center font-bold border-r border-orange-500">No. of Questions</th>
+                                <th className="px-2 py-2 md:px-6 md:py-3 text-center font-bold border-r border-orange-500">Total Marks</th>
+                                <th className="px-2 py-2 md:px-6 md:py-3 text-center font-bold">Duration</th>
                               </tr>
                             </thead>
                             <tbody>
