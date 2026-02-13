@@ -262,7 +262,7 @@ export default function HeroSlider() {
 
             {/* Subtext - Supporting Description */}
             <p
-              className="text-[13px] font-normal leading-[1.5] mb-10"
+              className="text-[13px] font-normal leading-[1.5] mb-16"
               style={{
                 color: '#718096'
               }}
