@@ -47,12 +47,6 @@ export default function Header() {
                 {link.name}
               </Link>
             ))}
-            <Link
-              to="/courses"
-              className="bg-[#0066FF] text-white px-6 py-2 rounded-xl font-medium hover:bg-[#0052CC] transition-colors shadow-md hover:shadow-lg"
-            >
-              Explore Programs
-            </Link>
           </nav>
 
           <button
@@ -81,13 +75,6 @@ export default function Header() {
                 {link.name}
               </Link>
             ))}
-            <Link
-              to="/courses"
-              onClick={() => setIsMenuOpen(false)}
-              className="block text-center bg-[#0066FF] text-white px-6 py-2 rounded-xl font-medium hover:bg-[#0052CC] transition-colors shadow-md"
-            >
-              Explore Programs
-            </Link>
           </nav>
         </div>
       )}
