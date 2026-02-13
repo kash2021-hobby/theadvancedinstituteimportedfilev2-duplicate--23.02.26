@@ -230,7 +230,7 @@ export default function HeroSlider() {
         </div>
 
         {/* Mobile: Content Section - Clean White Background */}
-        <div className="bg-white px-5 py-4 pb-8">
+        <div className="bg-white px-5 py-6 pb-8">
           <div
             key={`mobile-content-${slide.id}`}
             className="space-y-0"
@@ -250,7 +250,7 @@ export default function HeroSlider() {
 
             {/* Main Headline - Primary Message */}
             <h1
-              className="text-[24px] font-bold leading-[1.2] mb-8"
+              className="text-[24px] font-bold leading-[1.2] mb-4"
               style={{
                 color: '#1A202C',
                 letterSpacing: '-0.02em',
@@ -262,7 +262,7 @@ export default function HeroSlider() {
 
             {/* Subtext - Supporting Description */}
             <p
-              className="text-[13px] font-normal leading-[1.5] mb-6"
+              className="text-[13px] font-normal leading-[1.5] mb-5"
               style={{
                 color: '#718096'
               }}

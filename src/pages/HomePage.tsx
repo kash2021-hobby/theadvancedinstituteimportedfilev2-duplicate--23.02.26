@@ -121,7 +121,7 @@ export default function HomePage() {
 
           {/* Mobile: Scrolling Animation */}
           <div className="md:hidden relative">
-            <div className="flex gap-6 animate-scroll-left">
+            <div className="flex gap-3 animate-scroll-left">
               <div className="flex flex-col items-center justify-center text-center p-4 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-blue-200 shadow-md min-w-[140px]">
                 <div className="bg-white p-2.5 rounded-full shadow mb-2">
                   <Users className="w-5 h-5" style={{ color: '#0C64E5' }} />
