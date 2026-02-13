@@ -70,25 +70,43 @@ export default function TabbedCourseSection() {
   const categoriesBeforeSelected = allCategories.slice(0, selectedIndex);
   const categoriesAfterSelected = allCategories.slice(selectedIndex + 1);
 
-  const scrollToSlide = (index: number) => {
+  const scrollToSlide = (index: number, smooth = true) => {
     if (carouselRef.current) {
       const slideWidth = carouselRef.current.offsetWidth;
       carouselRef.current.scrollTo({
         left: slideWidth * index,
-        behavior: 'smooth'
+        behavior: smooth ? 'smooth' : 'auto'
       });
       setCurrentSlide(index);
     }
   };
 
   const handleNext = () => {
-    const nextSlide = currentSlide === filteredCourses.length - 1 ? 0 : currentSlide + 1;
-    scrollToSlide(nextSlide);
+    if (carouselRef.current) {
+      const nextIndex = currentSlide + 1;
+      scrollToSlide(nextIndex);
+
+      // If we're at the duplicated first slide, reset to actual first slide without animation
+      if (nextIndex === filteredCourses.length) {
+        setTimeout(() => {
+          scrollToSlide(0, false);
+        }, 300);
+      }
+    }
   };
 
   const handlePrev = () => {
-    const prevSlide = currentSlide === 0 ? filteredCourses.length - 1 : currentSlide - 1;
-    scrollToSlide(prevSlide);
+    if (carouselRef.current) {
+      if (currentSlide === 0) {
+        // Jump to the duplicate last slide without animation
+        scrollToSlide(filteredCourses.length, false);
+        setTimeout(() => {
+          scrollToSlide(filteredCourses.length - 1);
+        }, 10);
+      } else {
+        scrollToSlide(currentSlide - 1);
+      }
+    }
   };
 
   return (
@@ -178,9 +196,9 @@ export default function TabbedCourseSection() {
                     className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4 pb-4"
                     style={{ scrollSnapType: 'x mandatory' }}
                   >
-                    {filteredCourses.map((course) => (
+                    {[...filteredCourses, filteredCourses[0]].map((course, index) => (
                       <div
-                        key={course.slug}
+                        key={`${course.slug}-${index}`}
                         className="flex-shrink-0 w-full snap-center"
                       >
                         <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
@@ -266,16 +284,19 @@ export default function TabbedCourseSection() {
                   {/* Dots Indicator for Mobile */}
                   {filteredCourses.length > 1 && (
                     <div className="flex justify-center gap-2 mt-4">
-                      {filteredCourses.map((_, index) => (
-                        <button
-                          key={index}
-                          onClick={() => scrollToSlide(index)}
-                          className={`w-2 h-2 rounded-full transition-all ${
-                            index === currentSlide ? 'bg-blue-600 w-6' : 'bg-gray-300'
-                          }`}
-                          aria-label={`Go to slide ${index + 1}`}
-                        />
-                      ))}
+                      {filteredCourses.map((_, index) => {
+                        const isActive = index === currentSlide || (currentSlide === filteredCourses.length && index === 0);
+                        return (
+                          <button
+                            key={index}
+                            onClick={() => scrollToSlide(index)}
+                            className={`w-2 h-2 rounded-full transition-all ${
+                              isActive ? 'bg-blue-600 w-6' : 'bg-gray-300'
+                            }`}
+                            aria-label={`Go to slide ${index + 1}`}
+                          />
+                        );
+                      })}
                     </div>
                   )}
                 </div>
