@@ -238,7 +238,7 @@ export default function CoursesPage() {
             >
               Contact Us
             </Link>
-            <button className="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#004BB8] transition-colors border-2 border-primary">
+            <button className="bg-secondary text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#004BB8] transition-colors">
               Book Free Demo Class
             </button>
           </div>
