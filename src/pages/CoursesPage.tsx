@@ -95,7 +95,7 @@ export default function CoursesPage() {
                             className="w-full h-full object-cover"
                           />
                         </div>
-                        <div className="relative z-10">
+                        <div className="relative z-10 flex flex-col items-center">
                           <img
                             src="/indian-railways-logo.webp"
                             alt="Indian Railways"
