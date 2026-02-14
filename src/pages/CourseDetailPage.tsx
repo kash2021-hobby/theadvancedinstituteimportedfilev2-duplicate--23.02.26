@@ -653,7 +653,7 @@ export default function CourseDetailPage() {
                 </div>
               )}
 
-              <div>
+              <div className="lg:hidden">
                 <CourseRoadmap curriculum={course.curriculum} duration={course.duration} />
               </div>
 
@@ -713,6 +713,54 @@ export default function CourseDetailPage() {
                         <p className="font-medium text-gray-900">Mock Tests</p>
                         <p className="text-sm text-gray-600">Regular assessment & ranking</p>
                       </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Compact Curriculum Journey - Desktop Only */}
+                <div className="hidden lg:block bg-white border-2 border-gray-200 rounded-2xl p-6">
+                  <h3 className="font-semibold text-gray-900 mb-1">Curriculum Journey</h3>
+                  <p className="text-xs text-gray-600 mb-4">{course.duration} structured learning path</p>
+
+                  <div className="relative">
+                    {/* Vertical timeline line */}
+                    <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-green-500 to-orange-500" />
+
+                    <div className="space-y-4">
+                      {course.curriculum.map((month, index) => {
+                        const phaseColors: Record<string, string> = {
+                          'Foundation Building': 'bg-blue-100 border-blue-500 text-blue-700',
+                          'Intermediate Mastery': 'bg-green-100 border-green-500 text-green-700',
+                          'Advanced Practice': 'bg-purple-100 border-purple-500 text-purple-700',
+                          'Final Sprint': 'bg-orange-100 border-orange-500 text-orange-700',
+                          'Tier 1 Foundation': 'bg-blue-100 border-blue-500 text-blue-700',
+                          'Tier 1 Advanced': 'bg-green-100 border-green-500 text-green-700',
+                          'Tier 2 Preparation': 'bg-purple-100 border-purple-500 text-purple-700',
+                          'Tier 3 & Interview': 'bg-orange-100 border-orange-500 text-orange-700',
+                          'Preliminary Phase': 'bg-blue-100 border-blue-500 text-blue-700',
+                          'Mains Phase': 'bg-green-100 border-green-500 text-green-700',
+                          'Interview Phase': 'bg-purple-100 border-purple-500 text-purple-700',
+                        };
+                        const colorClass = phaseColors[month.phase] || 'bg-blue-100 border-blue-500 text-blue-700';
+
+                        return (
+                          <div key={index} className="relative pl-10">
+                            {/* Timeline dot */}
+                            <div className="absolute left-2.5 top-2 w-3 h-3 bg-white border-2 border-primary rounded-full z-10" />
+
+                            <div className="bg-gray-50 rounded-lg p-3 hover:shadow-md transition-shadow">
+                              <div className="flex items-center justify-between mb-2">
+                                <span className="text-xs font-bold text-gray-900">Month {month.month}</span>
+                                <span className={`text-xs px-2 py-0.5 rounded-full border ${colorClass}`}>
+                                  {month.phase}
+                                </span>
+                              </div>
+                              <p className="text-xs text-gray-700 font-medium mb-1">Milestone:</p>
+                              <p className="text-xs text-gray-600 leading-relaxed">{month.milestones}</p>
+                            </div>
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>
