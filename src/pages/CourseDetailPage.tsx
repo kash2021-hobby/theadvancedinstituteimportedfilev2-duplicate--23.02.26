@@ -9,7 +9,8 @@ import {
   Award,
   Target,
   FileText,
-  ChevronDown
+  ChevronDown,
+  Play
 } from 'lucide-react';
 import LeadForm from '../components/LeadForm';
 import CourseRoadmap from '../components/CourseRoadmap';
@@ -503,6 +504,44 @@ export default function CourseDetailPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-12">
+              {/* Video Section */}
+              <div>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">Course Introduction</h2>
+                <div className="relative w-full bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl overflow-hidden shadow-lg border border-gray-300">
+                  {/* 16:9 Aspect Ratio Container */}
+                  <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                    {/* YouTube Video Placeholder */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      {/* Replace the src below with your YouTube embed URL */}
+                      {/* <iframe
+                        className="absolute inset-0 w-full h-full"
+                        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                        title="Course Introduction Video"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      ></iframe> */}
+
+                      {/* Placeholder Content - Remove when adding actual video */}
+                      <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center">
+                        <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mb-4 shadow-xl">
+                          <Play className="w-10 h-10 text-white ml-1" fill="white" />
+                        </div>
+                        <h3 className="text-2xl font-bold text-gray-800 mb-2">Course Introduction Video</h3>
+                        <p className="text-gray-600 max-w-md">
+                          Watch this video to learn more about the course structure, benefits, and what you'll achieve
+                        </p>
+                        <div className="mt-6 px-6 py-3 bg-white rounded-lg shadow-md">
+                          <p className="text-sm text-gray-500 font-mono">
+                            Add your YouTube video here
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">Course Overview</h2>
                 <p className="text-gray-700 leading-relaxed">{course.overview}</p>
