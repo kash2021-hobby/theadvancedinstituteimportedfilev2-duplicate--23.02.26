@@ -18,7 +18,7 @@ export default function ContactPage() {
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
-            <div>
+            <div className="order-2 lg:order-1">
               <h2 className="text-3xl font-bold text-gray-900 mb-8">Get In Touch</h2>
 
               <div className="space-y-6 mb-10">
@@ -108,7 +108,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div>
+            <div className="order-1 lg:order-2">
               <div className="bg-gray-50 rounded-2xl p-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">Send Us a Message</h2>
                 <p className="text-gray-600 mb-6">
