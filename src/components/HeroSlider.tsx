@@ -88,9 +88,17 @@ export default function HeroSlider() {
     return () => clearInterval(interval);
   }, [isAutoPlaying, isPaused]);
 
-  // Sync carousel with slide changes
+  // Sync carousel with slide changes - reset to center and pause briefly
   useEffect(() => {
-    setCarouselIndex(1);
+    setCarouselIndex(1); // Reset to center image
+    setIsPaused(true); // Pause carousel rotation
+
+    // Resume carousel rotation after 2 seconds
+    const timer = setTimeout(() => {
+      setIsPaused(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
   }, [currentSlide]);
 
   const nextSlide = () => {
