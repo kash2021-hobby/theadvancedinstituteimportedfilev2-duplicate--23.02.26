@@ -9,7 +9,7 @@ export default function InfrastructureSection() {
     { icon: Users, title: 'AC Classrooms', description: 'Comfortable learning environment' },
     { icon: Wifi, title: 'High-Speed WiFi', description: 'Seamless connectivity' },
     { icon: BookOpen, title: 'Extensive Library', description: 'An enviable collection of books & resources' },
-    { icon: Monitor, title: 'Computer Lab', description: '50+ systems with latest software' },
+    { icon: Monitor, title: 'Computer Lab', description: 'Modern systems with latest software' },
     { icon: Car, title: 'Parking Facility', description: 'Secure two-wheeler & car parking' },
     { icon: Coffee, title: 'Cafeteria', description: 'Hygienic food & beverages' },
     { icon: Accessibility, title: 'Accessible Design', description: 'Wheelchair friendly campus' },
