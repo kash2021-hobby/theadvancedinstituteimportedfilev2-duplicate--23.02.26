@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabase';
-import Layout from '../components/Layout';
 import ProfileHero from '../components/leadership/ProfileHero';
 import BiographySection from '../components/leadership/BiographySection';
 import QualificationsSection from '../components/leadership/QualificationsSection';
@@ -52,26 +51,22 @@ export default function DeanPage() {
 
   if (loading) {
     return (
-      <Layout>
-        <div className="min-h-screen flex items-center justify-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
-        </div>
-      </Layout>
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+      </div>
     );
   }
 
   if (!profile) {
     return (
-      <Layout>
-        <div className="min-h-screen flex items-center justify-center">
-          <p className="text-gray-600">Profile not found</p>
-        </div>
-      </Layout>
+      <div className="min-h-screen flex items-center justify-center">
+        <p className="text-gray-600">Profile not found</p>
+      </div>
     );
   }
 
   return (
-    <Layout>
+    <>
       <Breadcrumbs
         items={[
           { label: 'Home', path: '/' },
@@ -111,6 +106,6 @@ export default function DeanPage() {
           </div>
         </section>
       )}
-    </Layout>
+    </>
   );
 }

@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabase';
-import Layout from '../components/Layout';
 import Breadcrumbs from '../components/leadership/Breadcrumbs';
 import { Award, Mail, Phone, Linkedin } from 'lucide-react';
 
@@ -48,16 +47,14 @@ export default function AdvisorsPage() {
 
   if (loading) {
     return (
-      <Layout>
-        <div className="min-h-screen flex items-center justify-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
-        </div>
-      </Layout>
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+      </div>
     );
   }
 
   return (
-    <Layout>
+    <>
       <Breadcrumbs
         items={[
           { label: 'Home', path: '/' },
@@ -200,6 +197,6 @@ export default function AdvisorsPage() {
           )}
         </div>
       </section>
-    </Layout>
+    </>
   );
 }
