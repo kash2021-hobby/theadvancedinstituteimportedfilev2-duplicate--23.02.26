@@ -8,7 +8,7 @@ export default function InfrastructureSection() {
   const facilities = [
     { icon: Users, title: 'AC Classrooms', description: 'Comfortable learning environment' },
     { icon: Wifi, title: 'High-Speed WiFi', description: 'Seamless connectivity' },
-    { icon: BookOpen, title: 'Extensive Library', description: '10,000+ books & resources' },
+    { icon: BookOpen, title: 'Extensive Library', description: 'An enviable collection of books & resources' },
     { icon: Monitor, title: 'Computer Lab', description: '50+ systems with latest software' },
     { icon: Car, title: 'Parking Facility', description: 'Secure two-wheeler & car parking' },
     { icon: Coffee, title: 'Cafeteria', description: 'Hygienic food & beverages' },
