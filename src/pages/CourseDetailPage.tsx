@@ -569,6 +569,128 @@ const coursesData: Record<string, CourseData> = {
         milestones: 'Complete preparation for all stages including interview'
       }
     ]
+  },
+  'adre': {
+    name: 'ADRE (Assam Direct Recruitment Examination)',
+    slug: 'adre',
+    duration: '6 Months',
+    mode: 'Classroom Only',
+    batchSize: '20 Students',
+    description: 'Complete preparation for Assam Direct Recruitment Examination with focus on Assam-specific topics',
+    logo: '/ssc-logo.webp',
+    backgroundImage: '/ssc-headquarters.webp',
+    overview: 'Our ADRE program provides comprehensive preparation for the Assam Direct Recruitment Examination conducted by the State Level Recruitment Commission (SLRC), Assam. The course covers all aspects of the exam with special emphasis on Assam-specific General Knowledge, History, Culture, Geography, and Current Affairs. We prepare students for various Grade III and Grade IV posts under the Government of Assam.',
+    highlights: [
+      'Comprehensive coverage of Assam-specific topics',
+      'Expert faculty with knowledge of Assam history and culture',
+      'Focus on Assamese language and literature',
+      'Daily current affairs updates (National & State)',
+      'Complete syllabus coverage for all subjects',
+      'Regular mock tests based on actual exam pattern',
+      'Study materials in English and Assamese',
+      'Remedial classes for weak areas'
+    ],
+    syllabus: [
+      {
+        title: 'General Knowledge (Assam Focus)',
+        topics: ['History of Assam', 'Geography of Assam', 'Culture and Heritage of Assam', 'Economy of Assam', 'Polity and Governance of Assam', 'Important Personalities of Assam', 'Rivers, Wildlife Sanctuaries and National Parks', 'Festivals and Traditions']
+      },
+      {
+        title: 'Indian History & Culture',
+        topics: ['Ancient India', 'Medieval India', 'Modern India', 'Freedom Struggle', 'Art and Culture', 'Indian Heritage Sites', 'Social Reform Movements', 'Post-Independence India']
+      },
+      {
+        title: 'Indian Polity & Governance',
+        topics: ['Constitution of India', 'Fundamental Rights and Duties', 'Union and State Government', 'Local Self Government', 'Panchayati Raj', 'Electoral System', 'Judiciary', 'Important Constitutional Amendments']
+      },
+      {
+        title: 'Geography (India & Assam)',
+        topics: ['Physical Geography of India', 'Climate and Vegetation', 'Natural Resources', 'Geography of Assam', 'Agricultural Patterns', 'Industrial Development', 'Transportation and Communication', 'Environmental Issues']
+      },
+      {
+        title: 'Indian Economy',
+        topics: ['Basic Economic Concepts', 'Indian Economic Development', 'Banking and Finance', 'Budget and Planning', 'Economic Reforms', 'Agriculture and Rural Development', 'Industrial Policy', 'Government Schemes']
+      },
+      {
+        title: 'General Science',
+        topics: ['Physics Basics', 'Chemistry Fundamentals', 'Biology and Life Sciences', 'Environmental Science', 'Scientific Discoveries', 'Health and Diseases', 'Technology and Innovation', 'Space Science']
+      },
+      {
+        title: 'Current Affairs',
+        topics: ['National Current Affairs', 'Assam State Affairs', 'International Events', 'Sports and Awards', 'Government Policies and Schemes', 'Economic Updates', 'Science and Technology News', 'Appointments and Summits']
+      },
+      {
+        title: 'Quantitative Aptitude',
+        topics: ['Number System', 'Percentages', 'Ratio and Proportion', 'Time and Work', 'Time and Distance', 'Simple and Compound Interest', 'Profit and Loss', 'Data Interpretation']
+      },
+      {
+        title: 'Reasoning Ability',
+        topics: ['Verbal Reasoning', 'Non-Verbal Reasoning', 'Logical Reasoning', 'Analytical Reasoning', 'Blood Relations', 'Coding-Decoding', 'Series Completion', 'Direction Sense']
+      }
+    ],
+    examPattern: [
+      {
+        stage: 'Written Examination',
+        sections: [
+          { name: 'General Knowledge (including Assam)', questions: 40, marks: 40 },
+          { name: 'General Science', questions: 20, marks: 20 },
+          { name: 'Quantitative Aptitude', questions: 20, marks: 20 },
+          { name: 'Reasoning Ability', questions: 20, marks: 20 }
+        ],
+        duration: '120 minutes',
+        total: { questions: 100, marks: 100 },
+        negativeMarking: '0.25 marks deducted for each wrong answer'
+      }
+    ],
+    batchTimings: [
+      { day: 'Monday to Friday', time: '6:00 AM - 8:00 AM' },
+      { day: 'Monday to Friday', time: '6:00 PM - 8:00 PM' },
+      { day: 'Weekend Batch (Sat-Sun)', time: '9:00 AM - 1:00 PM' }
+    ],
+    curriculum: [
+      {
+        month: 1,
+        phase: 'Foundation Building',
+        focusAreas: ['Assam History and Culture basics', 'Indian Polity fundamentals', 'Basic Quantitative Aptitude'],
+        activities: ['Daily class sessions', 'Introduction to Assam GK', 'Weekly practice tests'],
+        milestones: 'Build strong foundation in Assam-specific topics with 60% accuracy'
+      },
+      {
+        month: 2,
+        phase: 'Foundation Building',
+        focusAreas: ['Geography of Assam and India', 'General Science concepts', 'Reasoning Ability basics'],
+        activities: ['Topic-wise tests', 'Current affairs updates', 'Study material distribution'],
+        milestones: 'Complete 40% syllabus with 65% accuracy in tests'
+      },
+      {
+        month: 3,
+        phase: 'Intermediate Mastery',
+        focusAreas: ['Indian Economy and Assam Economy', 'Advanced Quantitative problems', 'Indian History in depth'],
+        activities: ['Full-length mock tests', 'Assam current affairs special sessions', 'Doubt clearing sessions'],
+        milestones: 'Complete 60% syllabus with 70% target accuracy'
+      },
+      {
+        month: 4,
+        phase: 'Intermediate Mastery',
+        focusAreas: ['Advanced Reasoning', 'Constitutional framework', 'Assam Culture and Heritage deep dive'],
+        activities: ['Subject-wise revision tests', 'Previous year paper analysis', 'Performance tracking'],
+        milestones: 'Complete 80% syllabus with 75% accuracy'
+      },
+      {
+        month: 5,
+        phase: 'Advanced Practice',
+        focusAreas: ['Complete current affairs revision', 'Speed and accuracy building', 'Weak area strengthening'],
+        activities: ['Daily mock tests', 'Time management workshops', 'Remedial classes'],
+        milestones: 'Complete syllabus with 80%+ accuracy in mocks'
+      },
+      {
+        month: 6,
+        phase: 'Final Sprint',
+        focusAreas: ['Complete revision of all subjects', 'Exam strategy and tips', 'Last-minute preparation'],
+        activities: ['Full-length final mocks', 'Quick revision sessions', 'Mental preparation and counseling'],
+        milestones: 'Exam ready with 85%+ target accuracy and complete confidence'
+      }
+    ]
   }
 };
 

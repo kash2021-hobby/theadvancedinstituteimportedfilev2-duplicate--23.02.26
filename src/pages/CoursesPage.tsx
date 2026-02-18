@@ -62,6 +62,21 @@ export default function CoursesPage() {
         'Interview preparation',
         'Current affairs updates'
       ]
+    },
+    {
+      name: 'ADRE (Assam Direct Recruitment)',
+      slug: 'adre',
+      duration: '6 Months',
+      mode: 'Classroom Only',
+      batchSize: '20 Students',
+      hasOnlineSupport: false,
+      description: 'Complete preparation for Assam Direct Recruitment Examination with special focus on Assam-specific topics, culture, and current affairs.',
+      highlights: [
+        'Assam-specific GK coverage',
+        'Expert faculty for regional topics',
+        'Study materials in English & Assamese',
+        'Complete exam pattern practice'
+      ]
     }
   ];
 
@@ -166,6 +181,25 @@ export default function CoursesPage() {
                           <img
                             src="/banking-logo.webp"
                             alt="Banking Logo"
+                            className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
+                          />
+                          <h2 className="text-3xl font-bold text-center">{course.name}</h2>
+                        </div>
+                      </>
+                    )}
+                    {course.slug === 'adre' && (
+                      <>
+                        <div className="absolute inset-0 opacity-40">
+                          <img
+                            src="/ssc-headquarters.webp"
+                            alt="ADRE Background"
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                        <div className="relative z-10 flex flex-col items-center">
+                          <img
+                            src="/ssc-logo.webp"
+                            alt="ADRE Logo"
                             className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
                           />
                           <h2 className="text-3xl font-bold text-center">{course.name}</h2>

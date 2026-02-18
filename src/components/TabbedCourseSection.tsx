@@ -59,10 +59,21 @@ const courses: Course[] = [
     backgroundImage: '/banking-background.webp',
     hasOnlineSupport: false,
     hasSpecialLectures: true
+  },
+  {
+    name: 'ADRE (Assam Direct Recruitment)',
+    duration: '6 Months',
+    cohortStart: '20th March 2026',
+    slug: 'adre',
+    category: 'State Exams',
+    logo: '/ssc-logo.webp',
+    backgroundImage: '/ssc-headquarters.webp',
+    hasOnlineSupport: false,
+    hasSpecialLectures: true
   }
 ];
 
-const categories = ['RRB', 'SSC', 'Banking'];
+const categories = ['RRB', 'SSC', 'Banking', 'State Exams'];
 
 export default function TabbedCourseSection() {
   const [selectedCategory, setSelectedCategory] = useState('Most Popular');
