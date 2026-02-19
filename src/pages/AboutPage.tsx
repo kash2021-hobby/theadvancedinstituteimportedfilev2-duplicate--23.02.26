@@ -45,10 +45,10 @@ export default function AboutPage() {
 
   const faculty = [
     {
-      name: 'Dr. Rajesh Kumar',
-      designation: 'Director & Mathematics Expert',
-      experience: '15+ years',
-      specialization: 'Quantitative Aptitude, Advanced Mathematics'
+      name: 'Dr. Raman Bora',
+      designation: 'Head of Department',
+      experience: '15+ Years',
+      specialization: 'GK/GA/CA - General Awareness/Current Affairs'
     },
     {
       name: 'Prof. Anita Sharma',
