@@ -350,19 +350,19 @@ export default function HomePage() {
 
           <div ref={successStoriesAnimation.ref} style={successStoriesAnimation.style} className="grid md:grid-cols-3 gap-10">
             {[
-              { 
-                name: "Dr. Rajesh Kumar", 
-                qualification: "Ph.D. in Mathematics", 
-                experience: "15+ Years", 
-                specialization: "Quantitative Aptitude & Reasoning",
+              {
+                name: "Dr. Raman Bora",
+                qualification: "Head of Department",
+                experience: "15+ Years",
+                specialization: "GK/GA/CA - General Awareness/Current Affairs",
                 image: "/faculty-1.webp",
-                fullQualifications: "Ph.D. in Mathematics, NET Qualified",
-                university: "Gauhati University",
-                subjects: ["Quantitative Aptitude", "Logical Reasoning", "Data Interpretation"],
+                fullQualifications: "Head of Department",
+                university: "Expert in General Knowledge and Current Affairs",
+                subjects: ["General Knowledge", "General Awareness", "Current Affairs"],
                 exams: ["SSC CGL", "SSC CHSL", "RRB NTPC", "Banking"],
-                achievement: "Trained 500+ students with 200+ selections in SSC & RRB exams",
-                teachingApproach: "Focuses on concept clarity and shortcut techniques for complex calculations",
-                quote: "Mathematics is not about numbers, it's about understanding patterns and logic"
+                achievement: "15+ years of expertise in General Knowledge and Current Affairs teaching",
+                teachingApproach: "Comprehensive approach to General Awareness with focus on current events and static GK",
+                quote: "Knowledge is power, and awareness opens doors to success"
               },
               { 
                 name: "Prof. Anita Sharma", 
@@ -537,19 +537,19 @@ export default function HomePage() {
           <div className="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl" onClick={(e) => e.stopPropagation()}>
             {(() => {
               const facultyData = [
-                { 
-                  name: "Dr. Rajesh Kumar", 
-                  qualification: "Ph.D. in Mathematics", 
-                  experience: "15+ Years", 
-                  specialization: "Quantitative Aptitude & Reasoning",
+                {
+                  name: "Dr. Raman Bora",
+                  qualification: "Head of Department",
+                  experience: "15+ Years",
+                  specialization: "GK/GA/CA - General Awareness/Current Affairs",
                   image: "/faculty-1.webp",
-                  fullQualifications: "Ph.D. in Mathematics, NET Qualified",
-                  university: "Gauhati University",
-                  subjects: ["Quantitative Aptitude", "Logical Reasoning", "Data Interpretation"],
+                  fullQualifications: "Head of Department",
+                  university: "Expert in General Knowledge and Current Affairs",
+                  subjects: ["General Knowledge", "General Awareness", "Current Affairs"],
                   exams: ["SSC CGL", "SSC CHSL", "RRB NTPC", "Banking"],
-                  achievement: "Trained 500+ students with 200+ selections in SSC & RRB exams",
-                  teachingApproach: "Focuses on concept clarity and shortcut techniques for complex calculations",
-                  quote: "Mathematics is not about numbers, it's about understanding patterns and logic"
+                  achievement: "15+ years of expertise in General Knowledge and Current Affairs teaching",
+                  teachingApproach: "Comprehensive approach to General Awareness with focus on current events and static GK",
+                  quote: "Knowledge is power, and awareness opens doors to success"
                 },
                 { 
                   name: "Prof. Anita Sharma", 

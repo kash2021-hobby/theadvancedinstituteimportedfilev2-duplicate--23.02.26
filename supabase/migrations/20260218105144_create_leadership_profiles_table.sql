@@ -83,14 +83,14 @@ CREATE POLICY "Authenticated users can delete leadership profiles"
 INSERT INTO leadership_profiles (role, name, designation, bio, qualifications, experience, achievements, areas_of_expertise, inspirational_message, display_order) VALUES
 (
   'director',
-  'Dr. Rajesh Kumar',
-  'Founder & Director',
-  'With over 25 years of experience in competitive exam preparation and educational leadership, Dr. Rajesh Kumar has been instrumental in shaping the careers of thousands of successful candidates. His vision for holistic education combined with rigorous academic training has made The Advanced Learning Academy a premier institution for government job aspirants.',
-  ARRAY['Ph.D. in Education Management', 'M.A. in Public Administration', 'B.Ed. from Delhi University'],
-  'Former Deputy Director at a prestigious coaching institute in Delhi. Has mentored over 10,000 students for SSC, Banking, and Railway exams. Expert in curriculum design and educational innovation.',
-  ARRAY['Founded The Advanced Learning Academy in 2010', 'Trained over 5,000 successful SSC candidates', 'Developed innovative teaching methodologies', 'Published 15 books on competitive exam preparation', 'Received "Excellence in Education" award in 2019'],
-  ARRAY['Educational Leadership', 'Curriculum Development', 'Competitive Exam Strategy', 'Student Mentorship', 'Institutional Management'],
-  'Education is not just about passing exams; it''s about building character, discipline, and a vision for the future. At The Advanced Learning Academy, we are committed to transforming lives through quality education and unwavering support.',
+  'Dr. Raman Bora',
+  'Head of Department',
+  'With over 15 years of dedicated experience in teaching General Knowledge, General Awareness, and Current Affairs, Dr. Raman Bora has established himself as a leading expert in government exam preparation. His comprehensive teaching approach and deep understanding of competitive exam patterns have helped countless students achieve their goals.',
+  ARRAY['Head of Department - GK/GA/CA'],
+  'Over 15 years of specialized experience in teaching General Knowledge, General Awareness, and Current Affairs for competitive government exams. Expert in SSC, Banking, and Railway exam patterns.',
+  ARRAY['15+ years of teaching excellence', 'Specialized in GK/GA/CA for government exams', 'Trained thousands of successful candidates', 'Expert in current affairs and static GK'],
+  ARRAY['General Knowledge', 'General Awareness', 'Current Affairs', 'Competitive Exam Strategy', 'SSC Preparation', 'Banking Exam Preparation'],
+  'Knowledge is power, and awareness opens doors to success. With the right guidance and comprehensive preparation in General Knowledge and Current Affairs, every student can achieve their dream government job.',
   1
 ),
 (
