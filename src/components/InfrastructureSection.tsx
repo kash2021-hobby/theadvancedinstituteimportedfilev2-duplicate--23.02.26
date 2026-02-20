@@ -18,24 +18,44 @@ export default function InfrastructureSection() {
 
   const infrastructureImages = [
     {
-      url: 'https://images.pexels.com/photos/7944080/pexels-photo-7944080.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'https://images.pexels.com/photos/7944080/pexels-photo-7944080.jpeg?auto=compress&cs=tinysrgb&w=1200',
       title: 'Modern Classrooms',
       description: 'Air-conditioned classrooms with modern teaching aids'
     },
     {
-      url: 'https://images.pexels.com/photos/5212329/pexels-photo-5212329.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'https://images.pexels.com/photos/5212329/pexels-photo-5212329.jpeg?auto=compress&cs=tinysrgb&w=1200',
       title: 'Expert Faculty',
       description: 'Experienced teachers dedicated to student success'
     },
     {
-      url: 'https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=1200',
       title: 'Interactive Learning',
       description: 'Engaging teaching methodology for better understanding'
     },
     {
-      url: 'https://images.pexels.com/photos/7092613/pexels-photo-7092613.jpeg?auto=compress&cs=tinysrgb&w=800',
+      url: 'https://images.pexels.com/photos/7092613/pexels-photo-7092613.jpeg?auto=compress&cs=tinysrgb&w=1200',
       title: 'Success Stories',
       description: 'Join hundreds of successful candidates'
+    },
+    {
+      url: 'https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      title: 'Extensive Library',
+      description: 'Rich collection of books and study materials'
+    },
+    {
+      url: 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      title: 'Computer Lab',
+      description: 'State-of-the-art technology and software'
+    },
+    {
+      url: 'https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      title: 'Study Environment',
+      description: 'Peaceful and focused learning spaces'
+    },
+    {
+      url: 'https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      title: 'Campus Facilities',
+      description: 'Modern amenities for student comfort'
     }
   ];
 
@@ -52,10 +72,10 @@ export default function InfrastructureSection() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
-          <div ref={facilitiesAnimation.ref} style={facilitiesAnimation.style} className="grid grid-cols-2 gap-3 md:gap-4 lg:order-1 order-2">
+          <div ref={facilitiesAnimation.ref} style={facilitiesAnimation.style} className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 lg:order-1 order-2">
             {infrastructureImages.map((image, index) => (
               <div key={index} className="relative group overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div className="aspect-[4/3] overflow-hidden">
+                <div className="aspect-[16/9] overflow-hidden">
                   <img
                     src={image.url}
                     alt={image.title}
