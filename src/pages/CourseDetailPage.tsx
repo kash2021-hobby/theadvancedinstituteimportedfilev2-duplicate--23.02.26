@@ -85,7 +85,11 @@ const coursesData: Record<string, CourseData> = {
       'Personal doubt clearing sessions',
       'Printed study material + PDF access',
       'Online test series portal access',
-      'Current affairs monthly updates'
+      'Current affairs monthly updates',
+      'Computer CBT training sessions',
+      'Personality Development Training Sessions',
+      'English Communication classes',
+      'Interview Preparation workshops'
     ],
     syllabus: [
       {
@@ -191,7 +195,11 @@ const coursesData: Record<string, CourseData> = {
       'Statistical analysis of performance',
       'Interview and personality development',
       'Complete study material for all tiers',
-      'Daily vocabulary building sessions'
+      'Daily vocabulary building sessions',
+      'Computer CBT training sessions',
+      'Personality Development Training Sessions',
+      'English Communication classes',
+      'Interview Preparation workshops'
     ],
     syllabus: [
       {
@@ -345,7 +353,11 @@ const coursesData: Record<string, CourseData> = {
       'Previous year papers practice',
       'Tier-wise mock test series',
       'Skill test preparation (LDC/DEO)',
-      'Personal performance tracking'
+      'Personal performance tracking',
+      'Computer CBT training sessions',
+      'Personality Development Training Sessions',
+      'English Communication classes',
+      'Interview Preparation workshops'
     ],
     syllabus: [
       {
@@ -464,7 +476,11 @@ const coursesData: Record<string, CourseData> = {
       'Current affairs daily updates',
       'Group discussion practice',
       'Descriptive test preparation',
-      'Sector-specific knowledge building'
+      'Sector-specific knowledge building',
+      'Computer CBT training sessions',
+      'Personality Development Training Sessions',
+      'English Communication classes',
+      'Interview Preparation workshops'
     ],
     syllabus: [
       {
@@ -590,7 +606,11 @@ const coursesData: Record<string, CourseData> = {
       'Mock interviews and group discussion practice',
       'Current affairs daily updates with banking focus',
       'Online test portal with performance analytics',
-      'Live and recorded online class access'
+      'Live and recorded online class access',
+      'Computer CBT training sessions',
+      'Personality Development Training Sessions',
+      'English Communication classes',
+      'Interview Preparation workshops'
     ],
     syllabus: [
       {
@@ -747,7 +767,11 @@ const coursesData: Record<string, CourseData> = {
       'Current affairs updates with banking focus',
       'Online test portal with detailed analytics',
       'Flexible learning with online class access',
-      'Affordable fee structure for mass preparation'
+      'Affordable fee structure for mass preparation',
+      'Computer CBT training sessions',
+      'Personality Development Training Sessions',
+      'English Communication classes',
+      'Interview Preparation workshops'
     ],
     syllabus: [
       {
@@ -862,7 +886,11 @@ const coursesData: Record<string, CourseData> = {
       'Complete syllabus coverage for all subjects',
       'Regular mock tests based on actual exam pattern',
       'Study materials in English and Assamese',
-      'Remedial classes for weak areas'
+      'Remedial classes for weak areas',
+      'Computer CBT training sessions',
+      'Personality Development Training Sessions',
+      'English Communication classes',
+      'Interview Preparation workshops'
     ],
     syllabus: [
       {
