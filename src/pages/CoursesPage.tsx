@@ -82,9 +82,9 @@ export default function CoursesPage() {
       name: 'ADRE (Assam Direct Recruitment)',
       slug: 'adre',
       duration: '6 Months',
-      mode: 'Classroom + Online Support',
+      mode: 'Classroom Only',
       batchSize: '20 Students',
-      hasOnlineSupport: true,
+      hasOnlineSupport: false,
       description: 'Complete preparation for Assam Direct Recruitment Examination with special focus on Assam-specific topics, culture, and current affairs.',
       highlights: [
         'Assam-specific GK coverage',
