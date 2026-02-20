@@ -43,8 +43,8 @@ export default function StickyContactBar() {
               <div className="bg-white rounded-full p-1">
                 <Phone className="w-3 h-3 text-[#0066FF]" />
               </div>
-              <span className="hidden sm:inline">Request a Callback</span>
-              <span className="sm:hidden">Callback</span>
+              <span className="hidden sm:inline">Submit The Details</span>
+              <span className="sm:hidden">Details</span>
             </button>
 
             <a

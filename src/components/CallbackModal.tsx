@@ -12,7 +12,7 @@ interface CallbackModalProps {
 export function CallbackModal({
   isOpen,
   onClose,
-  title = 'Request a Callback',
+  title = 'Submit The Details',
   message = 'Fill out the form below and our team will contact you within 24 hours',
   sourcePage = 'sticky-bar-callback'
 }: CallbackModalProps) {
