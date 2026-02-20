@@ -298,30 +298,30 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-24 md:py-32 bg-gradient-to-br from-white via-primary-50 to-ocean-50 relative overflow-hidden">
+      <section className="py-16 md:py-20 bg-gradient-to-br from-white via-primary-50 to-ocean-50 relative overflow-hidden">
         <div className="absolute top-20 right-10 w-72 h-72 bg-ocean-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-black text-gradient-blue mb-6 tracking-tight leading-tight pb-2">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-black text-gradient-blue mb-4 tracking-tight leading-tight pb-2">
               How Our Program Works
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-ocean-500 mx-auto mb-6 rounded-full"></div>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto font-medium leading-relaxed">
+            <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-ocean-500 mx-auto mb-4 rounded-full"></div>
+            <p className="text-base md:text-lg text-gray-700 max-w-3xl mx-auto font-medium leading-relaxed">
               A structured approach to ensure your success
             </p>
           </div>
 
-          <div ref={programAnimation.ref} style={programAnimation.style} className="max-w-4xl mx-auto">
+          <div ref={programAnimation.ref} style={programAnimation.style} className="max-w-3xl mx-auto">
             {programSteps.map((step, index) => (
-              <div key={index} className="flex items-start mb-10 last:mb-0 relative group">
+              <div key={index} className="flex items-start mb-6 last:mb-0 relative group">
                 {index < programSteps.length - 1 && (
-                  <div className="absolute left-7 top-16 bottom-0 w-1 bg-gradient-to-b from-primary-400 via-ocean-400 to-primary-600 rounded-full"></div>
+                  <div className="absolute left-6 top-14 bottom-0 w-1 bg-gradient-to-b from-primary-400 via-ocean-400 to-primary-600 rounded-full"></div>
                 )}
-                <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-primary-500 to-ocean-600 text-white rounded-full flex items-center justify-center font-black text-xl shadow-blue-lg z-10 mr-8 group-hover:scale-110 group-hover:animate-pulse transition-all duration-300">
+                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary-500 to-ocean-600 text-white rounded-full flex items-center justify-center font-black text-lg shadow-blue-lg z-10 mr-5 group-hover:scale-110 group-hover:animate-pulse transition-all duration-300">
                   {index + 1}
                 </div>
-                <div className="flex-grow bg-white p-8 rounded-2xl shadow-blue-md hover:shadow-blue-lg card-hover-lift border-2 border-primary-100 group-hover:border-primary-300 transition-all">
-                  <p className="text-gray-900 font-bold text-xl">{step}</p>
+                <div className="flex-grow bg-white p-5 md:p-6 rounded-2xl shadow-blue-md hover:shadow-blue-lg card-hover-lift border-2 border-primary-100 group-hover:border-primary-300 transition-all">
+                  <p className="text-gray-900 font-bold text-base md:text-lg">{step}</p>
                 </div>
               </div>
             ))}
