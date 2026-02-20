@@ -13,6 +13,7 @@ import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage';
 import ContactPage from './pages/ContactPage';
 import FeatureCarouselDemo from './pages/FeatureCarouselDemo';
+import AppFeaturesPage from './pages/AppFeaturesPage';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="blog/:slug" element={<BlogPostPage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="carousel-demo" element={<FeatureCarouselDemo />} />
+          <Route path="app-features" element={<AppFeaturesPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
