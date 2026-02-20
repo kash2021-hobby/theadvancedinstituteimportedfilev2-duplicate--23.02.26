@@ -4,6 +4,7 @@ import ScrollToTop from './components/ScrollToTop';
 import HomePage from './pages/HomePage';
 import CoursesPage from './pages/CoursesPage';
 import CourseDetailPage from './pages/CourseDetailPage';
+import SearchResultsPage from './pages/SearchResultsPage';
 import AboutPage from './pages/AboutPage';
 import DirectorPage from './pages/DirectorPage';
 import DeanPage from './pages/DeanPage';
@@ -22,6 +23,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="courses" element={<CoursesPage />} />
           <Route path="courses/:courseSlug" element={<CourseDetailPage />} />
+          <Route path="search" element={<SearchResultsPage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="about/director" element={<DirectorPage />} />
           <Route path="about/dean" element={<DeanPage />} />
