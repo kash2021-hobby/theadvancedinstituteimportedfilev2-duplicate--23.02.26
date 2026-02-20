@@ -124,9 +124,9 @@ const coursesData: Record<string, CourseData> = {
       }
     ],
     batchTimings: [
-      { day: 'Monday, Wednesday, Friday', time: '6:00 AM - 8:00 AM' },
+      { day: 'Monday, Wednesday, Friday', time: '10:00 AM - 12:00 PM' },
       { day: 'Monday, Wednesday, Friday', time: '6:00 PM - 8:00 PM' },
-      { day: 'Tuesday, Thursday, Saturday', time: '9:00 AM - 11:00 AM' }
+      { day: 'Tuesday, Thursday, Saturday', time: '10:00 AM - 12:00 PM' }
     ],
     curriculum: [
       {
@@ -261,7 +261,7 @@ const coursesData: Record<string, CourseData> = {
       }
     ],
     batchTimings: [
-      { day: 'Monday to Friday', time: '8:00 AM - 10:00 AM' },
+      { day: 'Monday to Friday', time: '10:00 AM - 12:00 PM' },
       { day: 'Monday to Friday', time: '5:00 PM - 7:00 PM' },
       { day: 'Weekend Batch (Sat-Sun)', time: '10:00 AM - 2:00 PM' }
     ],
@@ -405,7 +405,7 @@ const coursesData: Record<string, CourseData> = {
       }
     ],
     batchTimings: [
-      { day: 'Monday, Wednesday, Friday', time: '7:00 AM - 9:00 AM' },
+      { day: 'Monday, Wednesday, Friday', time: '10:00 AM - 12:00 PM' },
       { day: 'Tuesday, Thursday, Saturday', time: '5:00 PM - 7:00 PM' },
       { day: 'Weekend Batch (Sat-Sun)', time: '3:00 PM - 6:00 PM' }
     ],
@@ -552,9 +552,9 @@ const coursesData: Record<string, CourseData> = {
       }
     ],
     batchTimings: [
-      { day: 'Monday to Friday', time: '6:00 AM - 8:00 AM' },
+      { day: 'Monday to Friday', time: '10:00 AM - 12:00 PM' },
       { day: 'Monday to Friday', time: '6:00 PM - 8:00 PM' },
-      { day: 'Weekend Batch (Sat-Sun)', time: '9:00 AM - 1:00 PM' }
+      { day: 'Weekend Batch (Sat-Sun)', time: '10:00 AM - 1:00 PM' }
     ],
     curriculum: [
       {
@@ -687,9 +687,9 @@ const coursesData: Record<string, CourseData> = {
       }
     ],
     batchTimings: [
-      { day: 'Monday to Friday', time: '6:00 AM - 8:00 AM' },
+      { day: 'Monday to Friday', time: '10:00 AM - 12:00 PM' },
       { day: 'Monday to Friday', time: '6:00 PM - 8:00 PM' },
-      { day: 'Weekend Batch (Sat-Sun)', time: '9:00 AM - 1:00 PM' }
+      { day: 'Weekend Batch (Sat-Sun)', time: '10:00 AM - 1:00 PM' }
     ],
     curriculum: [
       {
@@ -813,9 +813,9 @@ const coursesData: Record<string, CourseData> = {
       }
     ],
     batchTimings: [
-      { day: 'Monday to Friday', time: '6:00 AM - 8:00 AM' },
+      { day: 'Monday to Friday', time: '10:00 AM - 12:00 PM' },
       { day: 'Monday to Friday', time: '6:00 PM - 8:00 PM' },
-      { day: 'Weekend Batch (Sat-Sun)', time: '9:00 AM - 1:00 PM' }
+      { day: 'Weekend Batch (Sat-Sun)', time: '10:00 AM - 1:00 PM' }
     ],
     curriculum: [
       {
