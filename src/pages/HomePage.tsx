@@ -438,7 +438,7 @@ export default function HomePage() {
             <div className="grid lg:grid-cols-2 gap-0">
               <div className="p-8 md:p-10 lg:p-14 flex flex-col justify-center bg-gradient-to-br from-white to-primary-50/50">
                 <div className="mb-6 animate-fadeInScale">
-                  <img src="https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=200&h=100" alt="The Advanced Learning Academy" className="h-10 w-auto" />
+                  <img src="/image.png" alt="The Advanced Learning Academy" className="h-10 w-auto" />
                 </div>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gradient-blue mb-6 leading-tight tracking-tight">
                   Level Up Your Skills with Expert-Led, Exam-Focused Courses.
