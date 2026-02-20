@@ -270,7 +270,7 @@ export default function BlogPostPage() {
                 >
                   <div className="h-48 overflow-hidden">
                     <img
-                      src={relatedPost.featured_image || '/student-image.png'}
+                      src={relatedPost.featured_image || 'https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=800'}
                       alt={relatedPost.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />

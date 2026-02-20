@@ -145,14 +145,14 @@ export default function CoursesPage() {
                       <>
                         <div className="absolute inset-0 opacity-50">
                           <img
-                            src="/train-background.webp"
+                            src="https://images.pexels.com/photos/2226458/pexels-photo-2226458.jpeg?auto=compress&cs=tinysrgb&w=800"
                             alt="Train background"
                             className="w-full h-full object-cover"
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
                           <img
-                            src="/indian-railways-logo.webp"
+                            src="https://images.pexels.com/photos/3824771/pexels-photo-3824771.jpeg?auto=compress&cs=tinysrgb&w=200"
                             alt="Indian Railways"
                             className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
                           />
@@ -164,14 +164,14 @@ export default function CoursesPage() {
                       <>
                         <div className="absolute inset-0 opacity-40">
                           <img
-                            src="/ssc-headquarters.webp"
+                            src="https://images.pexels.com/photos/7944080/pexels-photo-7944080.jpeg?auto=compress&cs=tinysrgb&w=800"
                             alt="SSC Headquarters"
                             className="w-full h-full object-cover"
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
                           <img
-                            src="/ssc-logo.webp"
+                            src="https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=200"
                             alt="SSC Logo"
                             className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
                           />
@@ -183,14 +183,14 @@ export default function CoursesPage() {
                       <>
                         <div className="absolute inset-0 opacity-40">
                           <img
-                            src="/ssc-chsl-background.webp"
+                            src="https://images.pexels.com/photos/159751/book-address-book-learning-learn-159751.jpeg?auto=compress&cs=tinysrgb&w=800"
                             alt="SSC CHSL Background"
                             className="w-full h-full object-cover"
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
                           <img
-                            src="/ssc-logo.webp"
+                            src="https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=200"
                             alt="SSC Logo"
                             className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
                           />
@@ -202,14 +202,14 @@ export default function CoursesPage() {
                       <>
                         <div className="absolute inset-0 opacity-40">
                           <img
-                            src="/banking-background.webp"
+                            src="https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=800"
                             alt="Banking Background"
                             className="w-full h-full object-cover"
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
                           <img
-                            src="/banking-logo.webp"
+                            src="https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=200"
                             alt="Banking Logo"
                             className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
                           />
@@ -221,14 +221,14 @@ export default function CoursesPage() {
                       <>
                         <div className="absolute inset-0 opacity-40">
                           <img
-                            src="/banking-background.webp"
+                            src="https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=800"
                             alt="Banking Background"
                             className="w-full h-full object-cover"
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
                           <img
-                            src="/banking-logo.webp"
+                            src="https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=200"
                             alt="Banking Logo"
                             className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
                           />
@@ -240,14 +240,14 @@ export default function CoursesPage() {
                       <>
                         <div className="absolute inset-0 opacity-40">
                           <img
-                            src="/ssc-headquarters.webp"
+                            src="https://images.pexels.com/photos/7944080/pexels-photo-7944080.jpeg?auto=compress&cs=tinysrgb&w=800"
                             alt="ADRE Background"
                             className="w-full h-full object-cover"
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
                           <img
-                            src="/ssc-logo.webp"
+                            src="https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=200"
                             alt="ADRE Logo"
                             className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
                           />

@@ -22,8 +22,8 @@ const courses: Course[] = [
     cohortStart: '1st March 2026',
     slug: 'rrb-ntpc',
     category: 'RRB',
-    logo: '/indian-railways-logo.webp',
-    backgroundImage: '/train-background.webp',
+    logo: 'https://images.pexels.com/photos/3824771/pexels-photo-3824771.jpeg?auto=compress&cs=tinysrgb&w=200',
+    backgroundImage: 'https://images.pexels.com/photos/2226458/pexels-photo-2226458.jpeg?auto=compress&cs=tinysrgb&w=1200',
     hasOnlineSupport: true,
     hasSpecialLectures: true
   },
@@ -33,8 +33,8 @@ const courses: Course[] = [
     cohortStart: '15th March 2026',
     slug: 'ssc-cgl',
     category: 'SSC',
-    logo: '/ssc-logo.webp',
-    backgroundImage: '/ssc-headquarters.webp',
+    logo: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=200',
+    backgroundImage: 'https://images.pexels.com/photos/7944080/pexels-photo-7944080.jpeg?auto=compress&cs=tinysrgb&w=1200',
     hasOnlineSupport: false,
     hasSpecialLectures: true
   },
@@ -44,8 +44,8 @@ const courses: Course[] = [
     cohortStart: '15th March 2026',
     slug: 'ssc-chsl',
     category: 'SSC',
-    logo: '/ssc-logo.webp',
-    backgroundImage: '/ssc-chsl-background.webp',
+    logo: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=200',
+    backgroundImage: 'https://images.pexels.com/photos/159751/book-address-book-learning-learn-159751.jpeg?auto=compress&cs=tinysrgb&w=1200',
     hasOnlineSupport: false,
     hasSpecialLectures: true
   },
@@ -55,8 +55,8 @@ const courses: Course[] = [
     cohortStart: '5th March 2026',
     slug: 'sbi-po-ibps-po',
     category: 'Banking',
-    logo: '/banking-logo.webp',
-    backgroundImage: '/banking-background.webp',
+    logo: 'https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=200',
+    backgroundImage: 'https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200',
     hasOnlineSupport: true,
     hasSpecialLectures: true
   },
@@ -66,8 +66,8 @@ const courses: Course[] = [
     cohortStart: '10th March 2026',
     slug: 'sbi-clerk-ibps-clerk',
     category: 'Banking',
-    logo: '/banking-logo.webp',
-    backgroundImage: '/banking-background.webp',
+    logo: 'https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=200',
+    backgroundImage: 'https://images.pexels.com/photos/6289065/pexels-photo-6289065.jpeg?auto=compress&cs=tinysrgb&w=1200',
     hasOnlineSupport: true,
     hasSpecialLectures: true
   },
@@ -77,8 +77,8 @@ const courses: Course[] = [
     cohortStart: '20th March 2026',
     slug: 'adre',
     category: 'State Exams',
-    logo: '/ssc-logo.webp',
-    backgroundImage: '/ssc-headquarters.webp',
+    logo: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=200',
+    backgroundImage: 'https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1200',
     hasOnlineSupport: false,
     hasSpecialLectures: true
   }

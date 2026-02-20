@@ -355,7 +355,7 @@ export default function HomePage() {
                 qualification: "Head of Department",
                 experience: "15+ Years",
                 specialization: "GK/GA/CA - General Awareness/Current Affairs",
-                image: "/faculty-1.webp",
+                image: "https://images.pexels.com/photos/5212329/pexels-photo-5212329.jpeg?auto=compress&cs=tinysrgb&w=800",
                 fullQualifications: "Head of Department",
                 university: "Expert in General Knowledge and Current Affairs",
                 subjects: ["General Knowledge", "General Awareness", "Current Affairs"],
@@ -369,7 +369,7 @@ export default function HomePage() {
                 qualification: "Post Graduate",
                 experience: "15+ Years",
                 specialization: "English Language",
-                image: "/faculty-dr-sir.webp",
+                image: "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=800",
                 fullQualifications: "Post Graduate - HOD English",
                 university: "Teaching for Professional Examinations",
                 subjects: ["English Language"],
@@ -383,7 +383,7 @@ export default function HomePage() {
                 qualification: "Post Graduate - HOD",
                 experience: "15+ Years",
                 specialization: "Quantitative Aptitude",
-                image: "/faculty-3.webp",
+                image: "https://images.pexels.com/photos/5212700/pexels-photo-5212700.jpeg?auto=compress&cs=tinysrgb&w=800",
                 fullQualifications: "Post Graduate - Head of Department (Quant)",
                 university: "Teaching for top level competitive examinations",
                 subjects: ["Quantitative Aptitude"],
@@ -441,7 +441,7 @@ export default function HomePage() {
             <div className="grid lg:grid-cols-2 gap-0">
               <div className="p-8 md:p-10 lg:p-14 flex flex-col justify-center bg-gradient-to-br from-white to-primary-50/50">
                 <div className="mb-6 animate-fadeInScale">
-                  <img src="/image.webp" alt="The Advanced Learning Academy" className="h-10 w-auto" />
+                  <img src="https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=200&h=100" alt="The Advanced Learning Academy" className="h-10 w-auto" />
                 </div>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gradient-blue mb-6 leading-tight tracking-tight">
                   Level Up Your Skills with Expert-Led, Exam-Focused Courses.
@@ -542,7 +542,7 @@ export default function HomePage() {
                   qualification: "Head of Department",
                   experience: "15+ Years",
                   specialization: "GK/GA/CA - General Awareness/Current Affairs",
-                  image: "/faculty-1.webp",
+                  image: "https://images.pexels.com/photos/5212329/pexels-photo-5212329.jpeg?auto=compress&cs=tinysrgb&w=800",
                   fullQualifications: "Head of Department",
                   university: "Expert in General Knowledge and Current Affairs",
                   subjects: ["General Knowledge", "General Awareness", "Current Affairs"],
@@ -556,7 +556,7 @@ export default function HomePage() {
                   qualification: "Post Graduate",
                   experience: "15+ Years",
                   specialization: "English Language",
-                  image: "/faculty-dr-sir.webp",
+                  image: "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=800",
                   fullQualifications: "Post Graduate - HOD English",
                   university: "Teaching for Professional Examinations",
                   subjects: ["English Language"],
@@ -570,7 +570,7 @@ export default function HomePage() {
                   qualification: "Post Graduate - HOD",
                   experience: "15+ Years",
                   specialization: "Quantitative Aptitude",
-                  image: "/faculty-3.webp",
+                  image: "https://images.pexels.com/photos/5212700/pexels-photo-5212700.jpeg?auto=compress&cs=tinysrgb&w=800",
                   fullQualifications: "Post Graduate - Head of Department (Quant)",
                   university: "Teaching for top level competitive examinations",
                   subjects: ["Quantitative Aptitude"],

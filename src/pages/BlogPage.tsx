@@ -176,7 +176,7 @@ export default function BlogPage() {
                       <div className="md:w-1/2">
                         <div className="h-64 md:h-full relative overflow-hidden">
                           <img
-                            src={featuredPost.featured_image || '/student-image.png'}
+                            src={featuredPost.featured_image || 'https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=800'}
                             alt={featuredPost.title}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                           />
@@ -233,7 +233,7 @@ export default function BlogPage() {
                   >
                     <div className="h-48 overflow-hidden">
                       <img
-                        src={post.featured_image || '/student-image.png'}
+                        src={post.featured_image || 'https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=800'}
                         alt={post.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />

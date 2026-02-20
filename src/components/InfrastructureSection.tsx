@@ -18,22 +18,22 @@ export default function InfrastructureSection() {
 
   const infrastructureImages = [
     {
-      url: '/student-girl-success.webp',
+      url: 'https://images.pexels.com/photos/7944080/pexels-photo-7944080.jpeg?auto=compress&cs=tinysrgb&w=800',
       title: 'Modern Classrooms',
       description: 'Air-conditioned classrooms with modern teaching aids'
     },
     {
-      url: '/faculty-1.webp',
+      url: 'https://images.pexels.com/photos/5212329/pexels-photo-5212329.jpeg?auto=compress&cs=tinysrgb&w=800',
       title: 'Expert Faculty',
       description: 'Experienced teachers dedicated to student success'
     },
     {
-      url: '/faculty-2.webp',
+      url: 'https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=800',
       title: 'Interactive Learning',
       description: 'Engaging teaching methodology for better understanding'
     },
     {
-      url: '/woman-success-story.webp',
+      url: 'https://images.pexels.com/photos/7092613/pexels-photo-7092613.jpeg?auto=compress&cs=tinysrgb&w=800',
       title: 'Success Stories',
       description: 'Join hundreds of successful candidates'
     }

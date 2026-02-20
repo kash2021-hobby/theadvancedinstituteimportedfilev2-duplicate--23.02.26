@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <Link to="/" className="flex items-center mb-4">
               <img
-                src="/image.webp"
+                src="https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=200&h=100"
                 alt="The Advanced Learning Academy"
                 className="h-12 w-auto brightness-0 invert"
               />
