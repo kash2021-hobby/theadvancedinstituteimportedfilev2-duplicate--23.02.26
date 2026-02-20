@@ -86,9 +86,9 @@ export default function MobileAppSection() {
 
           <div className={`relative transition-all duration-700 delay-200 ${sectionVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
             <div className="relative mx-auto w-56 h-[420px] animate-phone-float">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-400 via-ocean-500 to-primary-600 rounded-[2.5rem] shadow-blue-xl"></div>
+              <div className="absolute inset-0 bg-black rounded-[2.5rem] shadow-2xl"></div>
 
-              <div className="absolute inset-3 bg-black rounded-[2rem] overflow-hidden">
+              <div className="absolute inset-1.5 bg-black rounded-[2.3rem] overflow-hidden">
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-36 h-5 bg-black rounded-b-2xl z-10"></div>
 
                 <div className="relative h-full bg-white flex flex-col p-0 text-gray-900 overflow-hidden">
