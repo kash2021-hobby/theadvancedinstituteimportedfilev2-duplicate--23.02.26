@@ -15,15 +15,11 @@ import {
   Wifi,
   Video,
   Laptop,
-  GraduationCap,
-  Sparkles
+  GraduationCap
 } from 'lucide-react';
 import LeadForm from '../components/LeadForm';
 import CourseRoadmap from '../components/CourseRoadmap';
-import { SpecialLectureCard } from '../components/SpecialLectureCard';
-import { CallbackModal } from '../components/CallbackModal';
-import { useState, useEffect } from 'react';
-import { supabase } from '../lib/supabase';
+import { useState } from 'react';
 
 interface CourseData {
   name: string;
@@ -871,34 +867,6 @@ const coursesData: Record<string, CourseData> = {
 export default function CourseDetailPage() {
   const { courseSlug } = useParams<{ courseSlug: string }>();
   const [openSection, setOpenSection] = useState<number | null>(0);
-  const [specialLectures, setSpecialLectures] = useState<any[]>([]);
-  const [showCallbackModal, setShowCallbackModal] = useState(false);
-  const [selectedLecture, setSelectedLecture] = useState<any>(null);
-
-  useEffect(() => {
-    fetchSpecialLectures();
-  }, []);
-
-  const fetchSpecialLectures = async () => {
-    try {
-      const { data, error } = await supabase
-        .from('special_lectures')
-        .select('*')
-        .eq('is_upcoming', true)
-        .order('lecture_date', { ascending: true })
-        .limit(3);
-
-      if (error) throw error;
-      setSpecialLectures(data || []);
-    } catch (error) {
-      console.error('Error fetching special lectures:', error);
-    }
-  };
-
-  const handleRegisterClick = (lecture: any) => {
-    setSelectedLecture(lecture);
-    setShowCallbackModal(true);
-  };
 
   if (!courseSlug || !coursesData[courseSlug]) {
     return <Navigate to="/courses" replace />;
@@ -1245,46 +1213,6 @@ export default function CourseDetailPage() {
                 </div>
               </div>
 
-              {specialLectures.length > 0 && (
-                <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-4 md:p-8 border-2 border-amber-200">
-                  <div className="flex items-center space-x-3 mb-6">
-                    <div className="bg-gradient-to-r from-amber-500 to-orange-500 p-3 rounded-full">
-                      <GraduationCap className="w-8 h-8 text-white" />
-                    </div>
-                    <div>
-                      <h2 className="text-3xl font-bold text-gray-900">Special Guest Lectures</h2>
-                      <p className="text-gray-600 mt-1">Learn from industry leaders and government experts</p>
-                    </div>
-                  </div>
-                  <div className="mb-6">
-                    <div className="flex items-center gap-2 mb-4">
-                      <Sparkles className="w-5 h-5 text-amber-600" />
-                      <p className="text-gray-700 font-medium">
-                        All enrolled students get exclusive access to these expert sessions at no additional cost
-                      </p>
-                    </div>
-                  </div>
-                  <div className="grid md:grid-cols-1 gap-6">
-                    {specialLectures.map((lecture) => (
-                      <SpecialLectureCard
-                        key={lecture.id}
-                        lecture={lecture}
-                        variant="compact"
-                        onRegisterClick={() => handleRegisterClick(lecture)}
-                      />
-                    ))}
-                  </div>
-                  <div className="mt-6 text-center">
-                    <Link
-                      to="/"
-                      className="inline-flex items-center gap-2 text-amber-700 hover:text-amber-800 font-semibold"
-                    >
-                      View all upcoming lectures
-                      <ChevronDown className="w-4 h-4 rotate-[-90deg]" />
-                    </Link>
-                  </div>
-                </div>
-              )}
             </div>
 
             <div className="lg:col-span-1 min-w-0">
@@ -1458,18 +1386,6 @@ export default function CourseDetailPage() {
           </Link>
         </div>
       </section>
-
-      {showCallbackModal && (
-        <CallbackModal
-          isOpen={showCallbackModal}
-          onClose={() => {
-            setShowCallbackModal(false);
-            setSelectedLecture(null);
-          }}
-          title="Register for Special Lecture"
-          message={selectedLecture ? `Express your interest in attending: "${selectedLecture.topic}" by ${selectedLecture.expert_name}. Our team will contact you with registration details.` : ''}
-        />
-      )}
     </div>
   );
 }
