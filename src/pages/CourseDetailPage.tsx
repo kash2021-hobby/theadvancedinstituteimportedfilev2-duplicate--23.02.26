@@ -898,7 +898,7 @@ export default function CourseDetailPage() {
             {(courseSlug === 'rrb-ntpc' || courseSlug === 'sbi-po-ibps-po' || courseSlug === 'sbi-clerk-ibps-clerk') && (
               <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-teal-500 to-teal-600 text-white px-5 py-2 rounded-full text-sm font-bold shadow-lg mb-4">
                 <Wifi className="w-5 h-5" />
-                <span>Online Classes Available</span>
+                <span>Online + Offline Classes</span>
               </div>
             )}
             <p className="text-xl text-blue-50 mb-8" style={course.backgroundImage ? { textShadow: '2px 2px 8px rgba(0,0,0,0.7)' } : undefined}>{course.description}</p>
