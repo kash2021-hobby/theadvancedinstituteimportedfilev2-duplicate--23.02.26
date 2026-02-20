@@ -35,7 +35,7 @@ const courses: Course[] = [
     category: 'SSC',
     logo: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=200',
     backgroundImage: 'https://images.pexels.com/photos/7944080/pexels-photo-7944080.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    hasOnlineSupport: false,
+    hasOnlineSupport: true,
     hasSpecialLectures: true
   },
   {
@@ -46,7 +46,7 @@ const courses: Course[] = [
     category: 'SSC',
     logo: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=200',
     backgroundImage: 'https://images.pexels.com/photos/159751/book-address-book-learning-learn-159751.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    hasOnlineSupport: false,
+    hasOnlineSupport: true,
     hasSpecialLectures: true
   },
   {
@@ -79,7 +79,7 @@ const courses: Course[] = [
     category: 'State Exams',
     logo: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=200',
     backgroundImage: 'https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    hasOnlineSupport: false,
+    hasOnlineSupport: true,
     hasSpecialLectures: true
   }
 ];
