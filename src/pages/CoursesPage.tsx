@@ -79,21 +79,6 @@ export default function CoursesPage() {
       ]
     },
     {
-      name: 'Banking Exams',
-      slug: 'banking',
-      duration: '6 Months',
-      mode: 'Classroom Only',
-      batchSize: '20 Students',
-      hasOnlineSupport: false,
-      description: 'Complete banking exam preparation covering IBPS PO, Clerk, SBI, and RBI exams with specialized banking awareness modules.',
-      highlights: [
-        'Banking awareness classes',
-        'Reasoning and quantitative focus',
-        'Interview preparation',
-        'Current affairs updates'
-      ]
-    },
-    {
       name: 'ADRE (Assam Direct Recruitment)',
       slug: 'adre',
       duration: '6 Months',
@@ -217,7 +202,7 @@ export default function CoursesPage() {
                         </div>
                       </>
                     )}
-                    {course.slug === 'banking' && (
+                    {course.slug === 'sbi-clerk-ibps-clerk' && (
                       <>
                         <div className="absolute inset-0 opacity-40">
                           <img

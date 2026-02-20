@@ -458,134 +458,6 @@ const coursesData: Record<string, CourseData> = {
       }
     ]
   },
-  'banking': {
-    name: 'Banking Exams',
-    slug: 'banking',
-    duration: '6 Months',
-    mode: 'Classroom Only',
-    batchSize: '20 Students',
-    description: 'Complete banking exam preparation covering IBPS PO, Clerk, SBI, and RBI exams',
-    logo: 'https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=200',
-    backgroundImage: 'https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    overview: 'Our Banking Exams program provides comprehensive preparation for all major banking examinations including IBPS PO, IBPS Clerk, SBI PO, SBI Clerk, and RBI Grade B. The course includes specialized modules for banking awareness, financial awareness, and interview preparation.',
-    highlights: [
-      'Coverage of IBPS PO, Clerk, SBI, RBI exams',
-      'Banking and financial awareness classes',
-      'Computer knowledge modules',
-      'Interview preparation and mock interviews',
-      'Current affairs daily updates',
-      'Group discussion practice',
-      'Descriptive test preparation',
-      'Sector-specific knowledge building',
-      'Computer CBT training sessions',
-      'Personality Development Training Sessions',
-      'English Communication classes',
-      'Interview Preparation workshops'
-    ],
-    syllabus: [
-      {
-        title: 'Reasoning Ability',
-        topics: ['Puzzles & Seating Arrangement', 'Syllogism', 'Blood Relations', 'Coding-Decoding', 'Inequality', 'Data Sufficiency']
-      },
-      {
-        title: 'Quantitative Aptitude',
-        topics: ['Data Interpretation', 'Number Series', 'Simplification', 'Quadratic Equations', 'Data Sufficiency', 'Arithmetic Problems']
-      },
-      {
-        title: 'English Language',
-        topics: ['Reading Comprehension', 'Cloze Test', 'Error Spotting', 'Para Jumbles', 'Sentence Improvement', 'Vocabulary']
-      },
-      {
-        title: 'Banking & Financial Awareness',
-        topics: ['Banking Terms', 'RBI Functions', 'Banking Regulations', 'Government Schemes', 'Budget', 'Economic Survey', 'International Banking']
-      },
-      {
-        title: 'Computer Knowledge',
-        topics: ['Computer Basics', 'MS Office', 'Internet', 'Networking', 'Database', 'Computer Security']
-      }
-    ],
-    examPattern: [
-      {
-        stage: 'Preliminary Examination',
-        sections: [
-          { name: 'English Language', questions: 30, marks: 30 },
-          { name: 'Quantitative Aptitude', questions: 35, marks: 35 },
-          { name: 'Reasoning Ability', questions: 35, marks: 35 }
-        ],
-        duration: '60 minutes',
-        total: { questions: 100, marks: 100 }
-      },
-      {
-        stage: 'Mains Examination',
-        sections: [
-          { name: 'Reasoning & Computer Aptitude', questions: 45, marks: 60 },
-          { name: 'General/Economy/Banking Awareness', questions: 40, marks: 40 },
-          { name: 'English Language', questions: 35, marks: 40 },
-          { name: 'Data Analysis & Interpretation', questions: 35, marks: 60 }
-        ],
-        duration: '180 minutes',
-        total: { questions: 155, marks: 200 }
-      },
-      {
-        stage: 'Descriptive Test (Mains)',
-        sections: [
-          { name: 'Essay Writing', questions: 1, marks: 25 },
-          { name: 'Letter Writing', questions: 1, marks: 25 }
-        ],
-        duration: '30 minutes',
-        total: { questions: 2, marks: 50 }
-      }
-    ],
-    batchTimings: [
-      { day: 'Monday to Friday', time: '6:00 AM - 8:00 AM' },
-      { day: 'Monday to Friday', time: '6:00 PM - 8:00 PM' },
-      { day: 'Weekend Batch (Sat-Sun)', time: '9:00 AM - 1:00 PM' }
-    ],
-    curriculum: [
-      {
-        month: 1,
-        phase: 'Preliminary Phase',
-        focusAreas: ['Basic Reasoning Ability', 'Quantitative Aptitude foundation', 'English Language basics'],
-        activities: ['Daily class sessions', 'Banking terminology', 'Practice worksheets'],
-        milestones: 'Build foundation for banking exams'
-      },
-      {
-        month: 2,
-        phase: 'Preliminary Phase',
-        focusAreas: ['Puzzles & Seating', 'Data Interpretation', 'Reading comprehension'],
-        activities: ['Prelims mock tests', 'Banking awareness classes', 'Speed building drills'],
-        milestones: 'Complete 50% preliminary syllabus with 65% accuracy'
-      },
-      {
-        month: 3,
-        phase: 'Preliminary Phase',
-        focusAreas: ['Advanced reasoning', 'Complex DI problems', 'English mastery'],
-        activities: ['Full-length prelims mocks', 'Computer knowledge', 'Current affairs updates'],
-        milestones: 'Prelims exam ready with 75%+ accuracy'
-      },
-      {
-        month: 4,
-        phase: 'Mains Phase',
-        focusAreas: ['Advanced Reasoning', 'High-level Quantitative', 'Descriptive English'],
-        activities: ['Mains mock tests', 'Banking & Financial Awareness', 'Essay writing practice'],
-        milestones: 'Complete 50% mains syllabus'
-      },
-      {
-        month: 5,
-        phase: 'Mains Phase',
-        focusAreas: ['Complex problem solving', 'Data sufficiency', 'Letter & essay writing'],
-        activities: ['Full-length mains mocks', 'Computer knowledge deep dive', 'Performance analysis'],
-        milestones: 'Mains ready with 70%+ accuracy'
-      },
-      {
-        month: 6,
-        phase: 'Interview Phase',
-        focusAreas: ['Interview skills', 'Group discussion', 'Final revision'],
-        activities: ['Mock interviews', 'GD practice', 'Personality development'],
-        milestones: 'Complete preparation for all stages including interview'
-      }
-    ]
-  },
   'sbi-po-ibps-po': {
     name: 'SBI PO & IBPS PO',
     slug: 'sbi-po-ibps-po',
@@ -1043,7 +915,7 @@ export default function CourseDetailPage() {
             ? {
                 backgroundImage: `url(${course.backgroundImage})`,
                 backgroundSize: 'cover',
-                backgroundPosition: (courseSlug === 'banking' || courseSlug === 'sbi-po-ibps-po' || courseSlug === 'sbi-clerk-ibps-clerk') ? 'left center' : 'center',
+                backgroundPosition: (courseSlug === 'sbi-po-ibps-po' || courseSlug === 'sbi-clerk-ibps-clerk') ? 'left center' : 'center',
                 backgroundRepeat: 'no-repeat'
               }
             : undefined
@@ -1293,12 +1165,6 @@ export default function CourseDetailPage() {
                     <p className="text-gray-700 mb-6 text-sm md:text-base text-center md:text-left">
                       The SSC CHSL exam is conducted in three tiers. Tier 1 is a computer-based exam,
                       Tier 2 is a descriptive paper, and Tier 3 is a skill test (typing test).
-                    </p>
-                  )}
-                  {courseSlug === 'banking' && (
-                    <p className="text-gray-700 mb-6 text-sm md:text-base text-center md:text-left">
-                      Banking exams (IBPS/SBI) are typically conducted in two stages: Preliminary and Mains.
-                      The preliminary exam is a qualifying exam, while mains includes both objective and descriptive papers.
                     </p>
                   )}
                   {courseSlug === 'sbi-po-ibps-po' && (
