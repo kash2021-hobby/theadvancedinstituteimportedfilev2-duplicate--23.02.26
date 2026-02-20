@@ -1028,73 +1028,71 @@ export default function CourseDetailPage() {
                 <p className="text-gray-700 leading-relaxed text-center md:text-left break-words">{course.overview}</p>
               </div>
 
-              {(courseSlug === 'rrb-ntpc' || courseSlug === 'sbi-po-ibps-po' || courseSlug === 'sbi-clerk-ibps-clerk') && (
-                <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-2xl p-4 md:p-8 border-2 border-teal-200">
-                  <div className="flex items-center space-x-3 mb-6">
-                    <div className="bg-teal-600 p-3 rounded-full">
-                      <Monitor className="w-8 h-8 text-white" />
-                    </div>
-                    <h2 className="text-3xl font-bold text-gray-900">Online Learning Features</h2>
+              <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-2xl p-4 md:p-8 border-2 border-teal-200">
+                <div className="flex items-center space-x-3 mb-6">
+                  <div className="bg-teal-600 p-3 rounded-full">
+                    <Monitor className="w-8 h-8 text-white" />
                   </div>
-                  <p className="text-gray-700 mb-6 leading-relaxed">
-                    This course includes comprehensive online support, giving you the flexibility to learn from anywhere while maintaining the quality of classroom instruction.
-                  </p>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="bg-white rounded-xl p-5 shadow-md">
-                      <div className="flex items-start space-x-4">
-                        <div className="bg-teal-100 p-3 rounded-lg">
-                          <Video className="w-6 h-6 text-teal-600" />
-                        </div>
-                        <div>
-                          <h3 className="font-bold text-gray-900 mb-2">Live & Recorded Sessions</h3>
-                          <p className="text-sm text-gray-600">
-                            Attend live classes online and access recorded lectures anytime for revision
-                          </p>
-                        </div>
+                  <h2 className="text-3xl font-bold text-gray-900">Online Learning Features</h2>
+                </div>
+                <p className="text-gray-700 mb-6 leading-relaxed">
+                  This course includes comprehensive online support, giving you the flexibility to learn from anywhere while maintaining the quality of classroom instruction.
+                </p>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-white rounded-xl p-5 shadow-md">
+                    <div className="flex items-start space-x-4">
+                      <div className="bg-teal-100 p-3 rounded-lg">
+                        <Video className="w-6 h-6 text-teal-600" />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-gray-900 mb-2">Live & Recorded Sessions</h3>
+                        <p className="text-sm text-gray-600">
+                          Attend live classes online and access recorded lectures anytime for revision
+                        </p>
                       </div>
                     </div>
-                    <div className="bg-white rounded-xl p-5 shadow-md">
-                      <div className="flex items-start space-x-4">
-                        <div className="bg-teal-100 p-3 rounded-lg">
-                          <Laptop className="w-6 h-6 text-teal-600" />
-                        </div>
-                        <div>
-                          <h3 className="font-bold text-gray-900 mb-2">Online Test Portal</h3>
-                          <p className="text-sm text-gray-600">
-                            Take mock tests online with instant results and performance analysis
-                          </p>
-                        </div>
+                  </div>
+                  <div className="bg-white rounded-xl p-5 shadow-md">
+                    <div className="flex items-start space-x-4">
+                      <div className="bg-teal-100 p-3 rounded-lg">
+                        <Laptop className="w-6 h-6 text-teal-600" />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-gray-900 mb-2">Online Test Portal</h3>
+                        <p className="text-sm text-gray-600">
+                          Take mock tests online with instant results and performance analysis
+                        </p>
                       </div>
                     </div>
-                    <div className="bg-white rounded-xl p-5 shadow-md">
-                      <div className="flex items-start space-x-4">
-                        <div className="bg-teal-100 p-3 rounded-lg">
-                          <FileText className="w-6 h-6 text-teal-600" />
-                        </div>
-                        <div>
-                          <h3 className="font-bold text-gray-900 mb-2">Digital Study Materials</h3>
-                          <p className="text-sm text-gray-600">
-                            Access comprehensive PDF study materials and notes from any device
-                          </p>
-                        </div>
+                  </div>
+                  <div className="bg-white rounded-xl p-5 shadow-md">
+                    <div className="flex items-start space-x-4">
+                      <div className="bg-teal-100 p-3 rounded-lg">
+                        <FileText className="w-6 h-6 text-teal-600" />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-gray-900 mb-2">Digital Study Materials</h3>
+                        <p className="text-sm text-gray-600">
+                          Access comprehensive PDF study materials and notes from any device
+                        </p>
                       </div>
                     </div>
-                    <div className="bg-white rounded-xl p-5 shadow-md">
-                      <div className="flex items-start space-x-4">
-                        <div className="bg-teal-100 p-3 rounded-lg">
-                          <Users className="w-6 h-6 text-teal-600" />
-                        </div>
-                        <div>
-                          <h3 className="font-bold text-gray-900 mb-2">Online Doubt Clearing</h3>
-                          <p className="text-sm text-gray-600">
-                            Get your questions answered through dedicated online doubt clearing sessions
-                          </p>
-                        </div>
+                  </div>
+                  <div className="bg-white rounded-xl p-5 shadow-md">
+                    <div className="flex items-start space-x-4">
+                      <div className="bg-teal-100 p-3 rounded-lg">
+                        <Users className="w-6 h-6 text-teal-600" />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-gray-900 mb-2">Online Doubt Clearing</h3>
+                        <p className="text-sm text-gray-600">
+                          Get your questions answered through dedicated online doubt clearing sessions
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-              )}
+              </div>
 
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-center md:text-left">
