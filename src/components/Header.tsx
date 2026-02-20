@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Search } from 'lucide-react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [isSearchFocused, setIsSearchFocused] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -61,6 +63,13 @@ export default function Header() {
     return location.pathname.startsWith(path);
   };
 
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      console.log('Searching for:', searchQuery);
+    }
+  };
+
   return (
     <header className={`bg-white sticky top-0 z-50 transition-all duration-300 ${
       isScrolled ? 'shadow-lg' : 'shadow-md'
@@ -89,6 +98,23 @@ export default function Header() {
                 {link.name}
               </Link>
             ))}
+
+            <form onSubmit={handleSearch} className="relative">
+              <div className={`flex items-center transition-all duration-300 ${
+                isSearchFocused ? 'w-64' : 'w-48'
+              }`}>
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onFocus={() => setIsSearchFocused(true)}
+                  onBlur={() => setIsSearchFocused(false)}
+                  placeholder="Search courses..."
+                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+                />
+                <Search className="w-4 h-4 text-gray-400 absolute left-3" />
+              </div>
+            </form>
           </nav>
 
           <button
@@ -102,7 +128,7 @@ export default function Header() {
 
       <div
         className={`lg:hidden bg-white border-t transition-all duration-300 overflow-hidden ${
-          isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+          isMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
         <nav className="max-w-7xl mx-auto px-4 py-4 space-y-3">
@@ -120,6 +146,19 @@ export default function Header() {
               {link.name}
             </Link>
           ))}
+
+          <form onSubmit={handleSearch} className="pt-2">
+            <div className="relative">
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search courses..."
+                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+              />
+              <Search className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
+            </div>
+          </form>
         </nav>
       </div>
     </header>
