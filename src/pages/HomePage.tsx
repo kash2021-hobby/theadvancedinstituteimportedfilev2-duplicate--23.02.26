@@ -259,9 +259,9 @@ export default function HomePage() {
 
       <TabbedCourseSection />
 
-      <section className="py-24 md:py-32 bg-gradient-to-br from-ocean-50 via-primary-50 to-white relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-primary-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-ocean-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style={{animationDelay: '1s'}}></div>
+      <section className="py-24 md:py-32 bg-white relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-primary-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float hidden"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-ocean-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float hidden" style={{animationDelay: '1s'}}></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div ref={testimonialsAnimation.ref} style={testimonialsAnimation.style} className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-black text-gradient-blue mb-6 tracking-tight">
