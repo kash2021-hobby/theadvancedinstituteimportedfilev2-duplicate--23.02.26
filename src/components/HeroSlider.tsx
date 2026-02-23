@@ -18,7 +18,7 @@ const slides: Slide[] = [
     id: 1,
     eyebrowText: "",
     headline: "Crack Government Exams with Confidence",
-    subtext: "Join India's leading government exam institute with 15+ years of proven success in RRB NTPC, SSC CGL, SSC CHSL, and Banking exams.",
+    subtext: "Join a results-focused government exam institute dedicated to serious preparation for RRB NTPC, SSC CGL, SSC CHSL, ADRE Exam and Banking exams. Structured strategy, expert guidance, and disciplined practice — everything you need to compete with confidence.",
     personImage: "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=800",
     carouselImages: [
       "https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=800",
