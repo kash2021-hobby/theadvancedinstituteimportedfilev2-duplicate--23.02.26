@@ -247,6 +247,22 @@ export default function CoursesPage() {
                       {course.description}
                     </p>
 
+                    {/* Badges Section */}
+                    <div className="hidden md:flex flex-col gap-2 mb-6">
+                      {course.hasOnlineSupport && (
+                        <div className="bg-gradient-to-r from-teal-500 to-teal-600 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center space-x-1.5 w-fit">
+                          <Wifi className="w-3.5 h-3.5" />
+                          <span>Online + Offline Classes</span>
+                        </div>
+                      )}
+                      {course.hasSpecialLectures && (
+                        <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center space-x-1.5 w-fit">
+                          <GraduationCap className="w-3.5 h-3.5" />
+                          <span>Expert Lectures</span>
+                        </div>
+                      )}
+                    </div>
+
                     <div className="grid md:grid-cols-3 gap-4 mb-6">
                       <div className="flex items-center space-x-2 text-gray-700">
                         <Clock className="w-5 h-5 text-primary flex-shrink-0" />
@@ -300,22 +316,6 @@ export default function CoursesPage() {
                       <ChevronRight className="w-5 h-5" />
                     </Link>
                   </div>
-                </div>
-
-                {/* Bottom-right badges */}
-                <div className="absolute bottom-4 right-4 z-10 flex flex-col gap-2">
-                  {course.hasOnlineSupport && (
-                    <div className="bg-gradient-to-r from-teal-500 to-teal-600 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center space-x-1.5">
-                      <Wifi className="w-3.5 h-3.5" />
-                      <span>Online + Offline Classes</span>
-                    </div>
-                  )}
-                  {course.hasSpecialLectures && (
-                    <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center space-x-1.5">
-                      <GraduationCap className="w-3.5 h-3.5" />
-                      <span>Expert Lectures</span>
-                    </div>
-                  )}
                 </div>
               </div>
             ))}
