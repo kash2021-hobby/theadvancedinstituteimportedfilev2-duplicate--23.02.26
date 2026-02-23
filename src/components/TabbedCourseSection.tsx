@@ -91,6 +91,7 @@ export default function TabbedCourseSection() {
   const [isCarouselExpanded, setIsCarouselExpanded] = useState(true);
   const coursesAnimation = useScrollAnimation({ direction: 'up', delay: 100 });
   const carouselRef = useRef<HTMLDivElement>(null);
+  const selectedCategoryRef = useRef<HTMLDivElement>(null);
   const [currentSlide, setCurrentSlide] = useState(1);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
@@ -280,6 +281,37 @@ export default function TabbedCourseSection() {
     isUserInteractingRef.current = false;
   };
 
+  // Scroll selected category button into view (centered)
+  const scrollCategoryIntoView = () => {
+    if (selectedCategoryRef.current) {
+      // Small delay to let the DOM update after category change
+      setTimeout(() => {
+        if (selectedCategoryRef.current) {
+          const element = selectedCategoryRef.current;
+          const elementRect = element.getBoundingClientRect();
+          const absoluteElementTop = elementRect.top + window.pageYOffset;
+          const middle = absoluteElementTop - (window.innerHeight / 2) + (elementRect.height / 2);
+
+          // Scroll to position the button near the top with some padding
+          const targetScrollPosition = absoluteElementTop - 80; // 80px from top
+
+          window.scrollTo({
+            top: targetScrollPosition,
+            behavior: 'smooth'
+          });
+        }
+      }, 100);
+    }
+  };
+
+  // Handle category selection on mobile
+  const handleCategoryClick = (category: string) => {
+    setSelectedCategory(category);
+    setCurrentSlide(1);
+    setIsCarouselExpanded(true);
+    scrollCategoryIntoView();
+  };
+
   return (
     <section className="py-16 md:py-20" style={{ backgroundColor: '#EEF6FF' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -330,11 +362,7 @@ export default function TabbedCourseSection() {
                   {categoriesBeforeSelected.map((category) => (
                     <button
                       key={category}
-                      onClick={() => {
-                        setSelectedCategory(category);
-                        setCurrentSlide(1);
-                        setIsCarouselExpanded(true);
-                      }}
+                      onClick={() => handleCategoryClick(category)}
                       className="w-full text-left px-6 py-4 rounded-xl transition-all font-satoshi font-normal text-base leading-[26px] text-gray-700 hover:bg-[#004BB8] hover:text-white"
                     >
                       {category}
@@ -344,7 +372,7 @@ export default function TabbedCourseSection() {
               )}
 
               {/* Selected Category + Carousel */}
-              <div className="space-y-6">
+              <div ref={selectedCategoryRef} className="space-y-6">
                 <div className="bg-white rounded-2xl shadow-lg overflow-hidden p-2">
                   <button
                     onClick={() => setIsCarouselExpanded(!isCarouselExpanded)}
@@ -509,11 +537,7 @@ export default function TabbedCourseSection() {
                   {categoriesAfterSelected.map((category) => (
                     <button
                       key={category}
-                      onClick={() => {
-                        setSelectedCategory(category);
-                        setCurrentSlide(1);
-                        setIsCarouselExpanded(true);
-                      }}
+                      onClick={() => handleCategoryClick(category)}
                       className="w-full text-left px-6 py-4 rounded-xl transition-all font-satoshi font-normal text-base leading-[26px] text-gray-700 hover:bg-[#004BB8] hover:text-white"
                     >
                       {category}
