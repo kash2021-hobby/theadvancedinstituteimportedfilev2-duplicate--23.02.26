@@ -25,8 +25,6 @@ export default function LeadForm({
     learningMode: '',
     message: '',
     interestedInSpecialLectures: false,
-    notifyAppLaunch: false,
-    preferredPlatform: 'both',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -66,8 +64,6 @@ export default function LeadForm({
         learningMode: '',
         message: '',
         interestedInSpecialLectures: false,
-        notifyAppLaunch: false,
-        preferredPlatform: 'both',
       });
 
       if (onSuccess) {
@@ -197,38 +193,6 @@ export default function LeadForm({
           <span className="font-semibold text-amber-700">Yes, I'm interested in attending special guest lectures</span> by industry experts and government officials
         </label>
       </div>
-
-      <div className="flex items-start space-x-3 p-3 bg-rose-50 rounded-lg border border-rose-200">
-        <input
-          type="checkbox"
-          id="appLaunchNotification"
-          checked={formData.notifyAppLaunch}
-          onChange={(e) => setFormData({ ...formData, notifyAppLaunch: e.target.checked })}
-          className="mt-1 w-4 h-4 text-rose-600 border-gray-300 rounded focus:ring-rose-500"
-        />
-        <label htmlFor="appLaunchNotification" className="text-sm text-gray-700 cursor-pointer">
-          <span className="font-semibold text-rose-700">Notify me when the mobile app launches</span> - Get early access to 24/7 learning on the go
-        </label>
-      </div>
-
-      {formData.notifyAppLaunch && (
-        <div className="relative z-[98] pl-7">
-          <select
-            value={formData.preferredPlatform}
-            onChange={(e) => setFormData({ ...formData, preferredPlatform: e.target.value })}
-            className="w-full px-4 py-3 border border-rose-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-transparent bg-white cursor-pointer text-gray-900"
-          >
-            <option value="both" className="bg-white text-gray-900 py-2">Both iOS & Android</option>
-            <option value="ios" className="bg-white text-gray-900 py-2">iOS (iPhone/iPad)</option>
-            <option value="android" className="bg-white text-gray-900 py-2">Android</option>
-          </select>
-          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
-            <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-            </svg>
-          </div>
-        </div>
-      )}
 
       <button
         type="submit"
