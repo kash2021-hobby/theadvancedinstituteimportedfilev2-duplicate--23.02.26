@@ -68,7 +68,7 @@ export default function HomePage() {
     },
     {
       question: 'Are classes available offline?',
-      answer: 'Yes, we conduct classroom programs at our Guwahati center. Some courses also include online support for revision.'
+      answer: 'Yes, we conduct classroom programs at our Guwahati center. We provide all courses with online support for revision and doubt clearing.'
     },
     {
       question: 'What is batch size?',
