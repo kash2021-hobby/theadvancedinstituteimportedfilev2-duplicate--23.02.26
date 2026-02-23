@@ -894,7 +894,7 @@ export default function CourseDetailPage() {
         )}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6" style={course.backgroundImage ? { textShadow: '2px 2px 8px rgba(0,0,0,0.7)' } : undefined}>{course.name}</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white" style={course.backgroundImage ? { textShadow: '2px 2px 8px rgba(0,0,0,0.7)' } : undefined}>{course.name}</h1>
             {(courseSlug === 'rrb-ntpc' || courseSlug === 'sbi-po-ibps-po' || courseSlug === 'sbi-clerk-ibps-clerk') && (
               <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-teal-500 to-teal-600 text-white px-5 py-2 rounded-full text-sm font-bold shadow-lg mb-4">
                 <Wifi className="w-5 h-5" />

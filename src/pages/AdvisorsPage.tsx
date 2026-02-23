@@ -65,7 +65,7 @@ export default function AdvisorsPage() {
 
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Academic Advisors</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Our Academic Advisors</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             Meet our distinguished team of academic advisors who bring decades of combined experience
             in competitive exam preparation and student success.

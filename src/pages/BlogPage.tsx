@@ -112,7 +112,7 @@ export default function BlogPage() {
           <div className="text-center max-w-3xl mx-auto">
             <div className="flex items-center justify-center mb-6">
               <BookOpen className="w-12 h-12 mr-3" />
-              <h1 className="text-4xl md:text-5xl font-bold">
+              <h1 className="text-4xl md:text-5xl font-bold text-white">
                 Blog & Exam Tips
               </h1>
             </div>

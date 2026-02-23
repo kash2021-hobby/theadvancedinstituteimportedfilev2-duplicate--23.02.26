@@ -40,7 +40,7 @@ export default function ProfileHero({
           </div>
 
           <div className="flex-1 text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl font-bold mb-2">{name}</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-2 text-white">{name}</h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-6">{designation}</p>
 
             {quote && (
