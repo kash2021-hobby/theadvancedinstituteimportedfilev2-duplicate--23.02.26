@@ -302,7 +302,7 @@ export default function AboutPage() {
                       <Lightbulb className="w-5 h-5 text-primary-600 mr-2" />
                       <h5 className="font-bold text-gray-900">Quality Education</h5>
                     </div>
-                    <p className="text-sm text-gray-700">Expert faculty with 10+ years experience deliver concept-focused classes</p>
+                    <p className="text-sm text-gray-700">Expert faculty with 15+ years experience deliver concept-focused classes</p>
                   </div>
                   <div className="bg-gradient-to-r from-ocean-50 to-primary-50 p-4 rounded-xl border-2 border-ocean-100">
                     <div className="flex items-center mb-2">
