@@ -318,13 +318,6 @@ export default function AboutPage() {
                     </div>
                     <p className="text-sm text-gray-700">Online and offline classes with mobile app for 24/7 learning access</p>
                   </div>
-                  <div className="bg-gradient-to-r from-ocean-50 to-primary-50 p-4 rounded-xl border-2 border-ocean-100">
-                    <div className="flex items-center mb-2">
-                      <Award className="w-5 h-5 text-ocean-600 mr-2" />
-                      <h5 className="font-bold text-gray-900">Proven Results</h5>
-                    </div>
-                    <p className="text-sm text-gray-700">1000+ selections with 85% success rate in government examinations</p>
-                  </div>
                 </div>
               </div>
             </div>
