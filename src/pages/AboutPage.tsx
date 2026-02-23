@@ -360,7 +360,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-gradient-to-br from-blue-50 to-blue-100">
+      <section className="py-16 md:py-20 bg-gradient-to-br from-primary-50 to-ocean-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -388,7 +388,7 @@ export default function AboutPage() {
                   key={leader.id}
                   className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
                 >
-                  <div className="h-48 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
+                  <div className="h-48 bg-gradient-to-br from-primary-500 to-ocean-600 flex items-center justify-center">
                     {leader.image_url ? (
                       <img
                         src={leader.image_url}
@@ -396,20 +396,20 @@ export default function AboutPage() {
                         className="w-full h-full object-cover"
                       />
                     ) : (
-                      <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center text-blue-700 text-4xl font-bold shadow-lg">
+                      <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center text-primary-600 text-4xl font-bold shadow-lg">
                         {leader.name.split(' ').map(n => n[0]).join('')}
                       </div>
                     )}
                   </div>
                   <div className="p-6">
                     <h3 className="text-2xl font-bold text-gray-900 mb-1">{leader.name}</h3>
-                    <p className="text-blue-600 font-semibold mb-4">{leader.designation}</p>
+                    <p className="text-primary-600 font-semibold mb-4">{leader.designation}</p>
                     <p className="text-gray-600 text-sm leading-relaxed mb-6">
                       {shortBio}
                     </p>
                     <Link
                       to={getProfileLink()}
-                      className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-800 transition-colors"
+                      className="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700 transition-colors"
                     >
                       View Full Profile
                       <ArrowRight className="w-4 h-4" />
