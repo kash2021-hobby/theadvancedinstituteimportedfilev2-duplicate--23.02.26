@@ -278,6 +278,14 @@ export default function AboutPage() {
                     <CheckCircle2 className="w-6 h-6 text-primary-600 mr-3 flex-shrink-0 mt-1" />
                     <p className="text-gray-700 font-medium">Building a community of successful alumni who inspire future aspirants</p>
                   </div>
+                  <div className="flex items-start">
+                    <CheckCircle2 className="w-6 h-6 text-primary-600 mr-3 flex-shrink-0 mt-1" />
+                    <p className="text-gray-700 font-medium">Providing personalized mentoring and career guidance for each student's unique aspirations</p>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle2 className="w-6 h-6 text-primary-600 mr-3 flex-shrink-0 mt-1" />
+                    <p className="text-gray-700 font-medium">Fostering a supportive learning environment with regular feedback and continuous assessment</p>
+                  </div>
                 </div>
               </div>
             </div>
