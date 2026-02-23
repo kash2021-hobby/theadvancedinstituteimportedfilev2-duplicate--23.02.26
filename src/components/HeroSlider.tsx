@@ -148,7 +148,7 @@ export default function HeroSlider() {
         {/* Mobile: 3D Carousel Section with White Background */}
         <div
           key={`mobile-carousel-${slide.id}`}
-          className="relative w-full h-[54vh] min-h-[400px] max-h-[480px] overflow-hidden flex items-center justify-center bg-white pt-16"
+          className="relative w-full h-[68vh] min-h-[500px] max-h-[620px] overflow-hidden flex items-center justify-center bg-white pt-16"
         >
           {/* 3D Carousel Wrapper */}
           <div
@@ -172,7 +172,7 @@ export default function HeroSlider() {
                 <div
                   key={`${slide.id}-${index}`}
                   className={cn(
-                    'absolute w-56 h-[360px] sm:w-72 sm:h-[460px] transition-all duration-300 ease-in-out',
+                    'absolute w-64 h-[420px] sm:w-80 sm:h-[520px] transition-all duration-300 ease-in-out',
                     'flex items-center justify-center'
                   )}
                   style={{
