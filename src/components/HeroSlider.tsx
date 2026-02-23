@@ -199,7 +199,7 @@ export default function HeroSlider() {
         </div>
 
         {/* Mobile: Content Section - Clean White Background */}
-        <div className="bg-white px-5 pt-4 pb-4">
+        <div className="bg-white px-5 pt-4 pb-8">
           <div
             key={`mobile-content-${slide.id}`}
           >
