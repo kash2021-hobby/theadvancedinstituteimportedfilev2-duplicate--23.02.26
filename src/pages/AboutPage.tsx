@@ -86,6 +86,8 @@ export default function AboutPage() {
 
       <section className="py-20 md:py-28 bg-gradient-to-br from-white via-primary-50 to-ocean-50 relative overflow-hidden">
         <div className="absolute top-20 right-10 w-72 h-72 bg-primary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float"></div>
+        <div className="absolute bottom-10 left-0 w-96 h-96 bg-ocean-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style={{animationDelay: '2s'}}></div>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-gradient-blue mb-6 tracking-tight">
@@ -94,85 +96,109 @@ export default function AboutPage() {
             <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-ocean-500 mx-auto mb-8 rounded-full"></div>
           </div>
 
-          <div className="bg-white rounded-3xl shadow-blue-xl overflow-hidden border-2 border-primary-100">
-            <div className="grid lg:grid-cols-2 gap-0">
-              <div
-                className="relative bg-gradient-to-br from-primary-100 via-ocean-100 to-primary-200 aspect-video lg:aspect-auto flex items-center justify-center group cursor-pointer overflow-hidden min-h-[300px] lg:min-h-[500px]"
-                onClick={() => setIsVideoPlaying(true)}
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-ocean/20"></div>
-                <div className="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzNCODJGNiIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')]"></div>
+          <div className="grid lg:grid-cols-12 gap-8 items-stretch">
+            <div className="lg:col-span-1 hidden lg:flex flex-col justify-between">
+              <div className="bg-gradient-to-br from-primary-100 to-ocean-100 rounded-2xl p-6 shadow-md flex flex-col items-center justify-center aspect-square">
+                <BookOpen className="w-8 h-8 text-primary-600 mb-3" />
+                <p className="text-xs font-bold text-center text-gray-700">Expert Curriculum</p>
+              </div>
+              <div className="bg-gradient-to-br from-ocean-100 to-primary-100 rounded-2xl p-6 shadow-md flex flex-col items-center justify-center aspect-square">
+                <Target className="w-8 h-8 text-ocean-600 mb-3" />
+                <p className="text-xs font-bold text-center text-gray-700">Result Driven</p>
+              </div>
+            </div>
 
-                {!isVideoPlaying ? (
-                  <>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <img
-                        src="https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=200&h=100"
-                        alt="The Advanced Learning Academy"
-                        className="w-3/4 max-w-xs opacity-50"
-                      />
+            <div className="lg:col-span-10 bg-white rounded-3xl shadow-blue-xl overflow-hidden border-2 border-primary-100">
+              <div className="grid lg:grid-cols-2 gap-0">
+                <div
+                  className="relative bg-gradient-to-br from-primary-100 via-ocean-100 to-primary-200 aspect-video lg:aspect-auto flex items-center justify-center group cursor-pointer overflow-hidden min-h-[300px] lg:min-h-[500px]"
+                  onClick={() => setIsVideoPlaying(true)}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-ocean/20"></div>
+                  <div className="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzNCODJGNiIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')]"></div>
+
+                  {!isVideoPlaying ? (
+                    <>
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <img
+                          src="https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=200&h=100"
+                          alt="The Advanced Learning Academy"
+                          className="w-3/4 max-w-xs opacity-50"
+                        />
+                      </div>
+                      <div className="relative z-10 bg-gradient-to-br from-white to-primary-50 rounded-full p-10 shadow-blue-xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                        <Play className="w-20 h-20 text-primary-600 fill-primary-600" />
+                      </div>
+                      <div className="absolute bottom-8 left-8 right-8 text-center">
+                        <p className="text-white text-lg font-bold bg-primary-900/60 backdrop-blur-sm px-4 py-2 rounded-xl">
+                          Watch Our Introduction Video
+                        </p>
+                      </div>
+                    </>
+                  ) : (
+                    <div className="relative w-full h-full flex items-center justify-center">
+                      <div className="bg-white/95 backdrop-blur-md rounded-2xl p-8 max-w-md mx-4 text-center">
+                        <GraduationCap className="w-16 h-16 text-primary-600 mx-auto mb-4" />
+                        <p className="text-gray-800 text-lg font-bold mb-2">Video Coming Soon</p>
+                        <p className="text-gray-600">We're preparing an inspiring introduction video showcasing our facilities, faculty, and student success stories.</p>
+                      </div>
                     </div>
-                    <div className="relative z-10 bg-gradient-to-br from-white to-primary-50 rounded-full p-10 shadow-blue-xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                      <Play className="w-20 h-20 text-primary-600 fill-primary-600" />
-                    </div>
-                    <div className="absolute bottom-8 left-8 right-8 text-center">
-                      <p className="text-white text-lg font-bold bg-primary-900/60 backdrop-blur-sm px-4 py-2 rounded-xl">
-                        Watch Our Introduction Video
+                  )}
+                </div>
+
+                <div className="p-10 md:p-14 flex flex-col justify-center bg-gradient-to-br from-white to-primary-50/30">
+                  <h3 className="text-3xl md:text-4xl font-black text-gradient-ocean mb-8 tracking-tight">
+                    What is The Advanced Learning Academy?
+                  </h3>
+
+                  <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+                    <p className="font-medium">
+                      The Advanced Learning Academy is Guwahati's premier coaching institute dedicated to transforming government job aspirants into successful candidates. Since 2015, we have been the trusted partner for thousands of students pursuing careers in SSC, Banking, Railways, and other government sectors.
+                    </p>
+
+                    <div className="bg-gradient-to-br from-primary-50 to-ocean-50 p-6 rounded-2xl border-2 border-primary-100">
+                      <h4 className="font-black text-xl text-gray-900 mb-3 flex items-center">
+                        <Users className="w-6 h-6 mr-3 text-primary-600" />
+                        For Students
+                      </h4>
+                      <p className="text-gray-700">
+                        We provide expert-led courses, comprehensive study materials, regular mock tests, and personalized mentoring. Our small batch sizes ensure individual attention, while our proven teaching methodology focuses on concept clarity and exam strategy.
                       </p>
                     </div>
-                  </>
-                ) : (
-                  <div className="relative w-full h-full flex items-center justify-center">
-                    <div className="bg-white/95 backdrop-blur-md rounded-2xl p-8 max-w-md mx-4 text-center">
-                      <GraduationCap className="w-16 h-16 text-primary-600 mx-auto mb-4" />
-                      <p className="text-gray-800 text-lg font-bold mb-2">Video Coming Soon</p>
-                      <p className="text-gray-600">We're preparing an inspiring introduction video showcasing our facilities, faculty, and student success stories.</p>
+
+                    <div className="bg-gradient-to-br from-ocean-50 to-primary-50 p-6 rounded-2xl border-2 border-ocean-100">
+                      <h4 className="font-black text-xl text-gray-900 mb-3 flex items-center">
+                        <Shield className="w-6 h-6 mr-3 text-ocean-600" />
+                        For Parents
+                      </h4>
+                      <p className="text-gray-700">
+                        We understand parents' concerns about their child's future. Our transparent progress tracking system, regular parent-teacher meetings, detailed performance reports, and safe learning environment ensure peace of mind. Track your child's progress through weekly test scores, attendance records, and faculty feedback.
+                      </p>
                     </div>
                   </div>
-                )}
+
+                  <div className="grid grid-cols-2 gap-4 mt-8">
+                    <div className="bg-gradient-to-br from-primary-500 to-ocean-600 text-white p-4 rounded-xl text-center shadow-blue-md">
+                      <div className="text-3xl font-black mb-1">5000+</div>
+                      <div className="text-sm font-semibold">Students Trained</div>
+                    </div>
+                    <div className="bg-gradient-to-br from-ocean-500 to-primary-600 text-white p-4 rounded-xl text-center shadow-blue-md">
+                      <div className="text-3xl font-black mb-1">1000+</div>
+                      <div className="text-sm font-semibold">Successful Selections</div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
 
-              <div className="p-10 md:p-14 flex flex-col justify-center bg-gradient-to-br from-white to-primary-50/30">
-                <h3 className="text-3xl md:text-4xl font-black text-gradient-ocean mb-8 tracking-tight">
-                  What is The Advanced Learning Academy?
-                </h3>
-
-                <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
-                  <p className="font-medium">
-                    The Advanced Learning Academy is Guwahati's premier coaching institute dedicated to transforming government job aspirants into successful candidates. Since 2015, we have been the trusted partner for thousands of students pursuing careers in SSC, Banking, Railways, and other government sectors.
-                  </p>
-
-                  <div className="bg-gradient-to-br from-primary-50 to-ocean-50 p-6 rounded-2xl border-2 border-primary-100">
-                    <h4 className="font-black text-xl text-gray-900 mb-3 flex items-center">
-                      <Users className="w-6 h-6 mr-3 text-primary-600" />
-                      For Students
-                    </h4>
-                    <p className="text-gray-700">
-                      We provide expert-led courses, comprehensive study materials, regular mock tests, and personalized mentoring. Our small batch sizes ensure individual attention, while our proven teaching methodology focuses on concept clarity and exam strategy.
-                    </p>
-                  </div>
-
-                  <div className="bg-gradient-to-br from-ocean-50 to-primary-50 p-6 rounded-2xl border-2 border-ocean-100">
-                    <h4 className="font-black text-xl text-gray-900 mb-3 flex items-center">
-                      <Shield className="w-6 h-6 mr-3 text-ocean-600" />
-                      For Parents
-                    </h4>
-                    <p className="text-gray-700">
-                      We understand parents' concerns about their child's future. Our transparent progress tracking system, regular parent-teacher meetings, detailed performance reports, and safe learning environment ensure peace of mind. Track your child's progress through weekly test scores, attendance records, and faculty feedback.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-2 gap-4 mt-8">
-                  <div className="bg-gradient-to-br from-primary-500 to-ocean-600 text-white p-4 rounded-xl text-center shadow-blue-md">
-                    <div className="text-3xl font-black mb-1">5000+</div>
-                    <div className="text-sm font-semibold">Students Trained</div>
-                  </div>
-                  <div className="bg-gradient-to-br from-ocean-500 to-primary-600 text-white p-4 rounded-xl text-center shadow-blue-md">
-                    <div className="text-3xl font-black mb-1">1000+</div>
-                    <div className="text-sm font-semibold">Successful Selections</div>
-                  </div>
-                </div>
+            <div className="lg:col-span-1 hidden lg:flex flex-col justify-between">
+              <div className="bg-gradient-to-br from-primary-100 to-ocean-100 rounded-2xl p-6 shadow-md flex flex-col items-center justify-center aspect-square">
+                <Award className="w-8 h-8 text-ocean-600 mb-3" />
+                <p className="text-xs font-bold text-center text-gray-700">Excellence</p>
+              </div>
+              <div className="bg-gradient-to-br from-ocean-100 to-primary-100 rounded-2xl p-6 shadow-md flex flex-col items-center justify-center aspect-square">
+                <Heart className="w-8 h-8 text-primary-600 mb-3" />
+                <p className="text-xs font-bold text-center text-gray-700">Student Care</p>
               </div>
             </div>
           </div>
