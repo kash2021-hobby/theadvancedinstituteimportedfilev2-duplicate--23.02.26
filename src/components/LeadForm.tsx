@@ -24,7 +24,6 @@ export default function LeadForm({
     examInterest: '',
     learningMode: '',
     message: '',
-    interestedInSpecialLectures: false,
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -63,7 +62,6 @@ export default function LeadForm({
         examInterest: '',
         learningMode: '',
         message: '',
-        interestedInSpecialLectures: false,
       });
 
       if (onSuccess) {
@@ -181,18 +179,6 @@ export default function LeadForm({
         </div>
       )}
 
-      <div className="flex items-start space-x-3 p-3 bg-amber-50 rounded-lg border border-amber-200">
-        <input
-          type="checkbox"
-          id="specialLecturesInterest"
-          checked={formData.interestedInSpecialLectures}
-          onChange={(e) => setFormData({ ...formData, interestedInSpecialLectures: e.target.checked })}
-          className="mt-1 w-4 h-4 text-amber-600 border-gray-300 rounded focus:ring-amber-500"
-        />
-        <label htmlFor="specialLecturesInterest" className="text-sm text-gray-700 cursor-pointer">
-          <span className="font-semibold text-amber-700">Yes, I'm interested in attending special guest lectures</span> by industry experts and government officials
-        </label>
-      </div>
 
       <button
         type="submit"
