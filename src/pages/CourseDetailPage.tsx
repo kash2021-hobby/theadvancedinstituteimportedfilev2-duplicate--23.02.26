@@ -455,7 +455,7 @@ const coursesData: Record<string, CourseData> = {
     ]
   },
   'sbi-po-ibps-po': {
-    name: 'SBI PO & IBPS PO',
+    name: 'Bank PO',
     slug: 'sbi-po-ibps-po',
     duration: '8 Months',
     mode: 'Classroom + Online Support',

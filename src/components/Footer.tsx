@@ -81,7 +81,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link to="/courses/sbi-po-ibps-po" className="text-sm  transition-colors">
-                  SBI PO & IBPS PO
+                  Bank PO
                 </Link>
               </li>
               <li>

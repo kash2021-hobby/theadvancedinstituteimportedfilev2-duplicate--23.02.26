@@ -52,7 +52,7 @@ export default function CoursesPage() {
       ]
     },
     {
-      name: 'SBI PO & IBPS PO',
+      name: 'Bank PO',
       slug: 'sbi-po-ibps-po',
       duration: '6-8 Months',
       mode: 'Online + Offline Classes',

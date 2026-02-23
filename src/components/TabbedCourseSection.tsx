@@ -50,7 +50,7 @@ const courses: Course[] = [
     hasSpecialLectures: true
   },
   {
-    name: 'SBI PO & IBPS PO',
+    name: 'Bank PO',
     duration: '6-8 Months',
     cohortStart: '5th March 2026',
     slug: 'sbi-po-ibps-po',
