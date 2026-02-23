@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Clock, Users, BookOpen, Award, CheckCircle2, ChevronRight, Monitor, Wifi } from 'lucide-react';
+import { Clock, Users, BookOpen, Award, CheckCircle2, ChevronRight, Monitor, Wifi, GraduationCap } from 'lucide-react';
 
 export default function CoursesPage() {
   const courses = [
@@ -10,6 +10,7 @@ export default function CoursesPage() {
       mode: 'Online + Offline Classes',
       batchSize: '20 Students',
       hasOnlineSupport: true,
+      hasSpecialLectures: true,
       description: 'Comprehensive preparation program for Railway Recruitment Board Non-Technical Popular Categories exam covering all sections with focused practice.',
       highlights: [
         'Complete syllabus coverage',
@@ -25,6 +26,7 @@ export default function CoursesPage() {
       mode: 'Online + Offline Classes',
       batchSize: '20 Students',
       hasOnlineSupport: true,
+      hasSpecialLectures: true,
       description: 'Intensive coaching for Staff Selection Commission Combined Graduate Level examination with dedicated modules for Tier 1, Tier 2, and Tier 3.',
       highlights: [
         'Tier-wise preparation strategy',
@@ -40,6 +42,7 @@ export default function CoursesPage() {
       mode: 'Online + Offline Classes',
       batchSize: '20 Students',
       hasOnlineSupport: true,
+      hasSpecialLectures: true,
       description: 'Structured program for Staff Selection Commission Combined Higher Secondary Level exam focusing on fundamentals and speed building.',
       highlights: [
         'Foundation to advanced concepts',
@@ -55,6 +58,7 @@ export default function CoursesPage() {
       mode: 'Online + Offline Classes',
       batchSize: '20 Students',
       hasOnlineSupport: true,
+      hasSpecialLectures: true,
       description: 'Comprehensive preparation for SBI PO and IBPS PO exams in one batch. Expert-led training covering all phases including prelims, mains, and interview preparation with specialized banking knowledge.',
       highlights: [
         'Combined SBI PO & IBPS PO syllabus',
@@ -70,6 +74,7 @@ export default function CoursesPage() {
       mode: 'Online + Offline Classes',
       batchSize: '25 Students',
       hasOnlineSupport: true,
+      hasSpecialLectures: true,
       description: 'Comprehensive coaching for SBI Clerk and IBPS Clerk examinations with focus on speed, accuracy, and time management for clerical positions.',
       highlights: [
         'Focus on speed and accuracy',
@@ -85,6 +90,7 @@ export default function CoursesPage() {
       mode: 'Online + Offline Classes',
       batchSize: '20 Students',
       hasOnlineSupport: true,
+      hasSpecialLectures: true,
       description: 'Complete preparation for Assam Direct Recruitment Examination with special focus on Assam-specific topics, culture, and current affairs.',
       highlights: [
         'Assam-specific GK coverage',
@@ -118,12 +124,6 @@ export default function CoursesPage() {
                 key={course.slug}
                 className="bg-white border-2 border-gray-200 rounded-2xl overflow-hidden hover:border-primary hover:shadow-2xl transition-all relative"
               >
-                {course.hasOnlineSupport && (
-                  <div className="absolute top-4 right-4 z-20 bg-gradient-to-r from-teal-500 to-teal-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg flex items-center space-x-2">
-                    <Wifi className="w-4 h-4" />
-                    <span>Online + Offline Classes</span>
-                  </div>
-                )}
                 <div className="md:flex">
                   <div className="md:w-1/3 p-8 flex flex-col justify-center items-center text-white relative overflow-hidden bg-gray-900">
                     {course.slug === 'rrb-ntpc' && (
@@ -300,6 +300,22 @@ export default function CoursesPage() {
                       <ChevronRight className="w-5 h-5" />
                     </Link>
                   </div>
+                </div>
+
+                {/* Bottom-right badges */}
+                <div className="absolute bottom-4 right-4 z-10 flex flex-col gap-2">
+                  {course.hasOnlineSupport && (
+                    <div className="bg-gradient-to-r from-teal-500 to-teal-600 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center space-x-1.5">
+                      <Wifi className="w-3.5 h-3.5" />
+                      <span>Online + Offline Classes</span>
+                    </div>
+                  )}
+                  {course.hasSpecialLectures && (
+                    <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center space-x-1.5">
+                      <GraduationCap className="w-3.5 h-3.5" />
+                      <span>Expert Lectures</span>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
