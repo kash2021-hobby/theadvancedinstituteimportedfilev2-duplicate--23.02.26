@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, Search } from 'lucide-react';
 
@@ -11,6 +11,7 @@ export default function Header() {
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+  const hideTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,9 +21,26 @@ export default function Header() {
 
       if (currentScrollY < 10) {
         setIsVisible(true);
+        if (hideTimeoutRef.current) {
+          clearTimeout(hideTimeoutRef.current);
+          hideTimeoutRef.current = null;
+        }
       } else if (currentScrollY < lastScrollY) {
         setIsVisible(true);
+        if (hideTimeoutRef.current) {
+          clearTimeout(hideTimeoutRef.current);
+        }
+        hideTimeoutRef.current = setTimeout(() => {
+          if (currentScrollY > 100) {
+            setIsVisible(false);
+          }
+          hideTimeoutRef.current = null;
+        }, 1500);
       } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        if (hideTimeoutRef.current) {
+          clearTimeout(hideTimeoutRef.current);
+          hideTimeoutRef.current = null;
+        }
         setIsVisible(false);
         setIsMenuOpen(false);
       }
@@ -31,7 +49,12 @@ export default function Header() {
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (hideTimeoutRef.current) {
+        clearTimeout(hideTimeoutRef.current);
+      }
+    };
   }, [lastScrollY]);
 
   useEffect(() => {
