@@ -284,23 +284,34 @@ export default function TabbedCourseSection() {
   // Scroll selected category button into view (centered)
   const scrollCategoryIntoView = () => {
     if (selectedCategoryRef.current) {
-      // Small delay to let the DOM update after category change
+      // Small delay to let the DOM update after category change and carousel expansion
       setTimeout(() => {
         if (selectedCategoryRef.current) {
           const element = selectedCategoryRef.current;
           const elementRect = element.getBoundingClientRect();
           const absoluteElementTop = elementRect.top + window.pageYOffset;
-          const middle = absoluteElementTop - (window.innerHeight / 2) + (elementRect.height / 2);
+          const viewportHeight = window.innerHeight;
+          const elementHeight = elementRect.height;
 
-          // Scroll to position the button near the top with some padding
-          const targetScrollPosition = absoluteElementTop - 80; // 80px from top
+          // Calculate target position to center the content
+          // If the element is taller than viewport, position it at top with padding
+          // Otherwise, center it in the viewport
+          let targetScrollPosition;
+
+          if (elementHeight > viewportHeight - 160) {
+            // Element is too tall, position at top with padding
+            targetScrollPosition = absoluteElementTop - 80;
+          } else {
+            // Center the element in viewport
+            targetScrollPosition = absoluteElementTop - (viewportHeight - elementHeight) / 2;
+          }
 
           window.scrollTo({
-            top: targetScrollPosition,
+            top: Math.max(0, targetScrollPosition),
             behavior: 'smooth'
           });
         }
-      }, 100);
+      }, 150);
     }
   };
 
