@@ -87,10 +87,6 @@ export default function HomePage() {
       answer: 'Yes, we offer intensive fast-track batches for students who need to prepare in a shorter timeframe. Contact us for details.'
     },
     {
-      question: 'When will The Advanced Learning Academy mobile app be available?',
-      answer: 'We\'re finalizing our mobile app and it will be available soon on both iOS and Android. Students who enroll now will get priority early access with exclusive features.'
-    },
-    {
       question: 'Will the mobile app be free for enrolled students?',
       answer: 'Yes! The mobile app is completely free for all enrolled students. You\'ll get full access to all features including live classes, recorded lectures, and direct faculty messaging.'
     },
