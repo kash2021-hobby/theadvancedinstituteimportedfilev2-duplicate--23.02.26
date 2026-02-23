@@ -8,11 +8,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <Link to="/" className="flex items-center mb-4">
-              <img
-                src="https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=200&h=100"
-                alt="The Advanced Learning Academy"
-                className="h-12 w-auto brightness-0 invert"
-              />
+              <div className="flex items-center space-x-2">
+                <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center font-bold text-white text-lg">
+                  A
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-bold text-white text-sm leading-tight">The Advanced</span>
+                  <span className="font-bold text-white text-sm leading-tight">Learning Academy</span>
+                </div>
+              </div>
             </Link>
             <p className="text-sm text-gray-400 mb-4">
               Where learning meets employment. Expert coaching for SSC, Banking, Railway and more government exams. Now with 24/7 mobile app support coming soon!
