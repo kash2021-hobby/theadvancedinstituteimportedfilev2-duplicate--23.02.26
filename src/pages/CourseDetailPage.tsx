@@ -616,7 +616,7 @@ const coursesData: Record<string, CourseData> = {
     ]
   },
   'sbi-clerk-ibps-clerk': {
-    name: 'SBI Clerk & IBPS Clerk',
+    name: 'Bank Clerk',
     slug: 'sbi-clerk-ibps-clerk',
     duration: '6 Months',
     mode: 'Classroom + Online Support',

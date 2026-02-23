@@ -61,7 +61,7 @@ const courses: Course[] = [
     hasSpecialLectures: true
   },
   {
-    name: 'SBI Clerk & IBPS Clerk',
+    name: 'Bank Clerk',
     duration: '6 Months',
     cohortStart: '10th March 2026',
     slug: 'sbi-clerk-ibps-clerk',

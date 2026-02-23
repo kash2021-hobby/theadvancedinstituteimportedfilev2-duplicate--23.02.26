@@ -86,7 +86,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link to="/courses/sbi-clerk-ibps-clerk" className="text-sm  transition-colors">
-                  SBI Clerk & IBPS Clerk
+                  Bank Clerk
                 </Link>
               </li>
               <li>

@@ -68,7 +68,7 @@ export default function CoursesPage() {
       ]
     },
     {
-      name: 'SBI Clerk & IBPS Clerk',
+      name: 'Bank Clerk',
       slug: 'sbi-clerk-ibps-clerk',
       duration: '6 Months',
       mode: 'Online + Offline Classes',
