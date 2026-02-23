@@ -108,7 +108,10 @@ export default function AboutPage() {
 
                     <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                       <p className="font-medium">
-                        The Advanced Learning Academy is Guwahati's premier coaching institute dedicated to transforming government job aspirants into successful candidates. Since 2015, we have been the trusted partner for thousands of students pursuing careers in SSC, Banking, Railways, and other government sectors.
+                        The Advanced Learning Academy is Guwahati's dedicated coaching institute committed to transforming government job aspirants into confident, result-driven candidates. Built with a clear mission to deliver focused guidance and structured preparation, we specialize in SSC, Banking, Railways, Assam Government and other competitive examinations.
+                      </p>
+                      <p className="font-medium">
+                        With expert mentorship, updated study materials, and a student-centric approach, we are creating a strong foundation for aspirants who are serious about securing government careers.
                       </p>
                     </div>
                   </div>
@@ -195,7 +198,10 @@ export default function AboutPage() {
 
                     <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                       <p className="font-medium">
-                        The Advanced Learning Academy is Guwahati's premier coaching institute dedicated to transforming government job aspirants into successful candidates. Since 2015, we have been the trusted partner for thousands of students pursuing careers in SSC, Banking, Railways, and other government sectors.
+                        The Advanced Learning Academy is Guwahati's dedicated coaching institute committed to transforming government job aspirants into confident, result-driven candidates. Built with a clear mission to deliver focused guidance and structured preparation, we specialize in SSC, Banking, Railways, Assam Government and other competitive examinations.
+                      </p>
+                      <p className="font-medium">
+                        With expert mentorship, updated study materials, and a student-centric approach, we are creating a strong foundation for aspirants who are serious about securing government careers.
                       </p>
                     </div>
                   </div>
