@@ -338,9 +338,12 @@ export default function CoursesPage() {
             >
               Contact Us
             </Link>
-            <button className="bg-[#0066FF] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#004BB8] transition-colors shadow-lg">
+            <Link
+              to="/contact?form=demo"
+              className="bg-[#0066FF] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#004BB8] transition-colors shadow-lg inline-block"
+            >
               Book Free Demo Class
-            </button>
+            </Link>
           </div>
         </div>
       </section>

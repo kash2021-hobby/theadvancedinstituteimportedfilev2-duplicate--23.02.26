@@ -1,7 +1,18 @@
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Youtube } from 'lucide-react';
+import { useEffect, useRef } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import LeadForm from '../components/LeadForm';
 
 export default function ContactPage() {
+  const [searchParams] = useSearchParams();
+  const formRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (searchParams.get('form') === 'demo') {
+      formRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [searchParams]);
+
   return (
     <div>
       <section className="bg-gradient-to-br from-primary to-primary-dark text-white py-16 md:py-20">
@@ -109,7 +120,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="order-1 lg:order-2 w-full">
+            <div className="order-1 lg:order-2 w-full" ref={formRef}>
               <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 w-full max-w-md mx-auto lg:mx-0 lg:max-w-none">
                 <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 text-center lg:text-left">Send Us a Message</h2>
                 <p className="text-gray-600 mb-6 text-sm sm:text-base text-center lg:text-left">
@@ -160,7 +171,10 @@ export default function ContactPage() {
           <p className="text-base sm:text-lg text-gray-600 mb-8">
             Experience our teaching methodology firsthand. Book your free demo class today and start your preparation journey with us.
           </p>
-          <button className="bg-[#0066FF] text-white px-6 sm:px-10 py-3 sm:py-4 rounded-lg font-semibold hover:bg-[#004BB8] transition-colors text-base sm:text-lg shadow-lg">
+          <button
+            onClick={() => formRef.current?.scrollIntoView({ behavior: 'smooth' })}
+            className="bg-[#0066FF] text-white px-6 sm:px-10 py-3 sm:py-4 rounded-lg font-semibold hover:bg-[#004BB8] transition-colors text-base sm:text-lg shadow-lg"
+          >
             Book Free Demo Class
           </button>
         </div>
