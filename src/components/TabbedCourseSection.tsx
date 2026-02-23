@@ -328,8 +328,16 @@ export default function TabbedCourseSection() {
   };
 
   return (
-    <section className="py-16 md:py-20" style={{ backgroundColor: '#EEF6FF' }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      className="py-16 md:py-20 relative overflow-hidden"
+      style={{
+        backgroundColor: '#FAFAF8',
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='120' height='120' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='lines' x='0' y='0' width='120' height='120' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 10 20 Q 20 15 30 20 T 50 20' stroke='%23D9D5CF' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M 70 40 Q 80 35 90 40 T 110 40' stroke='%23D9D5CF' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M 15 70 Q 25 65 35 70 T 55 70' stroke='%23E0DCD7' stroke-width='1' fill='none' stroke-linecap='round'/%3E%3Cpath d='M 75 90 Q 85 85 95 90 T 115 90' stroke='%23E0DCD7' stroke-width='1' fill='none' stroke-linecap='round'/%3E%3Cpath d='M 20 50 Q 30 45 40 50 T 60 50' stroke='%23ECDCC8' stroke-width='1.2' fill='none' stroke-linecap='round'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='120' height='120' fill='%23FAFAF8'/%3E%3Crect width='120' height='120' fill='url(%23lines)'/%3E%3C/svg%3E")`,
+        backgroundRepeat: 'repeat',
+        backgroundSize: '120px 120px'
+      }}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div ref={coursesAnimation.ref} style={coursesAnimation.style} className="text-left mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Our Government Exam Programs
