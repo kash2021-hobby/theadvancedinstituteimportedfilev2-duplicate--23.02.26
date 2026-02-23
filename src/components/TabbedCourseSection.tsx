@@ -281,37 +281,41 @@ export default function TabbedCourseSection() {
     isUserInteractingRef.current = false;
   };
 
-  // Scroll selected category button into view (centered)
+  // Scroll to ensure the entire carousel (including "View Program" button) is visible
   const scrollCategoryIntoView = () => {
     if (selectedCategoryRef.current) {
-      // Small delay to let the DOM update after category change and carousel expansion
+      // Longer delay to let the carousel fully expand
       setTimeout(() => {
         if (selectedCategoryRef.current) {
           const element = selectedCategoryRef.current;
           const elementRect = element.getBoundingClientRect();
           const absoluteElementTop = elementRect.top + window.pageYOffset;
+          const absoluteElementBottom = absoluteElementTop + elementRect.height;
           const viewportHeight = window.innerHeight;
-          const elementHeight = elementRect.height;
+          const currentScrollTop = window.pageYOffset;
+          const viewportBottom = currentScrollTop + viewportHeight;
 
-          // Calculate target position to center the content
-          // If the element is taller than viewport, position it at top with padding
-          // Otherwise, center it in the viewport
-          let targetScrollPosition;
+          // Check if the bottom of the carousel is visible
+          const bottomPadding = 100; // Extra padding at bottom
+          const topPadding = 80; // Padding at top
 
-          if (elementHeight > viewportHeight - 160) {
-            // Element is too tall, position at top with padding
-            targetScrollPosition = absoluteElementTop - 80;
-          } else {
-            // Center the element in viewport
-            targetScrollPosition = absoluteElementTop - (viewportHeight - elementHeight) / 2;
+          if (absoluteElementBottom + bottomPadding > viewportBottom) {
+            // Bottom is cut off, scroll to show the entire element
+            const targetScrollPosition = absoluteElementBottom + bottomPadding - viewportHeight;
+
+            window.scrollTo({
+              top: Math.max(0, targetScrollPosition),
+              behavior: 'smooth'
+            });
+          } else if (absoluteElementTop < currentScrollTop + topPadding) {
+            // Top is cut off, scroll to show from top
+            window.scrollTo({
+              top: Math.max(0, absoluteElementTop - topPadding),
+              behavior: 'smooth'
+            });
           }
-
-          window.scrollTo({
-            top: Math.max(0, targetScrollPosition),
-            behavior: 'smooth'
-          });
         }
-      }, 150);
+      }, 300); // Increased delay to ensure carousel is fully rendered
     }
   };
 
