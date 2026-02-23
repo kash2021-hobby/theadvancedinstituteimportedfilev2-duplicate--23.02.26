@@ -146,9 +146,9 @@ export default function HeroSlider() {
       {/* Mobile Layout - Simplilearn Design Pattern with 3D Carousel */}
       <div className="lg:hidden -mt-16">
         {/* Mobile: 3D Carousel Section with White Background */}
-        <div 
+        <div
           key={`mobile-carousel-${slide.id}`}
-          className="relative w-full h-[55vh] min-h-[400px] max-h-[500px] overflow-hidden flex items-center justify-center bg-white pt-16"
+          className="relative w-full h-[68vh] min-h-[500px] max-h-[620px] overflow-hidden flex items-center justify-center bg-white pt-16"
         >
           {/* 3D Carousel Wrapper */}
           <div
@@ -172,14 +172,14 @@ export default function HeroSlider() {
                 <div
                   key={`${slide.id}-${index}`}
                   className={cn(
-                    'absolute w-48 h-80 sm:w-56 sm:h-96 transition-all duration-300 ease-in-out',
+                    'absolute w-64 h-[420px] sm:w-80 sm:h-[520px] transition-all duration-300 ease-in-out',
                     'flex items-center justify-center'
                   )}
                   style={{
                     transform: `
-                      translateX(${(pos) * 50}%) 
-                      scale(${isCenter ? 1 : isAdjacent ? 0.85 : 0.7})
-                      rotateY(${(pos) * -10}deg)
+                      translateX(${(pos) * 55}%)
+                      scale(${isCenter ? 1 : isAdjacent ? 0.82 : 0.7})
+                      rotateY(${(pos) * -12}deg)
                     `,
                     zIndex: isCenter ? 10 : isAdjacent ? 5 : 1,
                     opacity: isCenter ? 1 : isAdjacent ? 0.4 : 0,
@@ -190,7 +190,7 @@ export default function HeroSlider() {
                   <img
                     src={image}
                     alt={`${slide.headline} - Image ${index + 1}`}
-                    className="object-cover w-full h-full rounded-2xl border-2 border-white/20 shadow-2xl"
+                    className="object-cover w-full h-full rounded-2xl border-3 border-white/20 shadow-2xl"
                   />
                 </div>
               );
