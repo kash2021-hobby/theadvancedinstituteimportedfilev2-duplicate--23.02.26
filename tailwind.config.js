@@ -24,7 +24,6 @@ export default {
           700: '#1D4ED8',
           800: '#1E40AF',
           900: '#1E3A8A',
-          accent: '#0C70EB',
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
