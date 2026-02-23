@@ -379,12 +379,6 @@ export default function TabbedCourseSection() {
                         className="flex-shrink-0 w-full snap-center"
                       >
                         <div className="bg-white rounded-2xl overflow-hidden shadow-lg relative">
-                          {course.hasOnlineSupport && (
-                            <div className="absolute top-3 right-3 z-20 bg-gradient-to-r from-teal-500 to-teal-600 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center space-x-1.5">
-                              <Wifi className="w-3.5 h-3.5" />
-                              <span>Online + Offline Classes</span>
-                            </div>
-                          )}
                           <div
                             className="h-48 bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-hidden"
                             style={course.backgroundImage ? {
@@ -417,23 +411,23 @@ export default function TabbedCourseSection() {
                           </div>
 
                           <div className="p-6">
-                            {(course.hasOnlineSupport || course.hasSpecialLectures) && (
-                              <div className="flex flex-wrap gap-2 mb-4">
-                                {course.hasOnlineSupport && (
-                                  <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-teal-500 to-teal-600 text-white text-xs font-semibold rounded-full shadow-md">
-                                    <Wifi className="w-3.5 h-3.5" />
-                                    <span>Online + Offline Classes</span>
-                                  </div>
-                                )}
-                                {course.hasSpecialLectures && (
-                                  <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs font-semibold rounded-full shadow-md">
-                                    <GraduationCap className="w-3.5 h-3.5" />
-                                    <span>Expert Lectures</span>
-                                  </div>
-                                )}
-                              </div>
-                            )}
                             <div className="space-y-4 mb-6">
+                              {(course.hasOnlineSupport || course.hasSpecialLectures) && (
+                                <div className="flex flex-wrap gap-2">
+                                  {course.hasOnlineSupport && (
+                                    <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-teal-500 to-teal-600 text-white text-xs font-semibold rounded-full shadow-md">
+                                      <Wifi className="w-3.5 h-3.5" />
+                                      <span>Online + Offline Classes</span>
+                                    </div>
+                                  )}
+                                  {course.hasSpecialLectures && (
+                                    <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs font-semibold rounded-full shadow-md">
+                                      <GraduationCap className="w-3.5 h-3.5" />
+                                      <span>Expert Lectures</span>
+                                    </div>
+                                  )}
+                                </div>
+                              )}
                               <div className="flex items-center text-gray-700">
                                 <Clock className="w-5 h-5 mr-3 text-blue-600 flex-shrink-0" />
                                 <span className="text-sm font-medium">
@@ -538,22 +532,6 @@ export default function TabbedCourseSection() {
                   key={course.slug}
                   className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-1 relative"
                 >
-                  {(course.hasOnlineSupport || course.hasSpecialLectures) && (
-                    <div className="absolute top-3 right-3 z-20 flex flex-col gap-2">
-                      {course.hasOnlineSupport && (
-                        <div className="bg-gradient-to-r from-teal-500 to-teal-600 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center space-x-1.5">
-                          <Wifi className="w-3.5 h-3.5" />
-                          <span>Online + Offline Classes</span>
-                        </div>
-                      )}
-                      {course.hasSpecialLectures && (
-                        <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center space-x-1.5">
-                          <GraduationCap className="w-3.5 h-3.5" />
-                          <span>Expert Lectures</span>
-                        </div>
-                      )}
-                    </div>
-                  )}
                   <div
                     className="h-48 bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-hidden"
                     style={course.backgroundImage ? {
@@ -587,6 +565,22 @@ export default function TabbedCourseSection() {
 
                   <div className="p-6">
                     <div className="space-y-4 mb-6">
+                      {(course.hasOnlineSupport || course.hasSpecialLectures) && (
+                        <div className="flex flex-wrap gap-2">
+                          {course.hasOnlineSupport && (
+                            <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-teal-500 to-teal-600 text-white text-xs font-semibold rounded-full shadow-md">
+                              <Wifi className="w-3.5 h-3.5" />
+                              <span>Online + Offline Classes</span>
+                            </div>
+                          )}
+                          {course.hasSpecialLectures && (
+                            <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs font-semibold rounded-full shadow-md">
+                              <GraduationCap className="w-3.5 h-3.5" />
+                              <span>Expert Lectures</span>
+                            </div>
+                          )}
+                        </div>
+                      )}
                       <div className="flex items-center text-gray-700">
                         <Clock className="w-5 h-5 mr-3 text-blue-600 flex-shrink-0" />
                         <span className="text-sm font-medium">
