@@ -111,17 +111,6 @@ export default function AboutPage() {
                         The Advanced Learning Academy is Guwahati's premier coaching institute dedicated to transforming government job aspirants into successful candidates. Since 2015, we have been the trusted partner for thousands of students pursuing careers in SSC, Banking, Railways, and other government sectors.
                       </p>
                     </div>
-
-                    <div className="grid grid-cols-2 gap-4 mt-8">
-                      <div className="bg-gradient-to-br from-primary-500 to-ocean-600 text-white p-4 rounded-xl text-center shadow-blue-md">
-                        <div className="text-3xl font-black mb-1">5000+</div>
-                        <div className="text-sm font-semibold">Students Trained</div>
-                      </div>
-                      <div className="bg-gradient-to-br from-ocean-500 to-primary-600 text-white p-4 rounded-xl text-center shadow-blue-md">
-                        <div className="text-3xl font-black mb-1">1000+</div>
-                        <div className="text-sm font-semibold">Successful Selections</div>
-                      </div>
-                    </div>
                   </div>
 
                   <div
@@ -208,17 +197,6 @@ export default function AboutPage() {
                       <p className="font-medium">
                         The Advanced Learning Academy is Guwahati's premier coaching institute dedicated to transforming government job aspirants into successful candidates. Since 2015, we have been the trusted partner for thousands of students pursuing careers in SSC, Banking, Railways, and other government sectors.
                       </p>
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-4 mt-8">
-                      <div className="bg-gradient-to-br from-primary-500 to-ocean-600 text-white p-4 rounded-xl text-center shadow-blue-md">
-                        <div className="text-3xl font-black mb-1">5000+</div>
-                        <div className="text-sm font-semibold">Students Trained</div>
-                      </div>
-                      <div className="bg-gradient-to-br from-ocean-500 to-primary-600 text-white p-4 rounded-xl text-center shadow-blue-md">
-                        <div className="text-3xl font-black mb-1">1000+</div>
-                        <div className="text-sm font-semibold">Successful Selections</div>
-                      </div>
                     </div>
                   </div>
                 </div>
