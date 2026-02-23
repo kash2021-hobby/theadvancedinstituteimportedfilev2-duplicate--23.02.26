@@ -248,7 +248,7 @@ export default function CoursesPage() {
                     </p>
 
                     {/* Badges Section */}
-                    <div className="hidden md:flex flex-col gap-2 mb-6">
+                    <div className="flex md:flex flex-col gap-2 mb-6">
                       {course.hasOnlineSupport && (
                         <div className="bg-gradient-to-r from-teal-500 to-teal-600 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center space-x-1.5 w-fit">
                           <Wifi className="w-3.5 h-3.5" />
