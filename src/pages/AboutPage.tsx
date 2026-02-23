@@ -96,19 +96,8 @@ export default function AboutPage() {
             <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-ocean-500 mx-auto mb-8 rounded-full"></div>
           </div>
 
-          <div className="grid lg:grid-cols-12 gap-8 items-stretch">
-            <div className="lg:col-span-1 hidden lg:flex flex-col justify-between">
-              <div className="bg-gradient-to-br from-primary-100 to-ocean-100 rounded-2xl p-6 shadow-md flex flex-col items-center justify-center aspect-square">
-                <BookOpen className="w-8 h-8 text-primary-600 mb-3" />
-                <p className="text-xs font-bold text-center text-gray-700">Expert Curriculum</p>
-              </div>
-              <div className="bg-gradient-to-br from-ocean-100 to-primary-100 rounded-2xl p-6 shadow-md flex flex-col items-center justify-center aspect-square">
-                <Target className="w-8 h-8 text-ocean-600 mb-3" />
-                <p className="text-xs font-bold text-center text-gray-700">Result Driven</p>
-              </div>
-            </div>
-
-            <div className="lg:col-span-10 bg-white rounded-3xl shadow-blue-xl overflow-hidden border-2 border-primary-100">
+          <div className="grid lg:grid-cols-1 gap-8 items-stretch">
+            <div className="bg-white rounded-3xl shadow-blue-xl overflow-hidden border-2 border-primary-100">
               <div className="flex flex-col">
                 {/* Desktop Layout - Text Left, Video Right */}
                 <div className="hidden lg:grid lg:grid-cols-2 gap-0">
@@ -258,17 +247,6 @@ export default function AboutPage() {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div className="lg:col-span-1 hidden lg:flex flex-col justify-between">
-              <div className="bg-gradient-to-br from-primary-100 to-ocean-100 rounded-2xl p-6 shadow-md flex flex-col items-center justify-center aspect-square">
-                <Award className="w-8 h-8 text-ocean-600 mb-3" />
-                <p className="text-xs font-bold text-center text-gray-700">Excellence</p>
-              </div>
-              <div className="bg-gradient-to-br from-ocean-100 to-primary-100 rounded-2xl p-6 shadow-md flex flex-col items-center justify-center aspect-square">
-                <Heart className="w-8 h-8 text-primary-600 mb-3" />
-                <p className="text-xs font-bold text-center text-gray-700">Student Care</p>
               </div>
             </div>
           </div>
