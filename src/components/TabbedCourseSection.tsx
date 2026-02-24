@@ -23,7 +23,7 @@ const courses: Course[] = [
     slug: 'rrb-ntpc',
     category: 'RRB',
     logo: 'https://images.pexels.com/photos/3824771/pexels-photo-3824771.jpeg?auto=compress&cs=tinysrgb&w=200',
-    backgroundImage: '/images/hero/final_webp.webp',
+    backgroundImage: '/images/hero/railwayntpc copy copy.webp',
     hasOnlineSupport: true,
     hasSpecialLectures: true
   },
@@ -430,7 +430,7 @@ export default function TabbedCourseSection() {
                               backgroundPosition: 'center'
                             } : undefined}
                           >
-                            <div className="absolute inset-0 bg-black/40"></div>
+                            <div className={`absolute inset-0 ${course.slug === 'rrb-ntpc' ? 'bg-black/0' : 'bg-black/40'}`}></div>
                             <div className="relative text-center px-6 z-10">
                               {course.logo ? (
                                 <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-4 p-2 overflow-hidden">
@@ -579,7 +579,7 @@ export default function TabbedCourseSection() {
                       backgroundPosition: 'center'
                     } : undefined}
                   >
-                    <div className="absolute inset-0 bg-black/40"></div>
+                    <div className={`absolute inset-0 ${course.slug === 'rrb-ntpc' ? 'bg-black/0' : 'bg-black/40'}`}></div>
                     <div className="relative text-center px-6 z-10">
                       {course.logo ? (
                         <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-4 p-2 overflow-hidden">
