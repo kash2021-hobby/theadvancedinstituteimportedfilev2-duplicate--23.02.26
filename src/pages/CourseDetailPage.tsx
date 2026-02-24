@@ -1221,7 +1221,7 @@ export default function CourseDetailPage() {
                   <h3 className="text-xl font-bold text-gray-900 mb-6">Enroll in This Course</h3>
                   <LeadForm
                     sourcePage={`course-${course.slug}`}
-                    buttonText="Request Callback"
+                    buttonText="Submit The Details"
                   />
                 </div>
 
