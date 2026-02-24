@@ -16,7 +16,7 @@ export default function InfrastructureSection() {
     { icon: Users, title: 'Study Rooms', description: 'Dedicated group study areas' }
   ];
 
-  const classroomImage = 'https://images.pexels.com/photos/3808214/pexels-photo-3808214.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop';
+  const classroomImage = 'https://images.pexels.com/photos/4871839/pexels-photo-4871839.jpeg?auto=compress&cs=tinysrgb&w=1200';
 
   const infrastructureImages = [
     {
