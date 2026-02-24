@@ -426,8 +426,9 @@ export default function TabbedCourseSection() {
                             className={`${course.slug === 'rrb-ntpc' ? 'h-96' : 'h-48'} bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-hidden`}
                             style={course.backgroundImage ? {
                               backgroundImage: `url('${course.backgroundImage}')`,
-                              backgroundSize: 'cover',
-                              backgroundPosition: 'center'
+                              backgroundSize: course.slug === 'rrb-ntpc' ? 'contain' : 'cover',
+                              backgroundPosition: 'center',
+                              backgroundRepeat: 'no-repeat'
                             } : undefined}
                           >
                             <div className={`absolute inset-0 ${course.slug === 'rrb-ntpc' ? 'bg-black/0' : 'bg-black/40'}`}></div>
@@ -575,8 +576,9 @@ export default function TabbedCourseSection() {
                     className={`${course.slug === 'rrb-ntpc' ? 'h-96' : 'h-48'} bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-hidden`}
                     style={course.backgroundImage ? {
                       backgroundImage: `url('${course.backgroundImage}')`,
-                      backgroundSize: 'cover',
-                      backgroundPosition: 'center'
+                      backgroundSize: course.slug === 'rrb-ntpc' ? 'contain' : 'cover',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat'
                     } : undefined}
                   >
                     <div className={`absolute inset-0 ${course.slug === 'rrb-ntpc' ? 'bg-black/0' : 'bg-black/40'}`}></div>
