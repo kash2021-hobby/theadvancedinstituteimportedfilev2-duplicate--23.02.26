@@ -23,7 +23,7 @@ const courses: Course[] = [
     slug: 'rrb-ntpc',
     category: 'RRB',
     logo: 'https://images.pexels.com/photos/3824771/pexels-photo-3824771.jpeg?auto=compress&cs=tinysrgb&w=200',
-    backgroundImage: '/images/hero/railwayntpc copy copy.webp',
+    backgroundImage: '/images/hero/railwayntpc.webp',
     hasOnlineSupport: true,
     hasSpecialLectures: true
   },
