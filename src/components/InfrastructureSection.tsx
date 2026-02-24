@@ -18,42 +18,42 @@ export default function InfrastructureSection() {
 
   const infrastructureImages = [
     {
-      url: '/images/infrastructure/modern-classrooms.jpg',
+      url: '/images/infrastructure/faculty-1.jpg',
       title: 'Modern Classrooms',
       description: 'Air-conditioned classrooms with modern teaching aids'
     },
     {
-      url: '/images/infrastructure/expert-faculty.jpg',
+      url: '/images/infrastructure/faculty-2.jpg',
       title: 'Expert Faculty',
       description: 'Experienced teachers dedicated to student success'
     },
     {
-      url: '/images/infrastructure/interactive-learning.jpg',
+      url: '/images/infrastructure/faculty-3.jpg',
       title: 'Interactive Learning',
       description: 'Engaging teaching methodology for better understanding'
     },
     {
-      url: '/images/infrastructure/success-stories.jpg',
+      url: '/images/infrastructure/faculty-dr-sir.jpg',
       title: 'Success Stories',
       description: 'Join hundreds of successful candidates'
     },
     {
-      url: '/images/infrastructure/extensive-library.jpg',
+      url: '/images/infrastructure/banking-background.jpg',
       title: 'Extensive Library',
       description: 'Rich collection of books and study materials'
     },
     {
-      url: '/images/infrastructure/computer-lab.jpg',
+      url: '/images/infrastructure/faculty-1.jpg',
       title: 'Computer Lab',
       description: 'State-of-the-art technology and software'
     },
     {
-      url: '/images/infrastructure/study-environment.jpg',
+      url: '/images/infrastructure/faculty-2.jpg',
       title: 'Study Environment',
       description: 'Peaceful and focused learning spaces'
     },
     {
-      url: '/images/infrastructure/campus-facilities.jpg',
+      url: '/images/infrastructure/faculty-3.jpg',
       title: 'Campus Facilities',
       description: 'Modern amenities for student comfort'
     }

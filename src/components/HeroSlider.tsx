@@ -19,13 +19,10 @@ const slides: Slide[] = [
     eyebrowText: "",
     headline: "Crack Government Exams with Confidence",
     subtext: "Join a results-focused government exam institute for Railway NTPC, SSC CGL, SSC CHSL, ADRE and Banking exams with expert guidance and strategy.",
-    personImage: "/images/hero/hero-main.jpg",
+    personImage: "/images/hero/train-background.jpg",
     carouselImages: [
-      "/images/hero/hero-slide-1.jpg",
-      "/images/hero/hero-slide-2.jpg",
-      "/images/hero/hero-slide-3.jpg",
-      "/images/hero/hero-slide-4.jpg",
-      "/images/hero/hero-slide-5.jpg",
+      "/images/hero/train-background.jpg",
+      "/images/hero/hero-background.png",
     ],
     ctaText: "Explore Programs",
     ctaLink: "/courses"

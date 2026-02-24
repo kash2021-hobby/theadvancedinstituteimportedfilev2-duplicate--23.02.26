@@ -130,14 +130,14 @@ export default function CoursesPage() {
                       <>
                         <div className="absolute inset-0 opacity-50">
                           <img
-                            src="/images/courses/railway-ntpc-bg.jpg"
+                            src="/images/courses/ssc-chsl-background.jpg"
                             alt="Train background"
                             className="w-full h-full object-cover"
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
                           <img
-                            src="/images/courses/railway-ntpc-logo.png"
+                            src="/images/logos/indian-railways-logo.png"
                             alt="Indian Railways"
                             className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
                           />
@@ -149,14 +149,14 @@ export default function CoursesPage() {
                       <>
                         <div className="absolute inset-0 opacity-40">
                           <img
-                            src="/images/courses/ssc-cgl-bg.jpg"
+                            src="/images/courses/ssc-headquarters.jpg"
                             alt="SSC Headquarters"
                             className="w-full h-full object-cover"
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
                           <img
-                            src="/images/courses/ssc-cgl-logo.png"
+                            src="/images/logos/ssc-logo.png"
                             alt="SSC Logo"
                             className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
                           />
@@ -168,14 +168,14 @@ export default function CoursesPage() {
                       <>
                         <div className="absolute inset-0 opacity-40">
                           <img
-                            src="/images/courses/ssc-chsl-bg.jpg"
+                            src="/images/courses/ssc-chsl-background.jpg"
                             alt="SSC CHSL Background"
                             className="w-full h-full object-cover"
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
                           <img
-                            src="/images/courses/ssc-chsl-logo.png"
+                            src="/images/logos/ssc-logo.png"
                             alt="SSC Logo"
                             className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
                           />
@@ -187,14 +187,14 @@ export default function CoursesPage() {
                       <>
                         <div className="absolute inset-0 opacity-40">
                           <img
-                            src="/images/courses/bank-po-bg.jpg"
+                            src="/images/infrastructure/banking-background.jpg"
                             alt="Banking Background"
                             className="w-full h-full object-cover"
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
                           <img
-                            src="/images/courses/bank-po-logo.png"
+                            src="/images/logos/banking-logo.png"
                             alt="Banking Logo"
                             className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
                           />
@@ -206,14 +206,14 @@ export default function CoursesPage() {
                       <>
                         <div className="absolute inset-0 opacity-40">
                           <img
-                            src="/images/courses/bank-clerk-bg.jpg"
+                            src="/images/infrastructure/banking-background.jpg"
                             alt="Banking Background"
                             className="w-full h-full object-cover"
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
                           <img
-                            src="/images/courses/bank-clerk-logo.png"
+                            src="/images/logos/banking-logo.png"
                             alt="Banking Logo"
                             className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
                           />
@@ -225,14 +225,14 @@ export default function CoursesPage() {
                       <>
                         <div className="absolute inset-0 opacity-40">
                           <img
-                            src="/images/courses/adre-bg.jpg"
+                            src="/images/courses/ssc-chsl-background.jpg"
                             alt="ADRE Background"
                             className="w-full h-full object-cover"
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
                           <img
-                            src="/images/courses/adre-logo.png"
+                            src="/images/logos/ssc-logo.png"
                             alt="ADRE Logo"
                             className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
                           />
