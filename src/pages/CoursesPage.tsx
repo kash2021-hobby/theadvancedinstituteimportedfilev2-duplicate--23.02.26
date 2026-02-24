@@ -2,6 +2,15 @@ import { Link } from 'react-router-dom';
 import { Clock, Users, BookOpen, Award, CheckCircle2, ChevronRight, Monitor, Wifi, GraduationCap } from 'lucide-react';
 
 export default function CoursesPage() {
+  const carouselImages = [
+    "/images/hero/adregrade3.webp",
+    "/images/hero/bankclerk.webp",
+    "/images/hero/railwayntpc.webp",
+    "/images/hero/ssccgl.webp",
+    "/images/hero/hero-slide-5.webp",
+    "/images/hero/hero-slide-6.webp",
+  ];
+
   const courses = [
     {
       name: 'Railway NTPC',
@@ -12,6 +21,7 @@ export default function CoursesPage() {
       hasOnlineSupport: true,
       hasSpecialLectures: true,
       description: 'Comprehensive preparation program for Railway Recruitment Board Non-Technical Popular Categories exam covering all sections with focused practice.',
+      backgroundImage: carouselImages[2],
       highlights: [
         'Complete syllabus coverage',
         'Daily practice sessions',
@@ -28,6 +38,7 @@ export default function CoursesPage() {
       hasOnlineSupport: true,
       hasSpecialLectures: true,
       description: 'Intensive coaching for Staff Selection Commission Combined Graduate Level examination with dedicated modules for Tier 1, Tier 2, and Tier 3.',
+      backgroundImage: carouselImages[3],
       highlights: [
         'Tier-wise preparation strategy',
         'Quantitative aptitude mastery',
@@ -44,6 +55,7 @@ export default function CoursesPage() {
       hasOnlineSupport: true,
       hasSpecialLectures: true,
       description: 'Structured program for Staff Selection Commission Combined Higher Secondary Level exam focusing on fundamentals and speed building.',
+      backgroundImage: carouselImages[4],
       highlights: [
         'Foundation to advanced concepts',
         'Speed and accuracy training',
@@ -60,6 +72,7 @@ export default function CoursesPage() {
       hasOnlineSupport: true,
       hasSpecialLectures: true,
       description: 'Comprehensive preparation for SBI PO and IBPS PO exams in one batch. Expert-led training covering all phases including prelims, mains, and interview preparation with specialized banking knowledge.',
+      backgroundImage: carouselImages[3],
       highlights: [
         'Combined SBI PO & IBPS PO syllabus',
         'Interview & GD preparation',
@@ -76,6 +89,7 @@ export default function CoursesPage() {
       hasOnlineSupport: true,
       hasSpecialLectures: true,
       description: 'Comprehensive coaching for SBI Clerk and IBPS Clerk examinations with focus on speed, accuracy, and time management for clerical positions.',
+      backgroundImage: carouselImages[1],
       highlights: [
         'Focus on speed and accuracy',
         'Banking awareness modules',
@@ -92,6 +106,7 @@ export default function CoursesPage() {
       hasOnlineSupport: true,
       hasSpecialLectures: true,
       description: 'Complete preparation for Assam Direct Recruitment Examination with special focus on Assam-specific topics, culture, and current affairs.',
+      backgroundImage: carouselImages[0],
       highlights: [
         'Assam-specific GK coverage',
         'Expert faculty for regional topics',
@@ -125,121 +140,61 @@ export default function CoursesPage() {
                 className="bg-white border-2 border-gray-200 rounded-2xl overflow-hidden hover:border-primary hover:shadow-2xl transition-all relative"
               >
                 <div className="md:flex">
-                  <div className="md:w-1/3 p-8 flex flex-col justify-center items-center text-white relative overflow-hidden bg-gray-900">
-                    {course.slug === 'rrb-ntpc' && (
-                      <>
-                        <div className="absolute inset-0 opacity-50">
-                          <img
-                            src="/images/courses/ssc-chsl-background.jpg"
-                            alt="Train background"
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
-                        <div className="relative z-10 flex flex-col items-center">
-                          <img
-                            src="/images/logos/indian-railways-logo.png"
-                            alt="Indian Railways"
-                            className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
-                          />
-                          <h2 className="text-3xl font-bold text-center">{course.name}</h2>
-                        </div>
-                      </>
-                    )}
-                    {course.slug === 'ssc-cgl' && (
-                      <>
-                        <div className="absolute inset-0 opacity-40">
-                          <img
-                            src="/images/courses/ssc-headquarters.jpg"
-                            alt="SSC Headquarters"
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
-                        <div className="relative z-10 flex flex-col items-center">
-                          <img
-                            src="/images/logos/ssc-logo.png"
-                            alt="SSC Logo"
-                            className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
-                          />
-                          <h2 className="text-3xl font-bold text-center">{course.name}</h2>
-                        </div>
-                      </>
-                    )}
-                    {course.slug === 'ssc-chsl' && (
-                      <>
-                        <div className="absolute inset-0 opacity-40">
-                          <img
-                            src="/images/courses/ssc-chsl-background.jpg"
-                            alt="SSC CHSL Background"
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
-                        <div className="relative z-10 flex flex-col items-center">
-                          <img
-                            src="/images/logos/ssc-logo.png"
-                            alt="SSC Logo"
-                            className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
-                          />
-                          <h2 className="text-3xl font-bold text-center">{course.name}</h2>
-                        </div>
-                      </>
-                    )}
-                    {course.slug === 'sbi-po-ibps-po' && (
-                      <>
-                        <div className="absolute inset-0 opacity-40">
-                          <img
-                            src="/images/infrastructure/banking-background.jpg"
-                            alt="Banking Background"
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
-                        <div className="relative z-10 flex flex-col items-center">
-                          <img
-                            src="/images/logos/banking-logo.png"
-                            alt="Banking Logo"
-                            className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
-                          />
-                          <h2 className="text-3xl font-bold text-center">{course.name}</h2>
-                        </div>
-                      </>
-                    )}
-                    {course.slug === 'sbi-clerk-ibps-clerk' && (
-                      <>
-                        <div className="absolute inset-0 opacity-40">
-                          <img
-                            src="/images/infrastructure/banking-background.jpg"
-                            alt="Banking Background"
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
-                        <div className="relative z-10 flex flex-col items-center">
-                          <img
-                            src="/images/logos/banking-logo.png"
-                            alt="Banking Logo"
-                            className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
-                          />
-                          <h2 className="text-3xl font-bold text-center">{course.name}</h2>
-                        </div>
-                      </>
-                    )}
-                    {course.slug === 'adre' && (
-                      <>
-                        <div className="absolute inset-0 opacity-40">
-                          <img
-                            src="/images/courses/ssc-chsl-background.jpg"
-                            alt="ADRE Background"
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
-                        <div className="relative z-10 flex flex-col items-center">
-                          <img
-                            src="/images/logos/ssc-logo.png"
-                            alt="ADRE Logo"
-                            className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
-                          />
-                          <h2 className="text-3xl font-bold text-center">{course.name}</h2>
-                        </div>
-                      </>
-                    )}
+                  <div
+                    className="md:w-1/3 p-8 flex flex-col justify-center items-center text-white relative overflow-hidden bg-gray-900"
+                    style={{
+                      backgroundImage: `url(${course.backgroundImage})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat',
+                    }}
+                  >
+                    <div className="absolute inset-0 bg-black/50" />
+                    <div className="relative z-10 flex flex-col items-center">
+                      {course.slug === 'rrb-ntpc' && (
+                        <img
+                          src="/images/logos/indian-railways-logo.png"
+                          alt="Indian Railways"
+                          className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
+                        />
+                      )}
+                      {course.slug === 'ssc-cgl' && (
+                        <img
+                          src="/images/logos/ssc-logo.png"
+                          alt="SSC Logo"
+                          className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
+                        />
+                      )}
+                      {course.slug === 'ssc-chsl' && (
+                        <img
+                          src="/images/logos/ssc-logo.png"
+                          alt="SSC Logo"
+                          className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
+                        />
+                      )}
+                      {course.slug === 'sbi-po-ibps-po' && (
+                        <img
+                          src="/images/logos/banking-logo.png"
+                          alt="Banking Logo"
+                          className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
+                        />
+                      )}
+                      {course.slug === 'sbi-clerk-ibps-clerk' && (
+                        <img
+                          src="/images/logos/banking-logo.png"
+                          alt="Banking Logo"
+                          className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
+                        />
+                      )}
+                      {course.slug === 'adre' && (
+                        <img
+                          src="/images/logos/ssc-logo.png"
+                          alt="ADRE Logo"
+                          className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
+                        />
+                      )}
+                      <h2 className="text-3xl font-bold text-center">{course.name}</h2>
+                    </div>
                   </div>
 
                   <div className="md:w-2/3 p-8">
