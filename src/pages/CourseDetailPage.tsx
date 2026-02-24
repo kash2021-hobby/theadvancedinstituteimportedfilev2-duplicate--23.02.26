@@ -71,7 +71,7 @@ const coursesData: Record<string, CourseData> = {
     batchSize: '20 Students',
     description: 'Comprehensive preparation program for Railway Recruitment Board Non-Technical Popular Categories exam',
     logo: 'https://images.pexels.com/photos/3824771/pexels-photo-3824771.jpeg?auto=compress&cs=tinysrgb&w=200',
-    backgroundImage: 'https://images.pexels.com/photos/2226458/pexels-photo-2226458.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    backgroundImage: '/images/hero/final_webp.webp',
     overview: 'Our Railway NTPC program is designed to provide complete preparation for all stages of the examination. The course covers all sections including General Awareness, Mathematics, and General Intelligence & Reasoning with special focus on time management and accuracy.',
     highlights: [
       'Complete syllabus coverage for all stages',
