@@ -18,42 +18,42 @@ export default function InfrastructureSection() {
 
   const infrastructureImages = [
     {
-      url: 'https://images.pexels.com/photos/7944080/pexels-photo-7944080.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      url: '/images/infrastructure/modern-classrooms.jpg',
       title: 'Modern Classrooms',
       description: 'Air-conditioned classrooms with modern teaching aids'
     },
     {
-      url: 'https://images.pexels.com/photos/5212329/pexels-photo-5212329.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      url: '/images/infrastructure/expert-faculty.jpg',
       title: 'Expert Faculty',
       description: 'Experienced teachers dedicated to student success'
     },
     {
-      url: 'https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      url: '/images/infrastructure/interactive-learning.jpg',
       title: 'Interactive Learning',
       description: 'Engaging teaching methodology for better understanding'
     },
     {
-      url: 'https://images.pexels.com/photos/7092613/pexels-photo-7092613.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      url: '/images/infrastructure/success-stories.jpg',
       title: 'Success Stories',
       description: 'Join hundreds of successful candidates'
     },
     {
-      url: 'https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      url: '/images/infrastructure/extensive-library.jpg',
       title: 'Extensive Library',
       description: 'Rich collection of books and study materials'
     },
     {
-      url: 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      url: '/images/infrastructure/computer-lab.jpg',
       title: 'Computer Lab',
       description: 'State-of-the-art technology and software'
     },
     {
-      url: 'https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      url: '/images/infrastructure/study-environment.jpg',
       title: 'Study Environment',
       description: 'Peaceful and focused learning spaces'
     },
     {
-      url: 'https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      url: '/images/infrastructure/campus-facilities.jpg',
       title: 'Campus Facilities',
       description: 'Modern amenities for student comfort'
     }

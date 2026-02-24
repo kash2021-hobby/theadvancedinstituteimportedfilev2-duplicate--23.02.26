@@ -127,7 +127,7 @@ export default function AboutPage() {
                       <>
                         <div className="absolute inset-0 flex items-center justify-center">
                           <img
-                            src="https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=200&h=100"
+                            src="/images/about/video-placeholder.jpg"
                             alt="The Advanced Learning Academy"
                             className="w-3/4 max-w-xs opacity-50"
                           />
@@ -166,7 +166,7 @@ export default function AboutPage() {
                       <>
                         <div className="absolute inset-0 flex items-center justify-center">
                           <img
-                            src="https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=200&h=100"
+                            src="/images/about/video-placeholder.jpg"
                             alt="The Advanced Learning Academy"
                             className="w-3/4 max-w-xs opacity-50"
                           />

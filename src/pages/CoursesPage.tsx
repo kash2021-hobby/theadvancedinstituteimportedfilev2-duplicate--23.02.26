@@ -130,14 +130,14 @@ export default function CoursesPage() {
                       <>
                         <div className="absolute inset-0 opacity-50">
                           <img
-                            src="https://images.pexels.com/photos/2226458/pexels-photo-2226458.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            src="/images/courses/railway-ntpc-bg.jpg"
                             alt="Train background"
                             className="w-full h-full object-cover"
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
                           <img
-                            src="https://images.pexels.com/photos/3824771/pexels-photo-3824771.jpeg?auto=compress&cs=tinysrgb&w=200"
+                            src="/images/courses/railway-ntpc-logo.png"
                             alt="Indian Railways"
                             className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
                           />
@@ -149,14 +149,14 @@ export default function CoursesPage() {
                       <>
                         <div className="absolute inset-0 opacity-40">
                           <img
-                            src="https://images.pexels.com/photos/7944080/pexels-photo-7944080.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            src="/images/courses/ssc-cgl-bg.jpg"
                             alt="SSC Headquarters"
                             className="w-full h-full object-cover"
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
                           <img
-                            src="https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=200"
+                            src="/images/courses/ssc-cgl-logo.png"
                             alt="SSC Logo"
                             className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
                           />
@@ -168,14 +168,14 @@ export default function CoursesPage() {
                       <>
                         <div className="absolute inset-0 opacity-40">
                           <img
-                            src="https://images.pexels.com/photos/159751/book-address-book-learning-learn-159751.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            src="/images/courses/ssc-chsl-bg.jpg"
                             alt="SSC CHSL Background"
                             className="w-full h-full object-cover"
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
                           <img
-                            src="https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=200"
+                            src="/images/courses/ssc-chsl-logo.png"
                             alt="SSC Logo"
                             className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
                           />
@@ -187,14 +187,14 @@ export default function CoursesPage() {
                       <>
                         <div className="absolute inset-0 opacity-40">
                           <img
-                            src="https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            src="/images/courses/bank-po-bg.jpg"
                             alt="Banking Background"
                             className="w-full h-full object-cover"
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
                           <img
-                            src="https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=200"
+                            src="/images/courses/bank-po-logo.png"
                             alt="Banking Logo"
                             className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
                           />
@@ -206,14 +206,14 @@ export default function CoursesPage() {
                       <>
                         <div className="absolute inset-0 opacity-40">
                           <img
-                            src="https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            src="/images/courses/bank-clerk-bg.jpg"
                             alt="Banking Background"
                             className="w-full h-full object-cover"
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
                           <img
-                            src="https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=200"
+                            src="/images/courses/bank-clerk-logo.png"
                             alt="Banking Logo"
                             className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
                           />
@@ -225,14 +225,14 @@ export default function CoursesPage() {
                       <>
                         <div className="absolute inset-0 opacity-40">
                           <img
-                            src="https://images.pexels.com/photos/7944080/pexels-photo-7944080.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            src="/images/courses/adre-bg.jpg"
                             alt="ADRE Background"
                             className="w-full h-full object-cover"
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
                           <img
-                            src="https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=200"
+                            src="/images/courses/adre-logo.png"
                             alt="ADRE Logo"
                             className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
                           />
