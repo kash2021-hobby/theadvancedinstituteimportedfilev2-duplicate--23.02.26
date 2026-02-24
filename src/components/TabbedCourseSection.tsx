@@ -423,10 +423,10 @@ export default function TabbedCourseSection() {
                       >
                         <div className="bg-white rounded-2xl overflow-hidden shadow-lg relative">
                           <div
-                            className={`${course.slug === 'rrb-ntpc' ? 'h-96' : 'h-48'} bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-hidden`}
+                            className={`${course.slug === 'rrb-ntpc' ? 'h-64 sm:h-96' : 'h-48'} bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-hidden`}
                             style={course.backgroundImage ? {
                               backgroundImage: `url('${course.backgroundImage}')`,
-                              backgroundSize: course.slug === 'rrb-ntpc' ? 'contain' : 'cover',
+                              backgroundSize: course.slug === 'rrb-ntpc' ? 'cover' : 'cover',
                               backgroundPosition: 'center',
                               backgroundRepeat: 'no-repeat'
                             } : undefined}
@@ -580,7 +580,7 @@ export default function TabbedCourseSection() {
                     className={`${course.slug === 'rrb-ntpc' ? 'h-96' : 'h-48'} bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-hidden`}
                     style={course.backgroundImage ? {
                       backgroundImage: `url('${course.backgroundImage}')`,
-                      backgroundSize: course.slug === 'rrb-ntpc' ? 'contain' : 'cover',
+                      backgroundSize: 'cover',
                       backgroundPosition: 'center',
                       backgroundRepeat: 'no-repeat'
                     } : undefined}
