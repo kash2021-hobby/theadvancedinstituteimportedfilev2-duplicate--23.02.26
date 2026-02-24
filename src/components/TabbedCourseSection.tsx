@@ -423,12 +423,13 @@ export default function TabbedCourseSection() {
                       >
                         <div className="bg-white rounded-2xl overflow-hidden shadow-lg relative">
                           <div
-                            className={`${course.slug === 'rrb-ntpc' ? 'h-64 sm:h-96' : 'h-48'} bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-hidden`}
+                            className={`${course.slug === 'rrb-ntpc' ? 'h-80 sm:h-full' : 'h-48'} bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-visible`}
                             style={course.backgroundImage ? {
                               backgroundImage: `url('${course.backgroundImage}')`,
-                              backgroundSize: course.slug === 'rrb-ntpc' ? 'cover' : 'cover',
+                              backgroundSize: course.slug === 'rrb-ntpc' ? 'contain' : 'cover',
                               backgroundPosition: 'center',
-                              backgroundRepeat: 'no-repeat'
+                              backgroundRepeat: 'no-repeat',
+                              minHeight: course.slug === 'rrb-ntpc' ? '500px' : undefined
                             } : undefined}
                           >
                             {course.slug !== 'rrb-ntpc' && (
@@ -577,12 +578,13 @@ export default function TabbedCourseSection() {
                   className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-1 relative"
                 >
                   <div
-                    className={`${course.slug === 'rrb-ntpc' ? 'h-96' : 'h-48'} bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-hidden`}
+                    className={`${course.slug === 'rrb-ntpc' ? 'h-full' : 'h-48'} bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-visible`}
                     style={course.backgroundImage ? {
                       backgroundImage: `url('${course.backgroundImage}')`,
-                      backgroundSize: 'cover',
+                      backgroundSize: course.slug === 'rrb-ntpc' ? 'contain' : 'cover',
                       backgroundPosition: 'center',
-                      backgroundRepeat: 'no-repeat'
+                      backgroundRepeat: 'no-repeat',
+                      minHeight: course.slug === 'rrb-ntpc' ? '500px' : undefined
                     } : undefined}
                   >
                     {course.slug !== 'rrb-ntpc' && (
