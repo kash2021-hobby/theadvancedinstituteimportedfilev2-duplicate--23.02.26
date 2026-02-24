@@ -23,6 +23,10 @@ const slides: Slide[] = [
     carouselImages: [
       "/images/hero/train-background.jpg",
       "/images/hero/hero-background.png",
+      "/images/hero/hero-slide-3.jpg",
+      "/images/hero/hero-slide-4.jpg",
+      "/images/hero/hero-slide-5.jpg",
+      "/images/hero/hero-slide-6.jpg",
     ],
     ctaText: "Explore Programs",
     ctaLink: "/courses"
