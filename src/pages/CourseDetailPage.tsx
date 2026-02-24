@@ -877,24 +877,29 @@ export default function CourseDetailPage() {
   return (
     <div className="overflow-x-hidden">
       <section
-        className="bg-gradient-to-br from-primary to-primary-dark text-white py-16 md:py-20 relative overflow-hidden"
+        className="bg-gradient-to-br from-primary to-primary-dark text-white relative overflow-hidden"
         style={
           courseSlug === 'rrb-ntpc' && course.backgroundImage
             ? {
                 backgroundImage: `url(${course.backgroundImage})`,
-                backgroundSize: 'cover',
+                backgroundSize: 'contain',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
-                minHeight: '400px'
+                minHeight: '500px'
               }
             : courseSlug !== 'rrb-ntpc' && course.backgroundImage
             ? {
                 backgroundImage: `url(${course.backgroundImage})`,
                 backgroundSize: 'cover',
                 backgroundPosition: (courseSlug === 'sbi-po-ibps-po' || courseSlug === 'sbi-clerk-ibps-clerk') ? 'left center' : 'center',
-                backgroundRepeat: 'no-repeat'
+                backgroundRepeat: 'no-repeat',
+                paddingTop: '4rem',
+                paddingBottom: '5rem'
               }
-            : undefined
+            : {
+                paddingTop: '4rem',
+                paddingBottom: '5rem'
+              }
         }
       >
         {course.backgroundImage && courseSlug !== 'rrb-ntpc' && (
