@@ -134,7 +134,7 @@ export default function HeroSlider() {
                     <img
                       src={image}
                       alt={`${slide.headline} - Image ${index + 1}`}
-                      className="object-cover w-full h-full rounded-3xl border-4 border-white/30 shadow-2xl"
+                      className="object-contain w-full h-full rounded-3xl border-4 border-white/30 shadow-2xl bg-white"
                     />
                   </div>
                 );
@@ -191,7 +191,7 @@ export default function HeroSlider() {
                   <img
                     src={image}
                     alt={`${slide.headline} - Image ${index + 1}`}
-                    className="object-cover w-full h-full rounded-2xl border-3 border-white/20 shadow-2xl"
+                    className="object-contain w-full h-full rounded-2xl border-3 border-white/20 shadow-2xl bg-white"
                   />
                 </div>
               );
