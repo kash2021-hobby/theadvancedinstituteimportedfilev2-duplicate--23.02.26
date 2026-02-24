@@ -879,7 +879,15 @@ export default function CourseDetailPage() {
       <section
         className="bg-gradient-to-br from-primary to-primary-dark text-white py-16 md:py-20 relative overflow-hidden"
         style={
-          course.backgroundImage
+          courseSlug === 'rrb-ntpc' && course.backgroundImage
+            ? {
+                backgroundImage: `url(${course.backgroundImage})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                minHeight: '400px'
+              }
+            : courseSlug !== 'rrb-ntpc' && course.backgroundImage
             ? {
                 backgroundImage: `url(${course.backgroundImage})`,
                 backgroundSize: 'cover',
@@ -889,35 +897,37 @@ export default function CourseDetailPage() {
             : undefined
         }
       >
-        {course.backgroundImage && (
+        {course.backgroundImage && courseSlug !== 'rrb-ntpc' && (
           <div className="absolute inset-0 bg-black/50 z-0" />
         )}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white" style={course.backgroundImage ? { textShadow: '2px 2px 8px rgba(0,0,0,0.7)' } : undefined}>{course.name}</h1>
-            {(courseSlug === 'rrb-ntpc' || courseSlug === 'sbi-po-ibps-po' || courseSlug === 'sbi-clerk-ibps-clerk') && (
-              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-teal-500 to-teal-600 text-white px-5 py-2 rounded-full text-sm font-bold shadow-lg mb-4">
-                <Wifi className="w-5 h-5" />
-                <span>Online + Offline Classes</span>
-              </div>
-            )}
-            <p className="text-xl text-blue-50 mb-8" style={course.backgroundImage ? { textShadow: '2px 2px 8px rgba(0,0,0,0.7)' } : undefined}>{course.description}</p>
-            <div className="flex flex-wrap justify-center gap-6" style={course.backgroundImage ? { textShadow: '2px 2px 8px rgba(0,0,0,0.7)' } : undefined}>
-              <div className="flex items-center space-x-2">
-                <Clock className="w-6 h-6" style={course.backgroundImage ? { filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.7))' } : undefined} />
-                <span className="font-semibold">{course.duration}</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Users className="w-6 h-6" style={course.backgroundImage ? { filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.7))' } : undefined} />
-                <span className="font-semibold">Max {course.batchSize}</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <BookOpen className="w-6 h-6" style={course.backgroundImage ? { filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.7))' } : undefined} />
-                <span className="font-semibold">{course.mode}</span>
+        {courseSlug !== 'rrb-ntpc' && (
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white" style={course.backgroundImage ? { textShadow: '2px 2px 8px rgba(0,0,0,0.7)' } : undefined}>{course.name}</h1>
+              {(courseSlug === 'sbi-po-ibps-po' || courseSlug === 'sbi-clerk-ibps-clerk') && (
+                <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-teal-500 to-teal-600 text-white px-5 py-2 rounded-full text-sm font-bold shadow-lg mb-4">
+                  <Wifi className="w-5 h-5" />
+                  <span>Online + Offline Classes</span>
+                </div>
+              )}
+              <p className="text-xl text-blue-50 mb-8" style={course.backgroundImage ? { textShadow: '2px 2px 8px rgba(0,0,0,0.7)' } : undefined}>{course.description}</p>
+              <div className="flex flex-wrap justify-center gap-6" style={course.backgroundImage ? { textShadow: '2px 2px 8px rgba(0,0,0,0.7)' } : undefined}>
+                <div className="flex items-center space-x-2">
+                  <Clock className="w-6 h-6" style={course.backgroundImage ? { filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.7))' } : undefined} />
+                  <span className="font-semibold">{course.duration}</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Users className="w-6 h-6" style={course.backgroundImage ? { filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.7))' } : undefined} />
+                  <span className="font-semibold">Max {course.batchSize}</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <BookOpen className="w-6 h-6" style={course.backgroundImage ? { filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.7))' } : undefined} />
+                  <span className="font-semibold">{course.mode}</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        )}
       </section>
 
       <section className="py-16 bg-white overflow-hidden">
