@@ -21,12 +21,12 @@ const slides: Slide[] = [
     subtext: "Join a results-focused government exam institute for Railway NTPC, SSC CGL, SSC CHSL, ADRE and Banking exams with expert guidance and strategy.",
     personImage: "/images/hero/train-background.jpg",
     carouselImages: [
-      "/images/hero/train-background.jpg",
-      "/images/hero/hero-background.png",
-      "/images/hero/hero-slide-3.jpg",
-      "/images/hero/hero-slide-4.jpg",
-      "/images/hero/hero-slide-5.jpg",
-      "/images/hero/hero-slide-6.jpg",
+      "/images/hero/adregrade3.webp",
+      "/images/hero/bankclerk.webp",
+      "/images/hero/railwayntpc.webp",
+      "/images/hero/ssccgl.webp",
+      "/images/hero/hero-slide-5.webp",
+      "/images/hero/hero-slide-6.webp",
     ],
     ctaText: "Explore Programs",
     ctaLink: "/courses"
