@@ -128,10 +128,10 @@ export default function CoursesPage() {
                   <div className="md:w-1/3 p-8 flex flex-col justify-center items-center text-white relative overflow-hidden bg-gray-900">
                     {course.slug === 'rrb-ntpc' && (
                       <>
-                        <div className="absolute inset-0 opacity-50">
+                        <div className="absolute inset-0 opacity-100">
                           <img
-                            src="/images/courses/ssc-chsl-background.jpg"
-                            alt="Train background"
+                            src="/images/hero/railwayntpc copy.webp"
+                            alt="Railway NTPC"
                             className="w-full h-full object-cover"
                           />
                         </div>
