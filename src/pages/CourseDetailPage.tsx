@@ -64,7 +64,7 @@ interface CourseData {
 
 const coursesData: Record<string, CourseData> = {
   'rrb-ntpc': {
-    name: 'RRB NTPC',
+    name: 'Railway NTPC',
     slug: 'rrb-ntpc',
     duration: '6 Months',
     mode: 'Classroom + Online Support',
@@ -72,7 +72,7 @@ const coursesData: Record<string, CourseData> = {
     description: 'Comprehensive preparation program for Railway Recruitment Board Non-Technical Popular Categories exam',
     logo: 'https://images.pexels.com/photos/3824771/pexels-photo-3824771.jpeg?auto=compress&cs=tinysrgb&w=200',
     backgroundImage: 'https://images.pexels.com/photos/2226458/pexels-photo-2226458.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    overview: 'Our RRB NTPC program is designed to provide complete preparation for all stages of the examination. The course covers all sections including General Awareness, Mathematics, and General Intelligence & Reasoning with special focus on time management and accuracy.',
+    overview: 'Our Railway NTPC program is designed to provide complete preparation for all stages of the examination. The course covers all sections including General Awareness, Mathematics, and General Intelligence & Reasoning with special focus on time management and accuracy.',
     highlights: [
       'Complete syllabus coverage for all stages',
       'Daily practice sessions with mock tests',
@@ -1117,8 +1117,8 @@ export default function CourseDetailPage() {
                   <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center md:text-left">Exam Pattern</h2>
                   {courseSlug === 'rrb-ntpc' && (
                     <p className="text-gray-700 mb-6 text-sm md:text-base text-center md:text-left">
-                      The RRB NTPC 2025-26 exam will be conducted in two stages: Stage 1 (Preliminary) and Stage 2 (Main).
-                      The RRB NTPC Stage 1 and Stage 2 have the same syllabus, but the exam pattern is different.
+                      The Railway NTPC 2025-26 exam will be conducted in two stages: Stage 1 (Preliminary) and Stage 2 (Main).
+                      The Railway NTPC Stage 1 and Stage 2 have the same syllabus, but the exam pattern is different.
                     </p>
                   )}
                   {courseSlug === 'ssc-cgl' && (

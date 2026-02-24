@@ -78,7 +78,7 @@ export default function LeadForm({
   };
 
   const examOptions = [
-    'RRB NTPC',
+    'Railway NTPC',
     'SSC CGL',
     'SSC CHSL',
     'Banking Exams',

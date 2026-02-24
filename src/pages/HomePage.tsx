@@ -355,7 +355,7 @@ export default function HomePage() {
                 fullQualifications: "Head of Department",
                 university: "Expert in General Knowledge and Current Affairs",
                 subjects: ["General Knowledge", "General Awareness", "Current Affairs"],
-                exams: ["SSC CGL", "SSC CHSL", "RRB NTPC", "Banking"],
+                exams: ["SSC CGL", "SSC CHSL", "Railway NTPC", "Banking"],
                 achievement: "15+ years of expertise in General Knowledge and Current Affairs teaching",
                 teachingApproach: "Comprehensive approach to General Awareness with focus on current events and static GK",
                 quote: "Knowledge is power, and awareness opens doors to success"
@@ -369,7 +369,7 @@ export default function HomePage() {
                 fullQualifications: "Post Graduate - HOD English",
                 university: "Teaching for Professional Examinations",
                 subjects: ["English Language"],
-                exams: ["SSC CGL", "SSC CHSL", "Banking (PO/Clerk)", "Railway Exams (RRB NTPC/Group D)", "Other Government Exams"],
+                exams: ["SSC CGL", "SSC CHSL", "Banking (PO/Clerk)", "Railway Exams (Railway NTPC/Group D)", "Other Government Exams"],
                 achievement: "Application based teaching style with 2000+ students mentored",
                 teachingApproach: "Application based approach focusing on practical English usage for competitive exams",
                 quote: "Master English with practical application to excel in all government exams"
@@ -383,7 +383,7 @@ export default function HomePage() {
                 fullQualifications: "Post Graduate - Head of Department (Quant)",
                 university: "Teaching for top level competitive examinations",
                 subjects: ["Quantitative Aptitude"],
-                exams: ["Banking (PO/Clerk)", "Railway Exams (RRB NTPC/Group D)", "Other Government Exams"],
+                exams: ["Banking (PO/Clerk)", "Railway Exams (Railway NTPC/Group D)", "Other Government Exams"],
                 achievement: "Concept + Shortcut based teaching with 1500+ students mentored",
                 teachingApproach: "Combines strong conceptual foundation with time-saving shortcuts for competitive exams",
                 quote: "Master mathematics through concepts and smart shortcuts"
@@ -542,7 +542,7 @@ export default function HomePage() {
                   fullQualifications: "Head of Department",
                   university: "Expert in General Knowledge and Current Affairs",
                   subjects: ["General Knowledge", "General Awareness", "Current Affairs"],
-                  exams: ["SSC CGL", "SSC CHSL", "RRB NTPC", "Banking"],
+                  exams: ["SSC CGL", "SSC CHSL", "Railway NTPC", "Banking"],
                   achievement: "15+ years of expertise in General Knowledge and Current Affairs teaching",
                   teachingApproach: "Comprehensive approach to General Awareness with focus on current events and static GK",
                   quote: "Knowledge is power, and awareness opens doors to success"
@@ -556,7 +556,7 @@ export default function HomePage() {
                   fullQualifications: "Post Graduate - HOD English",
                   university: "Teaching for Professional Examinations",
                   subjects: ["English Language"],
-                  exams: ["SSC CGL", "SSC CHSL", "Banking (PO/Clerk)", "Railway Exams (RRB NTPC/Group D)", "Other Government Exams"],
+                  exams: ["SSC CGL", "SSC CHSL", "Banking (PO/Clerk)", "Railway Exams (Railway NTPC/Group D)", "Other Government Exams"],
                   achievement: "Application based teaching style with 2000+ students mentored",
                   teachingApproach: "Application based approach focusing on practical English usage for competitive exams",
                   quote: "Master English with practical application to excel in all government exams"
@@ -570,7 +570,7 @@ export default function HomePage() {
                   fullQualifications: "Post Graduate - Head of Department (Quant)",
                   university: "Teaching for top level competitive examinations",
                   subjects: ["Quantitative Aptitude"],
-                  exams: ["Banking (PO/Clerk)", "Railway Exams (RRB NTPC/Group D)", "Other Government Exams"],
+                  exams: ["Banking (PO/Clerk)", "Railway Exams (Railway NTPC/Group D)", "Other Government Exams"],
                   achievement: "Concept + Shortcut based teaching with 1500+ students mentored",
                   teachingApproach: "Combines strong conceptual foundation with time-saving shortcuts for competitive exams",
                   quote: "Master mathematics through concepts and smart shortcuts"

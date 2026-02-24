@@ -230,7 +230,7 @@ export default function AdminPage() {
                     className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
                   >
                     <option value="">Select exam</option>
-                    <option value="RRB NTPC">RRB NTPC</option>
+                    <option value="Railway NTPC">Railway NTPC</option>
                     <option value="SSC CGL">SSC CGL</option>
                     <option value="SSC CHSL">SSC CHSL</option>
                     <option value="Banking Exams">Banking Exams</option>

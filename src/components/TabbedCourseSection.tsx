@@ -17,7 +17,7 @@ interface Course {
 
 const courses: Course[] = [
   {
-    name: 'RRB NTPC',
+    name: 'Railway NTPC',
     duration: '6 Months',
     cohortStart: '1st March 2026',
     slug: 'rrb-ntpc',

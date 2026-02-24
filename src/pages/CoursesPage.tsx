@@ -4,7 +4,7 @@ import { Clock, Users, BookOpen, Award, CheckCircle2, ChevronRight, Monitor, Wif
 export default function CoursesPage() {
   const courses = [
     {
-      name: 'RRB NTPC',
+      name: 'Railway NTPC',
       slug: 'rrb-ntpc',
       duration: '6 Months',
       mode: 'Online + Offline Classes',
