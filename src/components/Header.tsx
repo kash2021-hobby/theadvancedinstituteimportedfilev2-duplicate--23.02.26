@@ -103,11 +103,13 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-14 md:h-16">
           <Link to="/" className="flex items-center space-x-3">
-            <img
-              src="/images/logos/Animate_this_logo_202602251731.gif"
-              alt="The Advanced Learning Academy"
-              className="h-10 md:h-12 w-auto"
-            />
+            <div className="bg-white rounded-lg p-1">
+              <img
+                src="/images/logos/Animate_this_logo_202602251731.gif"
+                alt="The Advanced Learning Academy"
+                className="h-8 md:h-10 w-auto"
+              />
+            </div>
             <img
               src="/image.png"
               alt="The Advanced Learning Academy"
