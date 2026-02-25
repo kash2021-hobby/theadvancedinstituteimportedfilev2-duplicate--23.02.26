@@ -423,40 +423,38 @@ export default function TabbedCourseSection() {
                       >
                         <div className="bg-white rounded-2xl overflow-hidden shadow-lg relative">
                           <div
-                            className={`${course.slug === 'rrb-ntpc' ? 'h-80 sm:h-full' : 'h-48'} bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-visible`}
+                            className={`${course.slug === 'rrb-ntpc' ? 'h-auto' : 'h-48'} bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-visible`}
                             style={course.backgroundImage ? {
                               backgroundImage: `url('${course.backgroundImage}')`,
                               backgroundSize: course.slug === 'rrb-ntpc' ? 'contain' : 'cover',
                               backgroundPosition: 'center',
                               backgroundRepeat: 'no-repeat',
-                              minHeight: course.slug === 'rrb-ntpc' ? '500px' : undefined
+                              minHeight: course.slug === 'rrb-ntpc' ? '300px' : undefined
                             } : undefined}
                           >
-                            {course.slug !== 'rrb-ntpc' && (
-                              <>
-                                <div className="absolute inset-0 bg-black/40"></div>
-                                <div className="relative text-center px-6 z-10">
-                                  {course.logo ? (
-                                    <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-4 p-2 overflow-hidden">
-                                      <img
-                                        src={course.logo}
-                                        alt={`${course.name} logo`}
-                                        className="w-full h-full object-cover"
-                                      />
-                                    </div>
-                                  ) : (
-                                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
-                                      <span className="text-2xl font-bold text-blue-600">
-                                        {course.category.charAt(0)}
-                                      </span>
-                                    </div>
-                                  )}
-                                  <h3 className="text-2xl font-bold text-white">
-                                    {course.name}
-                                  </h3>
-                                </div>
-                              </>
-                            )}
+                            <>
+                              <div className="absolute inset-0 bg-black/40"></div>
+                              <div className="relative text-center px-6 z-10">
+                                {course.logo ? (
+                                  <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-4 p-2 overflow-hidden">
+                                    <img
+                                      src={course.logo}
+                                      alt={`${course.name} logo`}
+                                      className="w-full h-full object-cover"
+                                    />
+                                  </div>
+                                ) : (
+                                  <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <span className="text-2xl font-bold text-blue-600">
+                                      {course.category.charAt(0)}
+                                    </span>
+                                  </div>
+                                )}
+                                <h3 className="text-2xl font-bold text-white">
+                                  {course.name}
+                                </h3>
+                              </div>
+                            </>
                           </div>
 
                           <div className="p-6">
@@ -578,40 +576,38 @@ export default function TabbedCourseSection() {
                   className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-1 relative"
                 >
                   <div
-                    className={`${course.slug === 'rrb-ntpc' ? 'h-full' : 'h-48'} bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-visible`}
+                    className={`${course.slug === 'rrb-ntpc' ? 'h-auto' : 'h-48'} bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-visible`}
                     style={course.backgroundImage ? {
                       backgroundImage: `url('${course.backgroundImage}')`,
                       backgroundSize: course.slug === 'rrb-ntpc' ? 'contain' : 'cover',
                       backgroundPosition: 'center',
                       backgroundRepeat: 'no-repeat',
-                      minHeight: course.slug === 'rrb-ntpc' ? '500px' : undefined
+                      minHeight: course.slug === 'rrb-ntpc' ? '300px' : undefined
                     } : undefined}
                   >
-                    {course.slug !== 'rrb-ntpc' && (
-                      <>
-                        <div className="absolute inset-0 bg-black/40"></div>
-                        <div className="relative text-center px-6 z-10">
-                          {course.logo ? (
-                            <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-4 p-2 overflow-hidden">
-                              <img
-                                src={course.logo}
-                                alt={`${course.name} logo`}
-                                className="w-full h-full object-cover"
-                              />
-                            </div>
-                          ) : (
-                            <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
-                              <span className="text-2xl font-bold text-blue-600">
-                                {course.category.charAt(0)}
-                              </span>
-                            </div>
-                          )}
-                          <h3 className="text-2xl font-bold text-white">
-                            {course.name}
-                          </h3>
-                        </div>
-                      </>
-                    )}
+                    <>
+                      <div className="absolute inset-0 bg-black/40"></div>
+                      <div className="relative text-center px-6 z-10">
+                        {course.logo ? (
+                          <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-4 p-2 overflow-hidden">
+                            <img
+                              src={course.logo}
+                              alt={`${course.name} logo`}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        ) : (
+                          <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span className="text-2xl font-bold text-blue-600">
+                              {course.category.charAt(0)}
+                            </span>
+                          </div>
+                        )}
+                        <h3 className="text-2xl font-bold text-white">
+                          {course.name}
+                        </h3>
+                      </div>
+                    </>
                   </div>
 
                   <div className="p-6">
