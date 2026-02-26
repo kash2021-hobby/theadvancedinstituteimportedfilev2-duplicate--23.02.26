@@ -423,17 +423,18 @@ export default function TabbedCourseSection() {
                       >
                         <div className="bg-white rounded-2xl overflow-hidden shadow-lg relative">
                           <div
-                            className={`${course.slug === 'rrb-ntpc' ? 'h-auto' : 'h-48'} bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-visible`}
-                            style={course.backgroundImage ? {
-                              backgroundImage: `url('${course.backgroundImage}')`,
-                              backgroundSize: course.slug === 'rrb-ntpc' ? 'contain' : 'cover',
+                            className="bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-visible"
+                            style={{
+                              width: '272px',
+                              height: '300px',
+                              backgroundImage: course.backgroundImage ? `url('${course.backgroundImage}')` : undefined,
+                              backgroundSize: 'contain',
                               backgroundPosition: 'center',
-                              backgroundRepeat: 'no-repeat',
-                              minHeight: course.slug === 'rrb-ntpc' ? '300px' : undefined
-                            } : undefined}
+                              backgroundRepeat: 'no-repeat'
+                            }}
                           >
                             <>
-                              <div className="absolute inset-0 bg-black/40"></div>
+                              <div className="absolute inset-0 bg-black/0"></div>
                             </>
                           </div>
 
@@ -556,17 +557,18 @@ export default function TabbedCourseSection() {
                   className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-1 relative"
                 >
                   <div
-                    className={`${course.slug === 'rrb-ntpc' ? 'h-auto' : 'h-48'} bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-visible`}
-                    style={course.backgroundImage ? {
-                      backgroundImage: `url('${course.backgroundImage}')`,
-                      backgroundSize: course.slug === 'rrb-ntpc' ? 'contain' : 'cover',
+                    className="bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-visible"
+                    style={{
+                      width: '272px',
+                      height: '300px',
+                      backgroundImage: course.backgroundImage ? `url('${course.backgroundImage}')` : undefined,
+                      backgroundSize: 'contain',
                       backgroundPosition: 'center',
-                      backgroundRepeat: 'no-repeat',
-                      minHeight: course.slug === 'rrb-ntpc' ? '300px' : undefined
-                    } : undefined}
+                      backgroundRepeat: 'no-repeat'
+                    }}
                   >
                     <>
-                      <div className="absolute inset-0 bg-black/40"></div>
+                      <div className="absolute inset-0 bg-black/0"></div>
                     </>
                   </div>
 
