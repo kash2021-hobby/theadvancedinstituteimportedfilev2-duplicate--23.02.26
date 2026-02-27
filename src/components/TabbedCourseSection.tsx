@@ -23,7 +23,7 @@ const courses: Course[] = [
     slug: 'rrb-ntpc',
     category: 'RRB',
     logo: 'https://images.pexels.com/photos/3824771/pexels-photo-3824771.jpeg?auto=compress&cs=tinysrgb&w=200',
-    backgroundImage: '/images/hero/railwayntpc.webp',
+    backgroundImage: '/images/hero/gif1.gif',
     hasOnlineSupport: true,
     hasSpecialLectures: true
   },
@@ -34,7 +34,7 @@ const courses: Course[] = [
     slug: 'ssc-cgl',
     category: 'SSC',
     logo: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=200',
-    backgroundImage: 'https://images.pexels.com/photos/7944080/pexels-photo-7944080.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    backgroundImage: '/images/hero/gif2.gif',
     hasOnlineSupport: true,
     hasSpecialLectures: true
   },
@@ -45,7 +45,7 @@ const courses: Course[] = [
     slug: 'ssc-chsl',
     category: 'SSC',
     logo: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=200',
-    backgroundImage: 'https://images.pexels.com/photos/159751/book-address-book-learning-learn-159751.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    backgroundImage: '/images/hero/gif3.gif',
     hasOnlineSupport: true,
     hasSpecialLectures: true
   },
@@ -56,7 +56,7 @@ const courses: Course[] = [
     slug: 'sbi-po-ibps-po',
     category: 'Banking',
     logo: 'https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=200',
-    backgroundImage: 'https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    backgroundImage: '/images/hero/gif4.gif',
     hasOnlineSupport: true,
     hasSpecialLectures: true
   },
@@ -67,7 +67,7 @@ const courses: Course[] = [
     slug: 'sbi-clerk-ibps-clerk',
     category: 'Banking',
     logo: 'https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=200',
-    backgroundImage: 'https://images.pexels.com/photos/6289065/pexels-photo-6289065.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    backgroundImage: '/images/hero/gif5.gif',
     hasOnlineSupport: true,
     hasSpecialLectures: true
   },
@@ -78,7 +78,7 @@ const courses: Course[] = [
     slug: 'adre',
     category: 'State Exams',
     logo: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=200',
-    backgroundImage: 'https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    backgroundImage: '/images/hero/gif6.gif',
     hasOnlineSupport: true,
     hasSpecialLectures: true
   }
