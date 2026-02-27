@@ -19,7 +19,7 @@ import {
 } from 'lucide-react';
 import LeadForm from '../components/LeadForm';
 import CourseRoadmap from '../components/CourseRoadmap';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 interface CourseData {
   name: string;
@@ -867,6 +867,16 @@ const coursesData: Record<string, CourseData> = {
 export default function CourseDetailPage() {
   const { courseSlug } = useParams<{ courseSlug: string }>();
   const [openSection, setOpenSection] = useState<number | null>(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   if (!courseSlug || !coursesData[courseSlug]) {
     return <Navigate to="/courses" replace />;
@@ -882,7 +892,7 @@ export default function CourseDetailPage() {
           courseSlug === 'rrb-ntpc' && course.backgroundImage
             ? {
                 backgroundImage: `url(${course.backgroundImage})`,
-                backgroundSize: 'cover',
+                backgroundSize: isMobile ? 'contain' : 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
                 minHeight: '400px'
@@ -890,8 +900,8 @@ export default function CourseDetailPage() {
             : courseSlug !== 'rrb-ntpc' && course.backgroundImage
             ? {
                 backgroundImage: `url(${course.backgroundImage})`,
-                backgroundSize: 'cover',
-                backgroundPosition: (courseSlug === 'sbi-po-ibps-po' || courseSlug === 'sbi-clerk-ibps-clerk') ? 'left center' : 'center',
+                backgroundSize: isMobile ? 'contain' : 'cover',
+                backgroundPosition: isMobile ? 'center' : ((courseSlug === 'sbi-po-ibps-po' || courseSlug === 'sbi-clerk-ibps-clerk') ? 'left center' : 'center'),
                 backgroundRepeat: 'no-repeat'
               }
             : undefined
