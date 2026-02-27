@@ -168,21 +168,21 @@ export default function AboutPage() {
                           <img
                             src="/images/backgrounds/image.png"
                             alt="The Advanced Learning Academy"
-                            className="w-3/4 max-w-xs opacity-50"
+                            className="w-3/4 max-w-xs opacity-50 mx-auto"
                           />
                         </div>
-                        <div className="relative z-10 bg-gradient-to-br from-white to-primary-50 rounded-full p-10 shadow-blue-xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                        <div className="relative z-10 bg-gradient-to-br from-white to-primary-50 rounded-full p-10 shadow-blue-xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 mx-auto">
                           <Play className="w-20 h-20 text-primary-600 fill-primary-600" />
                         </div>
                         <div className="absolute bottom-8 left-8 right-8 text-center">
-                          <p className="text-white text-lg font-bold bg-primary-900/60 backdrop-blur-sm px-4 py-2 rounded-xl">
+                          <p className="text-white text-lg font-bold bg-primary-900/60 backdrop-blur-sm px-4 py-2 rounded-xl mx-auto">
                             Watch Our Introduction Video
                           </p>
                         </div>
                       </>
                     ) : (
-                      <div className="relative w-full h-full flex items-center justify-center">
-                        <div className="bg-white/95 backdrop-blur-md rounded-2xl p-8 max-w-md mx-4 text-center">
+                      <div className="relative w-full h-full flex items-center justify-center px-4">
+                        <div className="bg-white/95 backdrop-blur-md rounded-2xl p-8 max-w-md mx-auto text-center">
                           <GraduationCap className="w-16 h-16 text-primary-600 mx-auto mb-4" />
                           <p className="text-gray-800 text-lg font-bold mb-2">Video Coming Soon</p>
                           <p className="text-gray-600">We're preparing an inspiring introduction video showcasing our facilities, faculty, and student success stories.</p>
