@@ -333,26 +333,26 @@ export default function AboutPage() {
 
           <div className="bg-gradient-to-br from-primary-600 via-ocean-600 to-primary-700 text-white rounded-3xl p-8 md:p-12 shadow-blue-xl border-4 border-primary-300">
             <div className="text-center">
-              <h3 className="text-3xl md:text-4xl font-black mb-6">Our Core Values</h3>
+              <h3 className="text-3xl md:text-4xl font-black mb-6 text-white">Our Core Values</h3>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border-2 border-white/20">
                   <Shield className="w-12 h-12 text-white mx-auto mb-4" />
-                  <h4 className="text-xl font-bold mb-2">Integrity</h4>
+                  <h4 className="text-xl font-bold mb-2 text-white">Integrity</h4>
                   <p className="text-sm text-white/90">Honest guidance and transparent processes</p>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border-2 border-white/20">
                   <Users className="w-12 h-12 text-white mx-auto mb-4" />
-                  <h4 className="text-xl font-bold mb-2">Excellence</h4>
+                  <h4 className="text-xl font-bold mb-2 text-white">Excellence</h4>
                   <p className="text-sm text-white/90">Commitment to highest quality standards</p>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border-2 border-white/20">
                   <Heart className="w-12 h-12 text-white mx-auto mb-4" />
-                  <h4 className="text-xl font-bold mb-2">Empathy</h4>
+                  <h4 className="text-xl font-bold mb-2 text-white">Empathy</h4>
                   <p className="text-sm text-white/90">Understanding every student's unique journey</p>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border-2 border-white/20">
                   <TrendingUp className="w-12 h-12 text-white mx-auto mb-4" />
-                  <h4 className="text-xl font-bold mb-2">Growth</h4>
+                  <h4 className="text-xl font-bold mb-2 text-white">Growth</h4>
                   <p className="text-sm text-white/90">Continuous improvement and innovation</p>
                 </div>
               </div>
