@@ -136,11 +136,6 @@ export default function CoursesPage() {
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
-                          <img
-                            src="/images/logos/indian-railways-logo.png"
-                            alt="Indian Railways"
-                            className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
-                          />
                           <h2 className="text-3xl font-bold text-center">{course.name}</h2>
                         </div>
                       </>
@@ -155,11 +150,6 @@ export default function CoursesPage() {
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
-                          <img
-                            src="/images/logos/ssc-logo.png"
-                            alt="SSC Logo"
-                            className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
-                          />
                           <h2 className="text-3xl font-bold text-center">{course.name}</h2>
                         </div>
                       </>
@@ -174,11 +164,6 @@ export default function CoursesPage() {
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
-                          <img
-                            src="/images/logos/ssc-logo.png"
-                            alt="SSC Logo"
-                            className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
-                          />
                           <h2 className="text-3xl font-bold text-center">{course.name}</h2>
                         </div>
                       </>
@@ -193,11 +178,6 @@ export default function CoursesPage() {
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
-                          <img
-                            src="/images/logos/banking-logo.png"
-                            alt="Banking Logo"
-                            className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
-                          />
                           <h2 className="text-3xl font-bold text-center">{course.name}</h2>
                         </div>
                       </>
@@ -212,11 +192,6 @@ export default function CoursesPage() {
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
-                          <img
-                            src="/images/logos/banking-logo.png"
-                            alt="Banking Logo"
-                            className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
-                          />
                           <h2 className="text-3xl font-bold text-center">{course.name}</h2>
                         </div>
                       </>
@@ -231,11 +206,6 @@ export default function CoursesPage() {
                           />
                         </div>
                         <div className="relative z-10 flex flex-col items-center">
-                          <img
-                            src="/images/logos/ssc-logo.png"
-                            alt="ADRE Logo"
-                            className="w-20 h-20 mb-4 object-contain bg-white rounded-full p-2"
-                          />
                           <h2 className="text-3xl font-bold text-center">{course.name}</h2>
                         </div>
                       </>
