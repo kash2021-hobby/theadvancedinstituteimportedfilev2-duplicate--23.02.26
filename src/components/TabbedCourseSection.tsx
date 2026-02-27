@@ -423,7 +423,7 @@ export default function TabbedCourseSection() {
                       >
                         <div className="bg-white rounded-2xl overflow-hidden shadow-lg relative">
                           <div
-                            className="bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-visible"
+                            className="bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative overflow-visible mx-auto"
                             style={{
                               width: '272px',
                               height: '300px',
