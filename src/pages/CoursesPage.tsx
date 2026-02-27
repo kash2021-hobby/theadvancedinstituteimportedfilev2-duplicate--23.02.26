@@ -126,6 +126,10 @@ export default function CoursesPage() {
               >
                 <div className="md:flex">
                   <div className="md:w-1/3 p-8 flex flex-col justify-center items-center text-white relative overflow-hidden bg-gray-900">
+                    <div className="w-full max-w-[272px] mx-auto" style={{
+                      height: '300px',
+                      position: 'relative'
+                    }}>
                     {course.slug === 'rrb-ntpc' && (
                       <>
                         <div className="absolute inset-0 opacity-100">
@@ -210,6 +214,7 @@ export default function CoursesPage() {
                         </div>
                       </>
                     )}
+                    </div>
                   </div>
 
                   <div className="md:w-2/3 p-8">
