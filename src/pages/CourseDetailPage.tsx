@@ -181,7 +181,7 @@ const coursesData: Record<string, CourseData> = {
     batchSize: '20 Students',
     description: 'Intensive coaching for Staff Selection Commission Combined Graduate Level examination',
     logo: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=200',
-    backgroundImage: 'https://images.pexels.com/photos/7944080/pexels-photo-7944080.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    backgroundImage: '/images/hero/r2.jpeg',
     overview: 'Our SSC CGL program offers comprehensive preparation for all four tiers of the examination. With dedicated modules for each tier and specialized coaching for descriptive paper, we ensure holistic development of all skills required to crack this prestigious exam.',
     highlights: [
       'Tier-wise structured preparation',
@@ -339,7 +339,7 @@ const coursesData: Record<string, CourseData> = {
     batchSize: '20 Students',
     description: 'Structured program for Staff Selection Commission Combined Higher Secondary Level exam',
     logo: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=200',
-    backgroundImage: 'https://images.pexels.com/photos/159751/book-address-book-learning-learn-159751.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    backgroundImage: '/images/hero/r3.jpeg',
     overview: 'Our SSC CHSL program focuses on building strong fundamentals and enhancing speed with accuracy. The course is designed for 10+2 level preparation with special emphasis on time management and exam strategy.',
     highlights: [
       'Foundation to advanced level preparation',
@@ -462,7 +462,7 @@ const coursesData: Record<string, CourseData> = {
     batchSize: '20 Students',
     description: 'Specialized coaching program for SBI PO and IBPS PO examinations with comprehensive preparation strategy',
     logo: 'https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=200',
-    backgroundImage: 'https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    backgroundImage: '/images/hero/r4.jpeg',
     overview: 'Our SBI PO & IBPS PO program is a specialized course designed exclusively for Probationary Officer positions in State Bank of India and other public sector banks through IBPS. This intensive program covers all three stages - Preliminary, Mains, and Interview with equal emphasis on each. The course combines classroom teaching with online resources, providing flexibility and comprehensive preparation. With expert faculty, banking-specific knowledge modules, and personality development sessions, we ensure students are fully equipped to crack these prestigious banking exams and secure leadership positions in the banking sector.',
     highlights: [
       'Dedicated preparation for PO level examinations',
@@ -623,7 +623,7 @@ const coursesData: Record<string, CourseData> = {
     batchSize: '25 Students',
     description: 'Comprehensive coaching for SBI Clerk and IBPS Clerk examinations with focus on accuracy and speed',
     logo: 'https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=200',
-    backgroundImage: 'https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    backgroundImage: '/images/hero/r1.jpeg',
     overview: 'Our SBI Clerk & IBPS Clerk program is designed to provide complete preparation for clerical positions in State Bank of India and other public sector banks through IBPS. This focused course covers both Preliminary and Mains examinations with emphasis on speed, accuracy, and time management. The program includes dedicated modules for banking awareness, computer knowledge, and regional language support. With regular mock tests, doubt clearing sessions, and expert guidance, we ensure students are fully prepared to secure clerical positions in the banking sector and build a strong foundation for their banking career.',
     highlights: [
       'Complete preparation for Clerk level examinations',
@@ -744,7 +744,7 @@ const coursesData: Record<string, CourseData> = {
     batchSize: '20 Students',
     description: 'Complete preparation for Assam Direct Recruitment Examination with focus on Assam-specific topics',
     logo: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=200',
-    backgroundImage: 'https://images.pexels.com/photos/7944080/pexels-photo-7944080.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    backgroundImage: '/images/hero/r5.jpeg',
     overview: 'Our ADRE program provides comprehensive preparation for the Assam Direct Recruitment Examination conducted by the State Level Recruitment Commission (SLRC), Assam. The course covers all aspects of the exam with special emphasis on Assam-specific General Knowledge, History, Culture, Geography, and Current Affairs. We prepare students for various Grade III and Grade IV posts under the Government of Assam.',
     highlights: [
       'Comprehensive coverage of Assam-specific topics',

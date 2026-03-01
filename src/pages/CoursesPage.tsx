@@ -4,7 +4,7 @@ import { Clock, Users, BookOpen, Award, CheckCircle2, ChevronRight, Monitor, Wif
 export default function CoursesPage() {
   const courses = [
     {
-      name: 'Railway NTPC',
+      name: '',
       slug: 'rrb-ntpc',
       duration: '6 Months',
       mode: 'Online + Offline Classes',
@@ -20,7 +20,7 @@ export default function CoursesPage() {
       ]
     },
     {
-      name: 'SSC CGL',
+      name: '',
       slug: 'ssc-cgl',
       duration: '6 + 3 Months',
       mode: 'Online + Offline Classes',
@@ -36,7 +36,7 @@ export default function CoursesPage() {
       ]
     },
     {
-      name: 'SSC CHSL',
+      name: '',
       slug: 'ssc-chsl',
       duration: '6 Months',
       mode: 'Online + Offline Classes',
@@ -52,7 +52,7 @@ export default function CoursesPage() {
       ]
     },
     {
-      name: 'Bank PO',
+      name: '',
       slug: 'sbi-po-ibps-po',
       duration: '6-8 Months',
       mode: 'Online + Offline Classes',
@@ -68,7 +68,7 @@ export default function CoursesPage() {
       ]
     },
     {
-      name: 'Bank Clerk',
+      name: '',
       slug: 'sbi-clerk-ibps-clerk',
       duration: '6 Months',
       mode: 'Online + Offline Classes',
@@ -84,7 +84,7 @@ export default function CoursesPage() {
       ]
     },
     {
-      name: 'ADRE (Assam Direct Recruitment)',
+      name: '',
       slug: 'adre',
       duration: '6 Months',
       mode: 'Online + Offline Classes',
@@ -134,7 +134,7 @@ export default function CoursesPage() {
                       <>
                         <div className="absolute inset-0 opacity-100">
                           <img
-                            src="/images/hero/railwayntpc copy.webp"
+                            src="/images/hero/gif1.gif"
                             alt="Railway NTPC"
                             className="w-full h-full object-cover"
                           />
@@ -146,9 +146,9 @@ export default function CoursesPage() {
                     )}
                     {course.slug === 'ssc-cgl' && (
                       <>
-                        <div className="absolute inset-0 opacity-40">
+                        <div className="absolute inset-0 opacity-100">
                           <img
-                            src="/images/courses/ssc-headquarters.jpg"
+                            src="/images/hero/gif2.gif"
                             alt="SSC Headquarters"
                             className="w-full h-full object-cover"
                           />
@@ -160,9 +160,9 @@ export default function CoursesPage() {
                     )}
                     {course.slug === 'ssc-chsl' && (
                       <>
-                        <div className="absolute inset-0 opacity-40">
+                        <div className="absolute inset-0 opacity-100">
                           <img
-                            src="/images/courses/ssc-chsl-background.jpg"
+                            src="/images/hero/gif2.gif"
                             alt="SSC CHSL Background"
                             className="w-full h-full object-cover"
                           />
@@ -174,9 +174,9 @@ export default function CoursesPage() {
                     )}
                     {course.slug === 'sbi-po-ibps-po' && (
                       <>
-                        <div className="absolute inset-0 opacity-40">
+                        <div className="absolute inset-0 opacity-100">
                           <img
-                            src="/images/infrastructure/banking-background.jpg"
+                            src="/images/hero/gif3.gif"
                             alt="Banking Background"
                             className="w-full h-full object-cover"
                           />
@@ -188,9 +188,9 @@ export default function CoursesPage() {
                     )}
                     {course.slug === 'sbi-clerk-ibps-clerk' && (
                       <>
-                        <div className="absolute inset-0 opacity-40">
+                        <div className="absolute inset-0 opacity-100">
                           <img
-                            src="/images/infrastructure/banking-background.jpg"
+                            src="/images/hero/gif4.gif"
                             alt="Banking Background"
                             className="w-full h-full object-cover"
                           />
@@ -202,9 +202,9 @@ export default function CoursesPage() {
                     )}
                     {course.slug === 'adre' && (
                       <>
-                        <div className="absolute inset-0 opacity-40">
+                        <div className="absolute inset-0 opacity-100">
                           <img
-                            src="/images/courses/ssc-chsl-background.jpg"
+                            src="/images/hero/gif5.gif"
                             alt="ADRE Background"
                             className="w-full h-full object-cover"
                           />
